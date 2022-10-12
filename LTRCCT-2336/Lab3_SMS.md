@@ -1,5 +1,5 @@
 ---
-title: 'Lab 5: SMS Configuration'
+title: 'Lab 3: SMS Configuration'
 ---
 
 

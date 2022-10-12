@@ -12,4 +12,3 @@ Welcome to the Cisco Webex Contact Center Cisco Live labs. Below you can find al
 | Cisco Live 2022 | Americas | Dip into NEW Digital Channels for Webex Contact Center (LTRCCT-2013) | [LTRCCT-2013 Lab Library](LTRCCT-2013/Home.md){:target="_blank"}                                                      |
 | Cisco Live 2022 | Americas | Webex Contact Center New Digital Channel Bot Capabilities (LTRCCT-3001) | [LTRCCT-3001 Lab Library](LTRCCT-3001/Home.md){:target="_blank"}                                                      |
 | Cisco Live 2022 | Americas | Webex Contact Center Workshop: Differentiating your Customer Experience (TECCCT-3001) | [TECCCT-3001 Lab Library](TECCCT-3001/HomePage.md){:target="_blank"}                                                      |
-| Cisco Live 2022 | APJC | Digital Channels for Webex Contact Center (LTRCCT-2336) | [LTRCCT-2336 Lab Library](LTRCCT-2336/Home.md){:target="_blank"}                                                      |

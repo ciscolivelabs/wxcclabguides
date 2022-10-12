@@ -220,25 +220,25 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - The SMS will be offered to the agent. Click "Accept" to handle the SMS.
 
-<img align="middle" src="images/AU_Lab5_14.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_14.png" width="1000" />
 <br/>
 <br/>
 
 - Type a response and hit send button.
 
-<img align="middle" src="images/Lab5_21.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_15.png " width="1000" />
 <br/>
 <br/>
 
 - End the contact
 
-<img align="middle" src="images/Lab5_22.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_16.png" width="1000" />
 <br/>
 <br/>
 
 - Add wrap up and close the task. 
 
-<img align="middle" src="images/Lab5_23.jpg" width="1000" />
+<img align="middle" src="images/AU_Lab3_17.png" width="1000" />
 <br/>
 <br/>
 
@@ -261,7 +261,6 @@ function nextLab()
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Home Page</button>
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;

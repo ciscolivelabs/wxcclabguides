@@ -1,5 +1,5 @@
 ---
-title: 'Lab 9: Flow Debug Capabilities'
+title: 'Lab 5: Flow Debug Capabilities'
 ---
 
 # Table of Contents

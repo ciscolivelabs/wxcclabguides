@@ -1,5 +1,5 @@
 ---
-title: 'Lab 8: Agent Productivity'
+title: 'Lab 4: Agent Productivity'
 ---
 
 # Table of Contents
@@ -35,19 +35,19 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Navigate to Assets > Integrations > Add Integration
 
-<img align="middle" src="images/Lab8_1.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_1.png" width="1000" />
 <br/>
 <br/>
 
 - Click on Add Integration and select Inbound Webhook 
 
-<img align="middle" src="images/Lab8_2.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_2.png" width="1000" />
 <br/>
 <br/>
 
 - Input a desired name in the **Webhook Name** field. Copy the **Webhook URL** for later use. Click **Save**
 
-<img align="middle" src="images/Lab8_3.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_3.png" width="1000" />
 <br/>
 <br/>
 
@@ -55,25 +55,25 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Login to your Webex contact centre portal with your administrator credentials: **[https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}** and navigate to **New Digital Channels**
 
-<img align="middle" src="images/Lab8_4.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_4.png" width="1000" />
 <br/>
 <br/>
 
 - Navigate to Groups > Click 'Default'
 
-<img align="middle" src="images/Lab8_5.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_5.png" width="1000" />
 <br/>
 <br/>
 
 - Click 'Default' Team
 
-<img align="middle" src="images/Lab8_6.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_6.png" width="1000" />
 <br/>
 <br/>
 
 - Navigate to 'Events and Rules' and click 'Add New Event'
 
-<img align="middle" src="images/Lab8_7.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_7.png" width="1000" />
 <br/>
 <br/>
 

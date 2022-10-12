@@ -315,10 +315,10 @@ If an agent doesn’t answer a contact request, the contact request will return 
 ### Congratulations, you have compleated Lab1 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://Webex CCtechsummit.github.io/Webex CClabguides/LRTCCT-2336/Home.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://Webex CCtechsummit.github.io/Webex CClabguides/LRTCCT-2336/Lab2_Email.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab2_Chat.html";
  }
 </script>
 

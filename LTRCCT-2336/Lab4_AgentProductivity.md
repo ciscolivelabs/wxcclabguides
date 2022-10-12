@@ -1,5 +1,5 @@
 ---
-title: 'Lab 8: Agent Productivity'
+title: 'Lab 4: Agent Productivity'
 ---
 
 # Table of Contents

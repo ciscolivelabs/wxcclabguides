@@ -599,7 +599,6 @@ function nextLab()
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Home Page</button>
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;

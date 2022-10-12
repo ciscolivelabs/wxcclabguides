@@ -65,12 +65,11 @@ The users have the following preconfiguration
 
 ### May good fortune smile on you as you begin this new adventure :)
  
-
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2336/Lab1_Preconfiguration.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab1_Preconfiguration.html";
  }
 </script>
 

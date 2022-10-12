@@ -1,5 +1,5 @@
 ---
-title: 'Dip into NEW Digital Channels for Webex Contact Center'
+title: 'NEW Digital Channels for Webex Contact Center'
 ## Session: LTRCCT-2336
 ## Speakers: Mayurkumar Vyas
 ---
@@ -7,7 +7,7 @@ title: 'Dip into NEW Digital Channels for Webex Contact Center'
 
 <img align="middle" src="images/Admin.jpeg" width="1000" />
 
-Welcome to the Lab Guide Library. Here you will find the step-by-step guides on how to setup service for all the available digital channels.
+Welcome to the Lab Guide Library. Here you will find the step-by-step guides on how to setup service for Chat and SMS digital channel.
 
 
 

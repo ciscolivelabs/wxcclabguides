@@ -1,9 +1,9 @@
 ---
-title: 'NEW Digital Channels for Webex Contact Center'
+title: 'Digital Channels for Webex Contact Center'
 ## Session: LTRCCT-2336
 ## Speakers: Mayurkumar Vyas
 ---
-[Switch to LIGHT MODE](https://wxcctechsummit.github.io/ltrcct-2336){:target="\_blank"}
+[Switch to LIGHT MODE](https://ciscolivelabs.github.io/ltrcct-2336){:target="\_blank"}
 
 <img align="middle" src="images/Admin.jpeg" width="1000" />
 

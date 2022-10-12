@@ -375,10 +375,10 @@ Content-Type: application/json
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab9_Troubleshooting.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab5_Troubleshooting.html";;
  }
 </script>
 

@@ -590,7 +590,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab4_FBM.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab3_SMS.html";
  }
 </script>
 

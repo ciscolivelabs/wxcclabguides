@@ -241,15 +241,15 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- Select the **Destination** as the registeredmonile output variable of the trigger (Start) node. Select **CONNECT** in the Form Number. 
+- Select the **Destination** as the registeredmobile output variable of the trigger (Start) node. Select **CONNECT** in the Form Number. 
 
-<img align="middle" src="images/AU_Lab4_1900.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_19.png" width="1000" />
 <br/>
 <br/>
 
 Enter the desired **Message** in the **Message** field and include the **$(n3.generateOTP.OTP)** variable as shown in the image below. 
 
-<img align="middle" src="images/AU_Lab4_2000.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_20.png" width="1000" />
 <br/>
 <br/>
 

@@ -229,7 +229,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- Select the **getOTP** variable in the **Transaction Reeference** section and click **Save** 
+- Select the **getOTP** variable in the **Transaction Reference** section and click **Save** 
 
 <img align="middle" src="images/Lab8_24.gif" width="1000" />
 <br/>
@@ -253,9 +253,9 @@ Enter the desired **Message** in the **Message** field and include the **$(n3.ge
 <br/>
 <br/>
 
-- Add **HTTP Request** node to the flow builder UI and connect the success outcome of **Email** to the **HTTP Request** node. Double click the node. 
+- Add **HTTP Request** node to the flow builder UI and connect the success outcome of **SMS** to the **HTTP Request** node. Double click the node. 
 
-<img align="middle" src="images/Lab8_28.gif" width="1000" />
+<img align="middle" src="images/AU_Lab_20_1.gif" width="1000" />
 <br/>
 <br/>
 
@@ -284,13 +284,13 @@ Content-Type: application/json
 
 - Configure the success path of the **HTTP Request** node by click and drag of the green dot in the node. 
 
-<img align="middle" src="images/Lab8_30.gif" width="1000" />
+<img align="middle" src="images/AU_Lab_20_2.gif" width="1000" />
 <br/>
 <br/>
 
 - Configure the error path of all 3 nodes - **Generate OTP** , **SMS** and **HTTP Request** by click and drag out of the red and orange dots in the nodes. 
 
-<img align="middle" src="images/Lab8_31.gif" width="1000" />
+<img align="middle" src="images/AU_Lab_20_3.gif" width="1000" />
 <br/>
 <br/>
 

@@ -89,21 +89,32 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- Select the **Payload** as **Custom Payload**
+- Select the **Payload** as **Key Value Pair** and Click on **Add Param**
 
-- In the **Data** field enter the below value
+<img align="middle" src="images/AU_Lab4_9.png" width="1000" />
+<br/>
+<br/>
 
-`
-{
-   "customerEmail": "@@emailid@@"
-}
-`
+- In the **Edit Parameter**: 
+  
+  -- Type Parameter name - **registeredmobile** (All in small letters)
 
-- Under **Header** section, configure **Content-Type** as **application/json**
+  -- Select **Request Body** in Pass Through
+
+  -- Select **custom param** in the Value field
+
+  -- select radio button **Allow Agent to enter value manually**
+
+  -- Click on **Update**
+
+<img align="middle" src="images/AU_Lab4_10.png" width="1000" />
+<br/>
+<br/>
+
 
 - Click **Save**
 
-<img align="middle" src="images/Lab8_9.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_11.png" width="1000" />
 <br/>
 <br/>
 
@@ -128,13 +139,13 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Enter a desired **name** for the room, search  for **Agent** and add the Agent user to this room. Click **Create**
 
-<img align="middle" src="images/Lab8_13.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_12.png" width="1000" />
 <br/>
 <br/>
 
 - Verify that the room is created and the agent is part of the newly created room. 
 
-<img align="middle" src="images/Lab8_14.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_13.png" width="1000" />
 <br/>
 <br/>
 
@@ -154,7 +165,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- In the response window, identify the room created in the previous step and copy the value of **id** of that room (this is for later use).
+- In the response window, identify the room created in the previous step and copy the value of **id** of that room in a notepad. (This is for later use).
 
 <img align="middle" src="images/Lab8_17.png" width="1000" />  
 <br/>
@@ -162,21 +173,21 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 ## Step 5. OTP Flow configuration 
 
-- Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL https://auclpod**X**.au.webexconnect.io/ (where **X** is your POD number).
 
-- Click on **Services** and select the service in which the Email asset is created in previous labs. It should be **My First Service**
+- Click on **Services** and select the **My First Service**.
 
 - In the service click on **FLOWS** -> **CREATE FLOW** 
 
-- Enter the **FLOW NAME** as **Inbound Webhook**, select the **TYPE** as **Work Flow** and under **METHOD** select **New flow**. Click **Create**
+- Enter the **FLOW NAME** as **Inbound Webhook Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **New flow**. Click **Create**
 
-<img align="middle" src="images/Lab8_18.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_14.png" width="1000" />
 <br/>
 <br/>
 
 - Select the trigger event of this flow as **Webhook**
 
-<img align="middle" src="images/Lab8_19.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_15.png" width="1000" />
 <br/>
 <br/>
 
@@ -185,14 +196,14 @@ In this Lab, we will go through the tasks that are required to configure a basic
 - Input the sample input data as,
 
 `
-{
-   "customerEmail": "@@emailid@@"
-}
+  {
+     "registeredmobile":"042XXXXXXXX"
+  }
 `
 
-- Click **Save**
+- Click **Parse** and Click **Save**
 
-<img align="middle" src="images/Lab8_20.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_16.png" width="1000" />
 <br/>
 <br/>
 
@@ -214,7 +225,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Select **OTP Format** as 'Numeric' and **OTP Validity** as '30' 
 
-<img align="middle" src="images/Lab8_23.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_18.png" width="1000" />
 <br/>
 <br/>
 
@@ -224,21 +235,21 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- Set the value for **getOTP** variable at exit of the **Generate OTP** node. 
+- Add **SMS** node to the flow builder UI and connect the success outcome of **Generate OTP** to the **SMS** node. Double click the node. 
 
-<img align="middle" src="images/Lab8_26.gif" width="1000" />
+<img align="middle" src="images/AU_Lab4_19.gif" width="1000" />
 <br/>
 <br/>
 
-- Add **Email** node to the flow builder UI and connect the success outcome of **Generate OTP** to the **Email** node. Double click the node. 
+- Select the **Destination** as the registeredmonile output variable of the trigger (Start) node. Select **CONNECT** in the Form Number. 
 
-<img align="middle" src="images/Lab8_25.gif" width="1000" />
+<img align="middle" src="images/Au_Lab4_19.png" width="1000" />
 <br/>
 <br/>
 
-- Select the **Destination ID** as the customerEmail output variable of the trigger (Start) node. Enter desired **Subject** name for the email and in the **Message** field include the **getOTP** variable as shown in the image below. 
+Enter the desired **Message** in the **Message** field and include the **$(n3.generateOTP.OTP)** variable as shown in the image below. 
 
-<img align="middle" src="images/Lab8_27.png" width="1000" />
+<img align="middle" src="images/Au_Lab4_20.png" width="1000" />
 <br/>
 <br/>
 
@@ -260,11 +271,14 @@ Content-Type: application/json
 **Body**: 
 
 {
+
 "roomId": "<room_ID_captured_In_Step_4>",
-"text": "OTP to verify is  $(getOTP)" 
+
+"text": "OTP to verify is (n3.generateOTP.OTP)" 
+
 }
 
-<img align="middle" src="images/Lab8_29.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_21.png" width="1000" />
 <br/>
 <br/>
 
@@ -274,98 +288,95 @@ Content-Type: application/json
 <br/>
 <br/>
 
-- Configure the error path of all 3 nodes - **Generate OTP** , **Email** and **HTTP Request** by click and drag out of the red and orange dots in the nodes. 
+- Configure the error path of all 3 nodes - **Generate OTP** , **SMS** and **HTTP Request** by click and drag out of the red and orange dots in the nodes. 
 
 <img align="middle" src="images/Lab8_31.gif" width="1000" />
 <br/>
 <br/>
 
-- Click **Make Live** option on the top right of the flow builder UI, select the **Email** application and click **Make Live**
-
-<img align="middle" src="images/Lab8_32.png" width="1000" />  
-<br/>
-<br/>
+- Click **Make Live** option on the top right of the flow builder UI, and click **Make Live**
 
 
 ## Step 6. Agent desktop layout update 
 
 - Login to Webex contact centre administration portal **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** and navigate to Desktop Layout section. Click **Edit**
 
-<img align="middle" src="images/Lab8_33.png" width="1000" /> 
+<img align="middle" src="images/AU_Lab4_22.png" width="1000" /> 
 <br/>
 <br/>
 
 - Download the desktop layout and open in a text editor. 
 
-<img align="middle" src="images/Lab8_34.png" width="1000" /> 
+<img align="middle" src="images/AU_Lab4_23.png" width="1000" /> 
 <br/>
 <br/>
 
 - Set the value of "webexConfigured" parameter to "true" and save the file. 
 
-<img align="middle" src="images/Lab8_35.png" width="1000" /> 
+<img align="middle" src="images/AU_Lab4_24.png" width="1000" /> 
 <br/>
 <br/>
   
 - **Upload** this updated file in Webex contact centre administration portal and click **Save**
 
-<img align="middle" src="images/Lab8_36.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_25.png" width="1000" />
 <br/>
 <br/>
 
 - Login to agent dekstop and verify that the the **Webex** option is visible and the OTP verification room is seen. (If already logged in to agent desktop, please logout and login again)
 
-<img align="middle" src="images/Lab8_37.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_26.png" width="1000" />
 <br/>
 <br/>
 
 ## Step 7. OTP scenario verification
 
-- Initiate an email contact and accept the contact in Agent desktop. Click **Relply All** option. 
+- Initiate an WebChat contact and accept the Chat. (Refer Lab2 - Step 7 to initiate Chat)
 
-<img align="middle" src="images/Lab8_38.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_27.png" width="1000" />
 <br/>
 <br/>
 
-- Choose the **Trigger Workflow** option, select **OTP Verification** and click **Trigger**
+- Choose the **Trigger Workflow** option, select **OTP Verification** and click **Next**
 
-<img align="middle" src="images/Lab8_39.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_28.png" width="1000" />
 <br/>
 <br/>
 
-- A confirmation that the workflow has been triggered will be displayed. Also, sender of the email will receive an OTP and the same OTP will be sent to agent through the Webex app integrated to agent desktop. 
+- Type mobile number in e164 format and click **Trigger**
 
-<img align="middle" src="images/Lab8_40.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_29.png" width="1000" />
+<br/>
+<br/>
+
+
+- A confirmation that the workflow has been triggered will be displayed. Also, OTP will be send on the customer's mobile number that agent entered and the same OTP will be sent to agent through the Webex app integrated to agent desktop. 
+
+<img align="middle" src="images/AU_Lab4_30.png" width="1000" />
 <br/>
 <br/>
 
 - Customer OTP 
 
-<img align="middle" src="images/Lab8_41.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_32.png" width="1000" />
 <br/>
 <br/>
 
 - Agent OTP 
 
-<img align="middle" src="images/Lab8_42.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_31.png" width="1000" />
 <br/>
 <br/>
 
-- On the original mail thread, customer replying with the OTP received.
+- On the Webchat, customer replies with the OTP received.
 
-<img align="middle" src="images/Lab8_43.png" width="1000" />
-<br/>
-<br/>
-
-- Within a minute, the agent receives an update on the agent desktop that there is a latest email available and if they would like to view it. Click 'View Original Email'
-
-<img align="middle" src="images/Lab8_44.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_34.png" width="1000" />
 <br/>
 <br/>
 
 - Agent can now verify the OTP. 
 
-<img align="middle" src="images/Lab8_45.png" width="1000" />
+<img align="middle" src="images/AU_Lab4_35.png" width="1000" />
 <br/>
 <br/>
 
@@ -387,7 +398,6 @@ function nextLab()
   border-radius: 5px;
   background-color: rgb(116,191,75);
   padding: 10px;">Home Page</button>
-
 <button onclick="nextLab()" style="
   position: absolute;
   right: 200px;

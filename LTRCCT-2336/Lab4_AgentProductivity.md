@@ -237,13 +237,13 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Add **SMS** node to the flow builder UI and connect the success outcome of **Generate OTP** to the **SMS** node. Double click the node. 
 
-<img align="middle" src="images/AU_Lab4_19.gif" width="1000" />
+<img align="middle" src="images/Au_Lab4_19.gif" width="1000" />
 <br/>
 <br/>
 
 - Select the **Destination** as the registeredmonile output variable of the trigger (Start) node. Select **CONNECT** in the Form Number. 
 
-<img align="middle" src="images/AU_Lab4_19.png" width="1000" />
+<img align="middle" src="images/Au_Lab4_19.png" width="1000" />
 <br/>
 <br/>
 

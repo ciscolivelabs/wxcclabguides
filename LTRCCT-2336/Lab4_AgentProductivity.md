@@ -299,7 +299,7 @@ Content-Type: application/json
 
 ## Step 6. Agent desktop layout update 
 
-- Login to Webex contact centre administration portal **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}** and navigate to Desktop Layout section. Click **Edit**
+- Login to Webex contact centre administration portal **[https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}** and navigate to Desktop Layout section. Click **Edit**
 
 <img align="middle" src="images/AU_Lab4_22.png" width="1000" /> 
 <br/>

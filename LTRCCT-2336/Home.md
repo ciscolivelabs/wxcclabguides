@@ -5,7 +5,7 @@ title: 'Digital Channels for Webex Contact Center'
 ---
 [Switch to LIGHT MODE](https://ciscolivelabs.github.io/LTRCCT-2336){:target="\_blank"}
 
-<img align="middle" src="images/Admin.jpeg" width="1000" />
+<img align="middle" src="images/homepage.jpg" width="1000" />
 
 Welcome to the Lab Guide Library. Here you will find the step-by-step guides on how to setup service for Chat and SMS digital channel.
 

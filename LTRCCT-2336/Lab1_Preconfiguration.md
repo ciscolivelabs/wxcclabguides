@@ -4,7 +4,7 @@ title: 'Lab 1: Preconfiguration'
 
 # Table of Contents
 
-- [Step 1. Node Authorisation for Webex CC Task and Engage nodes](#step-1-node-Authorisation-for-webex-cc-task-and-engage-nodes)
+- [Step 1. Node Authorization for Webex CC Task and Engage nodes](#step-1-node-Authorization-for-webex-cc-task-and-engage-nodes)
 - [Step 2. Download and upload CA (Channel Agnostic) flows in Connect](#step-2-download-and-upload-ca-flows-in-connect) 
 - [Step 3. Setup agents in Portal (Agents, Team, MMP)](#step-3-setup-agents-in-portal-agents-team-mmp)
 - [Step 4. Setup RONA timers](#step-4-setup-rona-timers)
@@ -19,7 +19,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- You have received the access credentials with a full admin access 
+- You have received the access credentials with a full admin access.
 - You have received the access to the agent and supervisor account.
 
 
@@ -38,11 +38,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-## Step 1. Node Authorisation for Webex CC Task and Engage nodes
+## Step 1. Node Authorization for Webex CC Task and Engage nodes
 
-> Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the Authorisation details configured within the ‘Node Runtime Authorisation’ field that Webex Contact Center users are required to provide during flow configuration.
+> Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the Authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
-- To authorize a pre-built integration go to **Assets** -> **Integrations**. The integrations which are not yet Authorised show the status as **Authorisation Pending**.
+- To authorize a pre-built integration go to **Assets** -> **Integrations**. The integrations which are not yet Authorised show the status as **Authorization Pending**.
 
 - In front of **Webex CC Engage** Click **Actions** -> **Manage**.
 
@@ -50,15 +50,15 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-- On the Manage Integrations page, scroll down to the **Node Authorisations** section. This section lists all the Authorisations mapped to this integration.
+- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the Authorizations mapped to this integration.
 
-- Click **Action** → **Add Authorisation** associated with the **Webex CC Engage Authorisation**, where Auth Type is oauth2 and Status is Authorisation Pending.
+- Click **Action** → **Add Authorization** associated with the **Webex CC Engage Authorization**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 <br/>
 <br/>
 
-- Enter the Authorisation Name and click **Authorize**. In that example we use **Webex CC Engage Authorisation**.
+- Enter the Authorization Name and click **Authorize**. In that example we use **Webex CC Engage Authorization**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 <br/>
@@ -70,19 +70,19 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-- On the Manage Integrations page, scroll down to the **Node Authorisations** section. This section lists all the Authorisations mapped to this integration. Click **Action** → **Add Authorisation** associated with the **Webex CC Authorisation**, where Auth Type is oauth2 and Status is Authorisation Pending.
+- On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the Authorizations mapped to this integration. Click **Action** → **Add Authorization** associated with the **Webex CC Authorization**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 <br/>
 <br/>
 
-- Enter the **Authorisation Name** (for example: **Webex CC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cladmin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
+- Enter the **Authorization Name** (for example: **Webex CC Authorization**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cladmin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 <br/>
 <br/>
 
-- Click back button for being redirected back to **Integrations** page. Verify that the status of the Authorisations is changed to **Authorised**.
+- Click back button for being redirected back to **Integrations** page. Verify that the status of the Authorizations is changed to **Authorised**.
 <img align="middle" src="images/Lab1_Authorized2_1.png" width="1000" />
 <br/>
 <br/>

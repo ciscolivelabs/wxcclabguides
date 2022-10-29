@@ -46,7 +46,7 @@ The users have the following preconfiguration
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
 | Agent         | clagent**\<ID\>**@email.carehybrid.com   | 
-| Supervisor    | claup**\<ID\>**@email.carehybrid.com     | 
+| Supervisor    | clsup**\<ID\>**@email.carehybrid.com     | 
 
 ### User Settings
 

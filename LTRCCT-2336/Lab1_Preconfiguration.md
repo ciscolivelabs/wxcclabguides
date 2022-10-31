@@ -26,8 +26,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
-> Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="_blank"}**\
-> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-anz1.cisco.com](https://desktop.wxcc-anz1.cisco.com){:target="_blank"}**\
 > Webex Connect: https://clpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
@@ -95,9 +95,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+1) Go to > [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-2) Navigate to **Webex Connect Flows** -> **v2.1**.
+2) Navigate to **Webex Connect Flows** -> **v2.1 and download download the 3 files XXXX.zip**.
 
 <img align="middle" src="images/Lab1_GitHub.gif" width="1000" />
 <br/>
@@ -138,7 +138,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-12) **!!!** Go back and repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**. Select the corresponding names.
+12) **!!!** Go back and repeat steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**. Select the corresponding names.
 
 13) Verify all the flows are showing live.
 
@@ -183,7 +183,7 @@ The users have the following preconfiguration
 
 ### 1. Create new MultiMedia Profile
 
-- Login to Managment Portal by accessing [https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="\_blank"}.
+- Login to Managment Portal by accessing [https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="\_blank"}.
 
 - Enter the admin email address (clpadmin\<ID\>@email.carehybrid.com) and click **Sign in**.
 

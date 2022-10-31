@@ -35,13 +35,15 @@ These labs are specially designed for the Cisco Live session. The primary purpos
 
 1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the links above.
 
-2. You have to use the admin account (with Administrator privileges) for access to Control Hub and Administration portal. 
+2. Use the admin account (with Administrator privileges) to access Control Hub and Administration portal. 
 
-3. Please follow the labs in the same order as they are provided.
+3. To login agent or supervisor, use Agent desktop URL (in the Incognito mode-Chrome browser or Private Window-Firefox browser). 
+
+4. Please follow the labs in the same order as they are provided.
 
 ### Users
 
-The users have the following preconfiguration
+Users are already configured for you with following user settings in the Webex CC admin portal.
 
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 

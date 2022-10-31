@@ -50,15 +50,15 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 ### Quick Links
 
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
-> Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.comportal){:target="_blank"}**\
-> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
+> Portal: **[https://portal.wxcc-anz1.cisco.comportal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}**\
+> Agent Desktop: **[https://desktop.wxcc-anz1.cisco.com](https://desktop.wxcc-anz1.cisco.com){:target="_blank"}**\
 > Webex Connect: https://auclpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
 ## Step 1. Live Chat Asset creation & register to Webex Engage
 
-- Login to your respective Webex Connect UI using the provided URL https://clpod**X**.au.webexconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL https://auclpod**X**.au.webexconnect.io/ (where **X** is your POD number).
 
 - Navigate to `Assets` > `Apps` > `Configure New App` > `Mobile / Web`
 

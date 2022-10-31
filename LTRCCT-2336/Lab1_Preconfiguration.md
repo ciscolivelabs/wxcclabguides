@@ -28,7 +28,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-anz1.cisco.com/portal](https://portal.wxcc-anz1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-anz1.cisco.com](https://desktop.wxcc-anz1.cisco.com){:target="_blank"}**\
-> Webex Connect: https://clpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
+> Webex Connect: https://auclpod**\<ID\>**.au.webexconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
@@ -97,7 +97,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 1) Go to > [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-2) Navigate to **Webex Connect Flows** -> **v2.1 and download download the 3 files XXXX.zip**.
+2) Navigate to **Webex Connect Flows** -> **v2.1 and download the 3 files XXXX.zip**.
 
 <img align="middle" src="images/Lab1_GitHub.gif" width="1000" />
 <br/>

@@ -35,13 +35,29 @@ These labs are specially designed for the Cisco Live session. The primary purpos
 
 1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the links above.
 
-2. Use the admin account (with Administrator privileges) to access Control Hub and Administration/Management portal. 
+2. Use the admin account to access **Control Hub** and **Administration/Management** portal. 
 
-3. To login agent or supervisor, use Agent desktop URL (in the Incognito mode-Chrome browser or Private Window-Firefox browser). 
+3. To log in to the agent desktop, use either a separate web browser or a new incognito web page. This will prevent any browser caching issues with admin and agent credentials.
+
+    - Navigate to **[https://desktop.wxcc-anz1.cisco.com/](https://desktop.wxcc-anz1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
+
+    - Enter the agent’s **email ID** `clagent**\<ID\>**@email.carehybrid.com`.
+
+    - Enter the **Password** for the appropriate Username.
+
+    - In the **_Station Login_** pane, select **"Extension"** and put any number, for instance 1000. 
+
+      > **Note:**  The Webex Calling service is not activated at this tenant we need to set a dummy extension only once during the login.
+
+    - Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the Next Lab.
+
+      <img align="middle" src="images/Lab1_Login.gif" width="1000" />
+      <br/>
+      <br/>
 
 4. Please follow the labs in the same order as they are provided.
 
-### Users
+### **Users**
 
 Users are already configured for you with following user settings in the Webex CC admin portal.
 
@@ -50,7 +66,7 @@ Users are already configured for you with following user settings in the Webex C
 | Agent         | clagent**\<ID\>**@email.carehybrid.com   | 
 | Supervisor    | clsup**\<ID\>**@email.carehybrid.com     | 
 
-### User Settings
+### **User Settings**
 
 | **Entity**          | **Name** |
 | ------------------- | -------- |
@@ -59,7 +75,7 @@ Users are already configured for you with following user settings in the Webex C
 | Team1               | Team1 |
 | Team2               | Team2 |
 
-## Lab Support
+## **Lab Support**
 
 1. Proctors are your number 1 contact. If you need assistance just raise your hand.
 

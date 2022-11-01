@@ -250,11 +250,12 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 <script>
 function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
-function nextLab() 
+function nextLab()
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab4_AgentProductivity.html";;
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab3_Chat.html";
  }
 </script>
+
 
 <div id="button-row">
 <button onclick="mainPage()" style="

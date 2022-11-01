@@ -95,7 +95,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 <br/>
 
-- In the **Edit Parameter**: 
+- In the **Add Parameter**: 
   
   -- Type Parameter name - **registeredmobile** (All in small letters)
 
@@ -105,7 +105,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
   -- select radio button **Allow Agent to enter value manually**
 
-  -- Click on **Update**
+  -- Click on **Add**
 
 <img align="middle" src="images/AU_Lab4_10.png" width="1000" />
 <br/>

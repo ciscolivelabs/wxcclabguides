@@ -476,14 +476,29 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 ## Step 7. Verification - start live chat and accept the request.
 
-- Open a new tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab1).
-> Agent Desktop: **[https://portal.wxcc-anz1.cisco.com](https://portal.wxcc-anz1.cisco.com){:target="_blank"}**\
+- Open a new incognito tab and login to the Agent Desktop and make the agent Available (if you haven't done already in Lab1).
+> Agent Desktop: **[https://desktop.wxcc-anz1.cisco.com](https://desktop.wxcc-anz1.cisco.com){:target="_blank"}**\
 
 <img align="middle" src="images/AU_Lab2_Agent1.png" width="1000" />
 <br/>
 <br/>
 
-- Go back to the tab where you opened [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"} and pasted the live chat widget code.
+
+- Go back to Webex Connect Engage portal, LiveChat > select Installation tab and Copy the chat script code.
+
+<img align="middle" src="images/AU_Lab2_18.png" width="1000" />
+<br/>
+<br/>
+
+- Open a new tab in your browser and navigate to [W3Schools Online HTML Editor](https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello){:target="_blank"}.
+
+- In the HTML example section, click on Try it yourself. (A new tab opens).
+
+- Paste the chat bubble code just above the `</body>` tag and click on **Run** button
+
+<img align="middle" src="images/AU_Lab2_24.png" width="1000" />
+<br/>
+<br/>
 
 - Click `Start Conversation`
 
@@ -503,7 +518,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- The form submission will be presented to the customer
+- The form submission will be presented to the Agent
 
 <img align="middle" src="images/AU_Lab2_Chat4.png" width="1000" />
 <br/>

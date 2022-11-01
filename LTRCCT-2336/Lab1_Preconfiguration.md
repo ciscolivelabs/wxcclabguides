@@ -154,7 +154,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab2_Chat.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab2_SMS.html";
  }
 </script>
 

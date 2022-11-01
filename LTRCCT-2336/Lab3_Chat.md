@@ -484,7 +484,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 
 
-- Go back to Webex Connect Engage portal, LiveChat > select Installation tab and Copy the chat script code.
+- Go back to Webex Connect Engage portal, LiveChat > edit the Livechat asset you created, click on installation tab and Copy the chat script code.
 
 <img align="middle" src="images/AU_Lab2_18.png" width="1000" />
 <br/>

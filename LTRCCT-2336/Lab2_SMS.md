@@ -249,12 +249,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
-function nextLab() 
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function nextLab()
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab4_AgentProductivity.html";;
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab3_SMS.html";
  }
 </script>
+
 
 <div id="button-row">
 <button onclick="mainPage()" style="

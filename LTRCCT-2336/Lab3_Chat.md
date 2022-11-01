@@ -602,10 +602,10 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### Congratulations, you have completed this section!
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
-function nextLab()
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Home.html";}
+function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab3_SMS.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-2336/Lab4_AgentProductivity.html";;
  }
 </script>
 

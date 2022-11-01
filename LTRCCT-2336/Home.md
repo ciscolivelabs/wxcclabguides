@@ -17,8 +17,9 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | --------------- | -------------------------- | -------------------------------------------------------------           |
 |  ----- | Before you Begin | [Lab Information](Lab_Info.md){:target="\_blank"}  |
 |  Lab 1 | Preconfiguration | [Preconfiguration](Lab1_Preconfiguration.md){:target="\_blank"}  |
-|  Lab 2 | Chat Configuration | [Live Chat creation end to end](Lab2_Chat.md){:target="\_blank"} |
-|  Lab 3 | SMS Setup | [SMS creation end to end](Lab3_SMS.md){:target="\_blank"}    |
+|  Lab 2 | SMS Setup | [SMS creation end to end](Lab3_SMS.md){:target="\_blank"}    |
+|  Lab 3 | Chat Configuration | [Live Chat creation end to end](Lab2_Chat.md){:target="\_blank"} |
+
 
 
 ## Bonus section - Advanced Lab Exercises

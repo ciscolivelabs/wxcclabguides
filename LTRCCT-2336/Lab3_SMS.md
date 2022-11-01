@@ -50,9 +50,9 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 >**Note**: SMS Numbers cannot be procured directly from the webex CC integrated webex Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
-## Step 2. SMS Asset registration to WebexCC
+## Step 2. SMS Asset registration to Webex Engage
 
-### 1. Register SMS asset to WebexCC
+### 1. Register SMS asset Webex Engage
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
@@ -60,7 +60,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
-- Click 'Register to WebexCC option' 
+- Click 'Register to Webex Engage' option 
 
 <img align="middle" src="images/AU_Lab3_Step2_2_1.png" width="1000" />
 <br/>
@@ -72,7 +72,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
-- Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+- Verify that the 'Register to Webex Engage' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 
 <img align="middle" src="images/AU_Lab3_Step2_4.png" width="1000" />
 <br/>
@@ -161,13 +161,13 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Enter the **FLOW NAME** as **SMS Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
-- Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
+- Drag and drop the **SMS Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
 <img align="middle" src="images/Au_lab3_step4_2.png" width="1000" />
 <br/>
 <br/>
 
-- Once the flow is saved, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
+- Once the flow is loaded, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
 
 
 - Input **_*_** as `Keyword` and click on **Verify**
@@ -178,7 +178,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 
 
-- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
+- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **SMS_Q** and click on **SAVE**.
 
 <img align="middle" src="images/Lab5_15.jpg" width="1000" />
 <br/>

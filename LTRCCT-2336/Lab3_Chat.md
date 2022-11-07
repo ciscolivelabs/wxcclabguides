@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Live Chat Configuration'
+title: 'Lab 3: Live Chat Configuration'
 ---
 
 

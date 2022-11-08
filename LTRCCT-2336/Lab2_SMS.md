@@ -43,7 +43,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned.
 
-<img align="middle" src="images/Lab3_step1.png" width="1000" />
+<img align="middle" src="images/lab3_step1.png" width="1000" />
 <br/>
 <br/>
 
@@ -56,7 +56,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
-<img align="middle" src="images/AU_lab3_step2_1.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step2_1.png" width="1000" />
 <br/>
 <br/>
 
@@ -163,7 +163,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Drag and drop the **SMS Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Au_lab3_step4_2.png" width="1000" />
+<img align="middle" src="images/AU_Lab3_Step4_2.png" width="1000" />
 <br/>
 <br/>
 

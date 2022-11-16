@@ -268,7 +268,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 1. Configure Live Chat widget
 - From Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`
 
-<img align="middle" src="images/Lab3_13.gif" width="400" />
+<img align="middle" src="images/lab3_13.gif" width="400" />
 <br/>
 <br/>
 

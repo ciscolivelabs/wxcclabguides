@@ -3,7 +3,6 @@ title: 'Digital Channels for Webex Contact Center'
 ## Session: LTRCCT-2336
 ## Speakers: Mayurkumar Vyas
 ---
-[Switch to LIGHT MODE](https://ciscolivelabs.github.io/LTRCCT-2336){:target="\_blank"}
 
 <img align="middle" src="images/homepage.jpg" width="1000" />
 

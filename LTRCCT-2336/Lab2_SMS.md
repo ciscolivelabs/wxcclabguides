@@ -184,7 +184,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
-- Find and open all the **SMS** nodes and select the SMS number assigned to your tenant in the **_FROM NUMBER_** section 
+- Find and open all the **SMS** nodes one by one and input the SMS number assigned to your tenant in the **_FROM NUMBER_** section 
 
 <img align="middle" src="images/Lab5_16.jpg" width="1000" />
 <br/>

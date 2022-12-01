@@ -224,6 +224,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 <br/>
 
 - Select **OTP Format** as 'Numeric' and **OTP Validity** as '30' 
+  > Note: If you are unable to save Generate OTP node; keep the OTP length field blank and save. 
 
 <img align="middle" src="images/AU_Lab4_18.png" width="1000" />
 <br/>

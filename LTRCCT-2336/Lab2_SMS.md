@@ -178,7 +178,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 
 
-- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **SMS_Q** and click on **SAVE**.
+- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **SMS_Queue** and click on **SAVE**.
 
 <img align="middle" src="images/Lab5_15.jpg" width="1000" />
 <br/>

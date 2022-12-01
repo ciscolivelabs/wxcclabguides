@@ -84,8 +84,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 <br/>
 
-## Step 2. Download and upload CA flows in Connect 
-> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
+## Step 2. Download and upload CA (Channel Agnostic) flows in Connect 
+> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA  flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
 > • Task Routed - Adding an agent participant to a conversation;\
@@ -94,7 +94,11 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 1) Go to > [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-2) Navigate to **Webex Connect Flows** -> **v2.1 and download the 3 files XXXX.zip**.
+2) Navigate to **Webex Connect Flows** -> **v2.1 and download following 3 zip files**.
+    - Task Routed Flow.workflow.zip
+    - Task Modified Flow.workflow.zip
+    - Task Close Flow.workflow.zip 
+
 
 <img align="middle" src="images/Lab1_GitHub.gif" width="1000" />
 <br/>

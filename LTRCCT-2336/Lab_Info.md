@@ -17,7 +17,7 @@ These labs are specially designed for the Cisco Live session. The primary purpos
 ## Lab Topology
 <img align="middle" src="images/topology.png" width="1000" />
 
-## Access URLs
+## **Access URLs**
 
 | Component     | URL                     | Login                                                       |
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
@@ -28,12 +28,34 @@ These labs are specially designed for the Cisco Live session. The primary purpos
 
 > **NOTE:**  
 > **\<ID\>** – is your unique POD ID listed on the card. \
+
 > The lab POD is the same as the production tenant which is located in the ANZ Datacenter. These labs are for instructional purposes only but the configuration can be reused for the real deployment.
+
 > The telephony service is not activated. This pod is used only for digital channels.
+
+> Please follow the labs in the same order as they are provided.
+
+## **Users**
+
+Users are already configured for you with following user settings in the Webex CC admin portal.
+
+| **User Role** | **User email**                       |
+| ------------- | ------------------------------------ | 
+| Agent         | clagent**\<ID\>**@email.carehybrid.com   | 
+| Supervisor    | clsup**\<ID\>**@email.carehybrid.com     | 
+
+### **User Settings**
+
+| **Entity**          | **Name** |
+| ------------------- | -------- |
+| Multimedia Profiles | MMP   |
+| Site                | Site1  |
+| Team1               | Team1 |
+| Team2               | Team2 |
 
 ## Before starting the labs
 
-1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the links above.
+1. Please confirm that you can login to WxCC Admin portal and Agent desktop by using the above links and User IDs.
 
 2. Use the admin account to access **Control Hub** and **Administration/Management** portal. 
 
@@ -55,25 +77,6 @@ These labs are specially designed for the Cisco Live session. The primary purpos
       <br/>
       <br/>
 
-4. Please follow the labs in the same order as they are provided.
-
-### **Users**
-
-Users are already configured for you with following user settings in the Webex CC admin portal.
-
-| **User Role** | **User email**                       |
-| ------------- | ------------------------------------ | 
-| Agent         | clagent**\<ID\>**@email.carehybrid.com   | 
-| Supervisor    | clsup**\<ID\>**@email.carehybrid.com     | 
-
-### **User Settings**
-
-| **Entity**          | **Name** |
-| ------------------- | -------- |
-| Multimedia Profiles | MMP   |
-| Site                | Site1  |
-| Team1               | Team1 |
-| Team2               | Team2 |
 
 ## **Lab Support**
 

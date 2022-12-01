@@ -590,11 +590,11 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-## Step 9. Challenge Lab - Enhance flow
+## Step 9. Challenge Lab (Optional) - Enhance flow
 
 ### 1. Add Branch to handle Dropdown form field
 
-- Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement
+- Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement.
 
 [Back to top](#table-of-contents)
 ---

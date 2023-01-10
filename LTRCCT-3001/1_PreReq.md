@@ -20,7 +20,7 @@ title: 'Lab 1: Pre-configuration'
     - [3. Create new Teams](#3-create-new-teams)
     - [4. User Configuration](#4-user-configuration)
   - [Access to the Agent Desktop](#access-to-the-agent-desktop)
-    - [Congratulations, you have completed Lab1 tasks!](#congratulations-you-have-completed-lab1-tasks)
+
 
 # Introduction
 
@@ -230,7 +230,7 @@ The users have the following preconfiguration
 - Please follow the same steps for **Supervisor** user. 
 
 
-[To top of this lab](#table-of-contents)
+
 
 
 ## Access to the Agent Desktop
@@ -250,7 +250,8 @@ The users have the following preconfiguration
 
 <img align="middle" src="images/Lab1_Login.png" width="1000" />
 
-[To top of this lab](#table-of-contents)
+
+[Back to top](#table-of-contents)
 
 
 
@@ -259,10 +260,10 @@ The users have the following preconfiguration
 ### Congratulations, you have completed Lab1 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/0_LabInfo.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/0_LabInfo.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/2_BasicChat.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/2.1_BasicChat.html";
  }
 </script>
 

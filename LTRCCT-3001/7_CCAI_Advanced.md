@@ -10,7 +10,6 @@ title: 'Lab 7: Improving your existing Dialogflow'
   - [Testing using your website.](#testing-using-your-website)
   - [Adding Fulfillment](#adding-fulfillment)
 - [Seize the Opportunity](#seize-the-opportunity)
-    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 # Introduction
 In this lab we are going to improve on our FAQ Dialogflow bot, by converting some of our FAQs into intents, requiring some entities, and taking an action on the information that we gather.
@@ -100,13 +99,15 @@ Take these new found concepts and let them run wild.  Improve on the use cases t
 
 
 
+[Back to top](#table-of-contents)
+
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/Home_EMEAR.html";
  }
 </script>
 

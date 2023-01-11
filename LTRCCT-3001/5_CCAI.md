@@ -13,8 +13,7 @@ title: 'Lab 5.1: CCAI Integration'
   - [Step 2: Create OAuth client ID and secret](#step-2-create-oauth-client-id-and-secret)
   - [Step 3. Authorize Google Dialog flow node in Webex Connect](#step-3-authorize-google-dialog-flow-node-in-webex-connect)
   - [Step 4. Enable Dialogflow and create agent](#step-4-enable-dialogflow-and-create-agent)
-  - [Back to top](#back-to-top)
-    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
+
   
 
 # Introduction
@@ -174,10 +173,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/3.3_QnABotAdvanced.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";
  }
 </script>
 

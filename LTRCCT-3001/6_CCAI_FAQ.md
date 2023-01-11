@@ -9,7 +9,7 @@ title: 'Lab 6: Creating a FAQ in Dialogflow'
   - [Importing FAQ](#importing-faq)
   - [Testing from within Dialogflow](#testing-from-within-dialogflow)
   - [Testing via Webex Connect chat](#testing-via-webex-connect-chat)
-    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
+
 
 # Introduction
 In this lab we are going to import a FAQ in Google Dialogflow from an existing website, which will act similarly to the Q&A bot in Webex Connect.  We will then select some Questions and transform them into intents.
@@ -59,15 +59,16 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 
 
 
+[Back to top](#table-of-contents)
 
 
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/7_CCAI_Advanced.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/7_CCAI_Advanced.html";
  }
 </script>
 

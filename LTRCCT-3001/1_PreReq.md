@@ -31,8 +31,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ### Pre-requisites
 
-- You have received the access credentials with a full admin access 
-- You have received the access to the agent account
+1. You have received the access credentials with a full admin access 
+2. You have received the access to the agent account
 
 
 ### Quick Links
@@ -271,7 +271,7 @@ function nextLab()
 <button onclick="mainPage()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go To Lab Pre-requisites</button>
+  padding: 10px;">Go To Previous Lab</button>
 
 <button onclick="nextLab()" style="
   position: absolute;

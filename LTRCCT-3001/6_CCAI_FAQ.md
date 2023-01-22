@@ -51,6 +51,7 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 ## Step 3. Testing from within Dialogflow
 - In the upper right corner, you will see a "try it now" prompt
 - Using one of the questions from the FAQ, ask a question or a variation of the question and verify there is a response.
+- 
 <img align="middle" src="images/EM_Lab6_8_9.gif" width="1000" />
 
 

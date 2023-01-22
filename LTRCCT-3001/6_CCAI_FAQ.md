@@ -5,54 +5,56 @@ title: 'Lab 6: Creating a FAQ in Dialogflow'
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-  - [Enabling FAQ in Dialogflow](#enabling-faq-in-dialogflow)
-  - [Importing FAQ](#importing-faq)
-  - [Testing from within Dialogflow](#testing-from-within-dialogflow)
-  - [Testing via Webex Connect chat](#testing-via-webex-connect-chat)
+  - [Step 1. Enabling FAQ in Dialogflow](#step-1-enabling-faq-in-dialogflow)
+  - [Step 2. Importing FAQ](#step-2-importing-faq)
+  - [Step 3. Testing from within Dialogflow](#step-3-testing-from-within-dialogflow)
+  - [Step 4. Testing via Webex Connect chat](#step-4-testing-via-webex-connect-chat)
+    - [Congratulations, you have completed this section!](#congratulations-you-have-completed-this-section)
 
 
 # Introduction
 In this lab we are going to import a FAQ in Google Dialogflow from an existing website, which will act similarly to the Q&A bot in Webex Connect.  We will then select some Questions and transform them into intents.
 
-## Enabling FAQ in Dialogflow
-- In the Dialogflow portal:
+## Step 1. Enabling FAQ in Dialogflow
+- Login to the Dialogflow portal https://dialogflow.cloud.google.com using the Gmail account created (or used) in the earlier lab
 - Click the Cog next to the name of your bot
-- Under General Toggle "Enable beta features and API" and click save.
+- Under General Toggle "Enable beta features and API" and click save
+<img align="middle" src="images/EM_Lab6_1.png" width="1000" />
 
+## Step 2. Importing FAQ
+- We are going to import our FAQ from the Cisco Live Amsterdam FAQ. [Cisco Live FAQ website](https://www.ciscolive.com/emea/attend/event-details/faq.html)
+- Click on the Knowledge (Beta) menu option and click Create Knowledge base
+<img align="middle" src="images/EM_Lab6_2.png" width="1000" />
+-  Name it "Cisco Live FAQ" and click Save
+<img align="middle" src="images/EM_Lab6_3.png" width="1000" />
 
-## Importing FAQ
-- We are going to import our FAQ from the CDC's Covid-19 FAQ.
-  - [CDC FAQ Website](https://www.cdc.gov/coronavirus/2019-ncov/faq.html)
-  
+- Click "Create the first one" and create the document with below mentioned details
+<img align="middle" src="images/EM_Lab6_4.png" width="1000" />
 
-- Click on the Knowledge (Beta) menu option
-- Click Create Knowledge base and name if Covid and click Save
-- Next to "No knowledge document has been created yet" click create the first one.
-    > Document Name: Covid FAQ
+    > Document Name: Cisco Live FAQ
     >
     > Knowledge Type: FAQ
     >
     > Mime Type: text/html
     >
-    > Data Source: URL: `https://www.cdc.gov/coronavirus/2019-ncov/faq.html`
+    > Data Source: URL: `https://www.ciscolive.com/emea/attend/event-details/faq.html`
     >
     > Enable Automatic Reload: True
     >
     > Click Create
 
-    ---
-- Now we need so allow Dialogflow to respond to out customers.
-  - Click the Add Response button
-    - You will see that a response string automatically populates that looks like `$Knowledge.Answer[1]`
-    - Click Save at the top of the page
-  --- 
+<img align="middle" src="images/EM_Lab6_5.png" width="1000" />
+
+- Click the "Add Response" button. A response string automatically populates that looks like `$Knowledge.Answer[1]` . Click Save at top of the page.
+<img align="middle" src="images/EM_Lab6_6_7.gif" width="1000" />
   
-## Testing from within Dialogflow
-- In the upper right corner, you will see a try it now prompt
-  - Using one of the questions from the FAQ, ask a question or a variation of the question.
+## Step 3. Testing from within Dialogflow
+- In the upper right corner, you will see a "try it now" prompt
+- Using one of the questions from the FAQ, ask a question or a variation of the question and verify there is a response.
+<img align="middle" src="images/EM_Lab6_8_9.gif" width="1000" />
 
 
-## Testing via Webex Connect chat
+## Step 4. Testing via Webex Connect chat
 - Launch your chat from your website
 - Using one of the questions from the FAQ, ask a question or a variation of the question.
 

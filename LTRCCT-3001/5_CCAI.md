@@ -1,5 +1,5 @@
 ---
-title: 'Lab 5.1: CCAI Integration'
+title: 'Lab 3.1: Dialogflow - Dialogflow setup'
 ---
 
 # Table of Contents

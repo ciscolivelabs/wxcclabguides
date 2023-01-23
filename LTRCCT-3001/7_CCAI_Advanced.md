@@ -1,5 +1,5 @@
 ---
-title: 'Lab 7: Improving your existing Dialogflow'
+title: 'Lab 3.4: Dialogflow - Advanced features'
 ---
 
 # Table of Contents

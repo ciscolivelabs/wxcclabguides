@@ -26,7 +26,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | ***Path A*** | ***Webex Connect Bot*** | ***40 mins*** |
 | Lab 3.1 | [QnA Bot setup](3.1_QnABotConfiguration.md){:target="\_blank"} | 10 mins |
 |Lab 3.2 |[QnA Bot Integration within Flow](3.2_QnABotFlowConfiguration.md){:target="\_blank"} | 20 mins |
-|Lab 3.2 |[FAQ Integration](3.3_QnABotAdvanced.md){:target="\_blank"}| 10 mins |
+|Lab 3.3 |[FAQ Integration](3.3_QnABotAdvanced.md){:target="\_blank"}| 10 mins |
 ||||
 | ***Path B*** | ***Dialogflow*** | ***90 mins*** |
 | Lab 3.1 | [DialogFlow setup](5_CCAI.md){:target="\_blank"} | 20 mins |

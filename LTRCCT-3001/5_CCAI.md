@@ -8,6 +8,7 @@ title: 'Lab 3.1: Dialogflow - Dialogflow setup'
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
     - [Quick Links](#quick-links)
+    - [AI Terminology](#ai-terminology)
 - [Lab Section](#lab-section)
   - [Step 1. Create a gmail account (Optional)](#step-1-create-a-gmail-account-optional)
   - [Step 2: Create OAuth client ID and secret](#step-2-create-oauth-client-id-and-secret)
@@ -32,6 +33,24 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
 > Connect: https://cl2pod**X**.imiconnect.io/ (where **X** is your POD number)
+
+
+### AI Terminology
+
+- **Utterances**: Anything a user says to the bot​
+
+- **Intents**: Task or action that the user wants to perform​
+
+- **Entities**: Metadata that specifies the user's intent​
+
+- **Responses**: Message sent from the bot to converse to the user​
+
+- **Fallback**: The state when a bot is unable to understand the utterance​
+
+- **Handover**: Bot stops processing messages and transfers to an agent
+
+- **NLU (Natural Language Understanding)**: engines used to assess the intent from the consumer inputs and respond with an accurate response
+
 
 # Lab Section
 

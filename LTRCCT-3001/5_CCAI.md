@@ -93,7 +93,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Input a desired **App name** and select the **User supported email** (Enter the Gmail account mentioned in Step-1 )
 <img align="middle" src="images/Lab5a_9.png" width="1000" />
 
-- Input **Authorized domain** as **imiconnect.io**
+- Input **Authorized domain** as **webexconnect.io**
 
 - Input **Email addresses** as the Gmail account mentioned in Step-1. Click **Save and Continue**
 <img align="middle" src="images/Lab5a_10.png" width="1000" />
@@ -118,7 +118,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Select **Application type** as **Web application** and a desired **Name**
 
-- Click **Add URI** and input the value as **https://oauthus.imiconnect.io/callback** and click **Create**
+- Click **Add URI** and input the value as **https://oauth.us.webexconnect.io/callback** and click **Create**
 <img align="middle" src="images/Lab5a_17.png" width="1000" />
 
 - Copy the **Client ID** , **Client Secret** to a text editor in the local computer. Also, **Download JSON** .  We will need these values at a later stage to complete the configuration. 

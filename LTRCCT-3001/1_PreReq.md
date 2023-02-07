@@ -1,5 +1,5 @@
 ---
-title: 'Lab 1: Pre-configuration'
+title: 'Lab 1: Environment setup'
 ---
 
 # Table of Contents

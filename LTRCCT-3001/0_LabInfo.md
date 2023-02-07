@@ -1,5 +1,5 @@
 ---
-title: 'Lab Pre-requisites'
+title: 'Lab Information'
 ---
 ## Introduction
 The recently introduced New Digital Channels capability in Webex Contact Centre provides a no-code bot-building capability and allows to build complex conversational flows. This session is targeted at contact centre engineers, architects and application builders interested to build bots using the new Bot Builder which is a cloud-based bot platform available out of the box with the Webex Contact Centre platform. During this session, participants will understand,

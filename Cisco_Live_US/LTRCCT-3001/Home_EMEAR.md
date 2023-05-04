@@ -1,7 +1,7 @@
 ---
-title: 'Webex Contact Centre New Digital Channels Bot Capabilities'
+title: 'Webex Contact Center New Digital Channels Bot Capabilities'
 ## Session: LTRCCT-3001
-## Speakers: Gagarin Sathiyanarayanan, Gorka Antona
+## Speakers: Shrishail Doddalinganavar and Anuj Bhatia.
 ---
 
 <img align="middle" src="images/CL23_LTRCCT-3001.png" width="1000" />

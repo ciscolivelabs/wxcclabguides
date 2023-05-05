@@ -16,42 +16,47 @@ title: 'Lab 3.3: Dialogflow - FAQ integration'
 In this lab we are going to import a FAQ in Google Dialogflow from an existing website, which will act similarly to the Q&A bot in Webex Connect.  We will then select some Questions and transform them into intents.
 
 ## Step 1. Enabling FAQ in Dialogflow
-- Login to the Dialogflow portal https://dialogflow.cloud.google.com using the Gmail account created (or used) in the earlier lab
+- Login to the [Dialogflow portal](https://dialogflow.cloud.google.com){:target="_blank"} using the Gmail account created (or used) in the earlier lab
 - Click the Cog next to the name of your bot
 - Under General Toggle "Enable beta features and API" and click save
 <img align="middle" src="images/EM_Lab6_1.png" width="1000" />
 
 ## Step 2. Importing FAQ
-- We are going to import our FAQ from the Cisco Live Amsterdam FAQ. [Cisco Live FAQ website](https://www.ciscolive.com/emea/attend/event-details/faq.html)
+- We are going to import our FAQ from florida tourism. [Florida tourism website link](https://www.visitflorida.org/resources/research/research-faq/)
 - Click on the Knowledge (Beta) menu option and click Create Knowledge base
 <img align="middle" src="images/EM_Lab6_2.png" width="1000" />
--  Name it "Cisco Live FAQ" and click Save
+-  Name it "Florida FAQ" and click Save
 <img align="middle" src="images/EM_Lab6_3.png" width="1000" />
 
 - Click "Create the first one" and create the document with below mentioned details
-<img align="middle" src="images/EM_Lab6_4.png" width="1000" />
+<img align="middle" src="images/EM_Lab643.png" width="1000" />
 
-    > Document Name: Cisco Live FAQ
+    > Document Name: Florida FAQ
     >
     > Knowledge Type: FAQ
     >
     > Mime Type: text/html
     >
-    > Data Source: URL: `https://www.ciscolive.com/emea/attend/event-details/faq.html`
+    > Data Source: URL: `https://www.visitflorida.org/resources/research/research-faq/`
     >
     > Enable Automatic Reload: True
     >
     > Click Create
 
-<img align="middle" src="images/EM_Lab6_5.png" width="1000" />
+<img align="middle" src="images/EM_Lab6_4.png" width="1000" />
 
-- Click the "Add Response" button. A response string automatically populates that looks like `$Knowledge.Answer[1]` . Click Save at top of the page.
-<img align="middle" src="images/EM_Lab6_6_7.gif" width="1000" />
+- Click the "Add Response" button.
+
+<img align="middle" src="images/EM_Lab6_6_7.gif" width="600" />
+
+- A response string automatically populates that looks like `$Knowledge.Answer[1]` . Click Save at top of the page.
+
+<img align="middle" src="images/EM_Lab6_6_77.gif" width="600" />
   
 ## Step 3. Testing from within Dialogflow
 - In the upper right corner, you will see a "try it now" prompt
 - Using one of the questions from the FAQ, ask a question or a variation of the question and verify there is a response.
-- 
+- For example, Type in "What is Florida's population?" and see the response.
 <img align="middle" src="images/EM_Lab6_8_9.gif" width="1000" />
 
 

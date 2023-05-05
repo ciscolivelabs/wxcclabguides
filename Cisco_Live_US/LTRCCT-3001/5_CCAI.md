@@ -62,7 +62,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 2: Create OAuth client ID and secret
 
-- Login to https://console.cloud.google.com/ using the Gmail account mentioned in Step-1. 
+- Login to [google console](https://console.cloud.google.com/){:target="_blank"} using the Gmail account mentioned in Step-1. 
 
 - Select **Country** , Accept the terms of service and Click **Agree and Continue**
 <img align="middle" src="images/Lab5a_1.png" width="1000" />
@@ -154,7 +154,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 4. Enable Dialogflow and create agent 
 
-- Login to https://console.cloud.google.com/ using the Gmail account mentioned in Step-1. 
+- Login to [google console](https://console.cloud.google.com/){:target="_blank"} using the Gmail account mentioned in Step-1. 
 
 - In the search window, input **Dialogflow API** and click the **Dialogflow API** option under marketplace. 
 <img align="middle" src="images/Lab5a_26.png" width="1000" />
@@ -162,7 +162,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Click **Enable**
 <img align="middle" src="images/Lab5a_27.png" width="1000" />
 
-- Go to https://dialogflow.cloud.google.com and accept the **Terms of service** and click **Accept**
+- Go to [google dialog flow](https://dialogflow.cloud.google.com){:target="_blank"}. and accept the **Terms of service** and click **Accept**
 <img align="middle" src="images/Lab5a_28.png" width="1000" />
 
 - Click **Create Agent**
@@ -174,7 +174,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Click **Intents** and click **Create Intent**
 <img align="middle" src="images/Lab5a_31.png" width="1000" />
 
-- Input intent name as **Agent Handover** amd click **Add Training Phrases**
+- Input intent name as **Agent Handover** and click **Add Training Phrases**
 <img align="middle" src="images/Lab5a_32.png" width="1000" />
 
 - Input some sample training phrases as shown in the image below and click **Add parameters and action**

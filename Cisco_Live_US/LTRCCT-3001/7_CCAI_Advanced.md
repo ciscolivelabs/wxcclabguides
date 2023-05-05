@@ -104,7 +104,7 @@ Take these new found concepts and let them run wild.  Improve on the use cases t
 function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/6_CCAI_FAQ.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/Home_EMEAR.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/Home_US.html";
  }
 </script>
 

@@ -1,9 +1,13 @@
+---
+title: 'Cheat Sheet'
+---
+
 # Cheat Sheet
 
 ## Contact Center Navigation
 
 > Navigate to Entry Points
->
+> <img align="left" source="images/openEP.gif"/>
 > Map an Entry Point
 >
 > Navigate to Queues
@@ -32,5 +36,6 @@
 
 #### Time Now
 > \{\{now()\}\}
+
 #### Time Now as Epoch
-> \{\{now()\|epoch\}\}
+> \{\{now() \| epoch\}\}

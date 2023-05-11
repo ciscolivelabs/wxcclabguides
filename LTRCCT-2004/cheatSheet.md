@@ -2,11 +2,9 @@
 title: 'Cheat Sheet'
 ---
 
-# Cheat Sheet
-
 ## Contact Center Navigation
 
-> Navigate to Entry Points
+> <summary> Navigate to Entry Points </summary>
 > 
 > <img src="images/openEP.gif"/> 
 >

@@ -4,35 +4,47 @@ title: 'Cheat Sheet'
 
 ## Contact Center Navigation
 
-> <details> <summary> Navigate to Entry Points </summary>
+> <details> <summary>Navigate to Entry Points </summary>
 > 
 > <img src="images/openEP.gif"/> 
 > 
 > </details>
 >
-> Map an Entry Point
+> <details> <summary>Map an Entry Point</summary>
 >
 > <img src="images/openEPmap.gif"/>
 >
-> Navigate to Queues
+> </details>
+>
+> <details> <summary>Navigate to Queues</summary>
 >
 > <img src="images/openQueue.gif"/>
 >
-> Navigate to Teams
+> </details>
+>
+> <details> <summary>Navigate to Teams</summary>
 >
 > <img src="images/openEP.gifx"/>
 >
-> Navigate to Skills
+> </details>
+>
+> <details> <summary>Navigate to Skills</summary>
 >
 > <img src="images/openEP.gifx"/>
 >
-> Navigate to Skills Profiles
+> </details>
+>
+> <details> <summary>Navigate to Skills Profiles</summary>
 >
 > <img src="images/openEP.gifx"/>
 >
-> Navigate to Flow Builder
+> </details>
+>
+> <details> <summary>Navigate to Flow Builder</summary>
 >
 > <img src="images/rsToFlow.gif"/>
+>
+> </details>
 
 ## Pebble
 > Official pebble template documentation [https://pebbletemplates.io/](https://pebbletemplates.io/){:target="_blank"}

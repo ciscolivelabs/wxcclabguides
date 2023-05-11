@@ -4,9 +4,11 @@ title: 'Cheat Sheet'
 
 ## Contact Center Navigation
 
-> <summary> Navigate to Entry Points </summary>
+> <details> <summary> Navigate to Entry Points </summary>
 > 
 > <img src="images/openEP.gif"/> 
+> 
+> </details>
 >
 > Map an Entry Point
 >

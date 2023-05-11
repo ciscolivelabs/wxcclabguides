@@ -7,18 +7,32 @@ title: 'Cheat Sheet'
 ## Contact Center Navigation
 
 > Navigate to Entry Points
-> <img align="left" source="images/openEP.gif"/>
+> 
+> <img src="images/openEP.gif"/> 
+>
 > Map an Entry Point
+>
+> <img src="images/openEPmap.gif"/>
 >
 > Navigate to Queues
 >
+> <img src="images/openQueue.gif"/>
+>
 > Navigate to Teams
+>
+> <img src="images/openEP.gifx"/>
 >
 > Navigate to Skills
 >
+> <img src="images/openEP.gifx"/>
+>
 > Navigate to Skills Profiles
 >
+> <img src="images/openEP.gifx"/>
+>
 > Navigate to Flow Builder
+>
+> <img src="images/rsToFlow.gif"/>
 
 ## Pebble
 > Official pebble template documentation [https://pebbletemplates.io/](https://pebbletemplates.io/){:target="_blank"}

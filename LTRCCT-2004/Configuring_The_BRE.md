@@ -62,7 +62,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > 
 > Click to make the rule active
 > 
-> Select the label <w class = "label_out"> </w> from the drop down 
+> Select the label <w class = "label_out">routeInfo</w> from the drop down 
 >
 > Set the priority to 100
 >
@@ -85,7 +85,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > 
 > Click to make the rule active
 > 
-> Select the label <w class = "label_out"> </w> from the drop down 
+> Select the label <w class = "label_out">routeInfo</w> from the drop down 
 >
 > Set the priority to 99
 >
@@ -123,7 +123,9 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 
 
 ## Parsing BRE data to a variable
-
+> <img style="position: relative" src="images/BRE_Parse.jpg"/>
+<w style="position: relative; top: -80px; left:55px; color: rgb(0,0,0)">$.</w>
+<w style="position: relative; top: -80px; left:52px; color: rgb(0,0,0)" class = label_out>routeInfo</w>
 
 
 <script>

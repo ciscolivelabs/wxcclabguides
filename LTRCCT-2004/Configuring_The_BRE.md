@@ -116,13 +116,13 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 
 ## Accessing the BRE data from your flow
 > <img style="position: relative" src="images/BRE_Params.jpg"/>
-<w style="position: absolute; top: 90px; left: 250px; color: rgb(0,0,0)" class = "context_out">table</w>
-<w style="position: absolute; top: -225px; left: 40px; color: rgb(0,0,0) " class = "key_out">ani</w>
-<w style="position: absolute; top: -235px; left: 240px; color: rgb(0,0,0)">value</w>
+<w style="position: relative; top: -275px; left: 255px; color: rgb(0,0,0)" class = "context_out">table</w>
+<w style="position: relative; top: -225px; left: 15px; color: rgb(0,0,0) " class = "key_out">ani</w>
+<w style="position: relative; top: -225px; left: 200px; color: rgb(0,0,0)">value</w>
 
 
 
- ## Parsing BRE data to a variable
+## Parsing BRE data to a variable
 
 
 

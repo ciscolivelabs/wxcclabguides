@@ -11,6 +11,8 @@ title: 'Creating a BRE Lookup'
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
   - [Adding, updating, and removing data from your BRE table](#adding-updating-and-removing-data-from-your-bre-table)
+    - [Adding and updating data](#adding-and-updating-data)
+    - [Adding, updating and removing data in bulk](#adding-updating-and-removing-data-in-bulk)
   - [Accessing the BRE data from your flow](#accessing-the-bre-data-from-your-flow)
   - [Parsing BRE data to a variable](#parsing-bre-data-to-a-variable)
 
@@ -105,15 +107,52 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 ## Adding, updating, and removing data from your BRE table
 > Navigate to [https://rules.wxcc-us1.cisco.com/datasync/login](https://rules.wxcc-us1.cisco.com/datasync/login){:target="_blank"}
 >
-> Click datasync link
+> <details> <summary>Click datasync link</summary>
+> <img style="position: relative" src="images/BRE_Login.jpg"/>
 >
-> Login using your tenant admin credentials
+> </details>
 >
-> Click Site A
-> 
+>
+> Login using your tenant admin credentials if prompted
+>
+> <details> <summary>Select Site A</summary>
+> <img style="position: relative" src="images/BRE_Site.jpg"/>
+>
+> </details>
 
 
-
+### Adding and updating data
+>
+> <details> <summary>Click Add BRE Data</summary>
+> <img style="position: relative" src="images/BRE_AddData.jpg"/>
+>
+> </details>
+>
+> Select your tenant name from the TenatName drop down
+>
+> Select the table name you want to add/update data to in the BRE Lookup Type drop down
+>
+> Add the value you will be looking up in the Key field
+>
+> Add the value you want to be returned in the Value field
+>
+> Clicking Add Data will let you add additional rows
+>
+> Clicking the Remove button will remove teh row from your Add/Update
+>
+> Click Submit to save the updates
+>
+> ---
+### Adding, updating and removing data in bulk
+>
+> <details> <summary>Click Upload BRE CSV data</summary>
+> <img style="position: relative" src="images/BRE_AddDataBulk.jpg"/>
+>
+> </details>
+>
+> Select your tenant name from the TenatName drop down
+>
+> Select the table name you want to add/update data to in the BRE Lookup Type drop down
 ## Accessing the BRE data from your flow
 > <img style="position: relative" src="images/BRE_Params.jpg"/>
 <w style="position: relative; top: -275px; left: 255px; color: rgb(0,0,0)" class = "context_out">table</w>

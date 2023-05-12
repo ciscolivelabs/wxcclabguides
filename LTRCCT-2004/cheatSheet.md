@@ -65,3 +65,8 @@ title: 'Cheat Sheet'
 
 #### Time Now as Epoch
 > \{\{now() \| epoch\}\}
+
+
+
+## Tools and Toys
+[BRE Tool](Configuring_The_BRE.md){:target="_blank"}

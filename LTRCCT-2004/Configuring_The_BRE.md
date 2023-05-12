@@ -153,6 +153,10 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > Select your tenant name from the TenatName drop down
 >
 > Select the table name you want to add/update data to in the BRE Lookup Type drop down
+
+
+
+
 ## Accessing the BRE data from your flow
 > <img style="position: relative" src="images/BRE_Params.jpg"/>
 <w style="position: relative; top: -275px; left: 255px; color: rgb(0,0,0)" class = "context_out">table</w>

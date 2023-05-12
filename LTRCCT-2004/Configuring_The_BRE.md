@@ -11,6 +11,7 @@ title: 'Creating a BRE Lookup'
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
   - [Adding, updating, and removing data from your BRE table](#adding-updating-and-removing-data-from-your-bre-table)
+    - [Logging in](#logging-in)
     - [Adding and updating data](#adding-and-updating-data)
     - [Adding, updating and removing data in bulk](#adding-updating-and-removing-data-in-bulk)
   - [Accessing the BRE data from your flow](#accessing-the-bre-data-from-your-flow)
@@ -105,6 +106,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 
 
 ## Adding, updating, and removing data from your BRE table
+### Logging in
 > Navigate to [https://rules.wxcc-us1.cisco.com/datasync/login](https://rules.wxcc-us1.cisco.com/datasync/login){:target="_blank"}
 >
 > <details> <summary>Click datasync link</summary>
@@ -113,13 +115,14 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > </details>
 >
 >
-> Login using your tenant admin credentials if prompted
+>> Login using your tenant admin credentials if prompted
 >
 > <details> <summary>Select Site A</summary>
 > <img style="position: relative" src="images/BRE_Site.jpg"/>
 >
 > </details>
-
+>
+> ---
 
 ### Adding and updating data
 >
@@ -150,9 +153,23 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 >
 > </details>
 >
+>
+> Create a CSV file with 3 columns
+>
+> > ⚠️ CSV must have headers in the file or the first row will be skipped 
+> >
+> > Key: the value you will be looking up
+> >
+> > Value: the value you want to be returned
+> >
+> > Action: the action you want taken on the key (ADD, UPDATE, DELETE)
+>
+>
 > Select your tenant name from the TenatName drop down
 >
 > Select the table name you want to add/update data to in the BRE Lookup Type drop down
+>
+> ---
 
 
 
@@ -163,6 +180,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 <w style="position: relative; top: -225px; left: 15px; color: rgb(0,0,0) " class = "key_out">ani</w>
 <w style="position: relative; top: -225px; left: 200px; color: rgb(0,0,0)">value</w>
 
+---
 
 
 ## Parsing BRE data to a variable
@@ -170,6 +188,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 <w style="position: relative; top: -80px; left:55px; color: rgb(0,0,0)">$.</w>
 <w style="position: relative; top: -80px; left:52px; color: rgb(0,0,0)" class = label_out>routeInfo</w>
 
+---
 
 <script>
     function update(){them = Array.from(document.querySelectorAll("input")).reduce((acc, input) => ({...acc, [input.id + "_out"] : input.value}),{});

@@ -260,10 +260,10 @@ The users have the following preconfiguration
 ### Congratulations, you have completed Lab1 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/0_LabInfo.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/0_LabInfo.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/2.1_BasicChat.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/2.1_BasicChat.html";
  }
 </script>
 

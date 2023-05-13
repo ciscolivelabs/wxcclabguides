@@ -212,10 +212,10 @@ In this lab exercise we are going to configure a basic in Live Chat applet and d
 ### Congratulations, you have completed Lab2 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/1_PreReq.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/1_PreReq.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.1_QnABotConfiguration.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/3.1_QnABotConfiguration.html";
  }
 </script>
 

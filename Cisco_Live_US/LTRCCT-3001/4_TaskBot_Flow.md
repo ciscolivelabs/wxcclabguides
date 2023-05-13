@@ -460,10 +460,10 @@ In this portion of the lab, we will be configuring the bot itself.  We have thre
 ### Congratulations, you have completed Lab 4 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot.html";}
+function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/4_TaskBot.html";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/5_CCAI.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/5_CCAI.html";
  }
 
 </script>

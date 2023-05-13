@@ -74,10 +74,10 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/5.2_CCAIFlowConfig.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/7_CCAI_Advanced.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/7_CCAI_Advanced.html";
  }
 </script>
 

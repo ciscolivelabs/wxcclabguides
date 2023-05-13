@@ -192,10 +192,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/3.3_QnABotAdvanced.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/3.3_QnABotAdvanced.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/5.2_CCAIFlowConfig.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/5.2_CCAIFlowConfig.html";
  }
 </script>
 

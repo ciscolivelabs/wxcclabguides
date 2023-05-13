@@ -203,13 +203,13 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 ## Decide between Code or Flow Builder for actioning bot logic.
 
 <script>
-function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Code.html";
+function code() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/4_TaskBot_Code.html";
 }
 function flowBuilder() {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/4_TaskBot_Flow.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/4_TaskBot_Flow.html";
  }
 function previous() {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/3.3_QnABotAdvanced.html";
+ window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/3.3_QnABotAdvanced.html";
  }
 
 </script>

@@ -146,6 +146,8 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > Click Submit to save the updates
 >
 > ---
+
+
 ### Adding, updating and removing data in bulk
 >
 > <details> <summary>Click Upload BRE CSV data</summary>

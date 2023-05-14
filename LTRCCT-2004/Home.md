@@ -10,4 +10,5 @@ Speakers: Kevin Simpson
 
 |Lab|Topic|Lab Link|
 |---|---|---|
-|Lab0|Initial setup and configuration||
+|Lab0|Initial setup and configuration|[Preconfiguration and validation](Lab_0.md){:target="\_blank"}|
+|Lab1|Adding Callback Number Read Back|[Adding Callback Number Read Back](Lab_1.md){:target="\_blank"}|

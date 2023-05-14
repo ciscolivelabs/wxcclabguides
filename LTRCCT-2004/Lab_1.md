@@ -39,41 +39,43 @@ In this lab we will be taking a starter flow and adding a callback number read b
    
 <br><br><br><br><br><br><br><br>
 
+---
+
 6. Click the ellipsis next to the newly imported flow_template and select Open 
 
-> <img src="images/openFlow.JPG" height="40">
-> 
-> Rename the flow to <w class="attendee_out">AttendeeID</w>_TechSummit by clicking on the pencil icon at the top of the screen, next to the flow name
->
-> Click on the Play Message node
->> Audio File: welcome.wav 
->>
->>---
-> 
-> Click on the Queue Contact node
->> Select Static Queue
->>
->> Queue: Q_<w class="attendee_out">AttendeeID</w>
->>
->> ---
->
-> Click on the Play Music node
->> Select Static Audio File
->>
->> Music File: defaultmusic_on_hold.wav
->>
->> ---
->
-> Click the Validation switch to turn on validation
->
-> Click Publish Flow
-> 
-> Add a Publish Note of your choosing
->
-> Click Publish Flow
->
-> Click Return to Flow
-> 
-> Turn off Validation 
->
->   ---
+    > <img src="images/openFlow.JPG" height="40">
+    > 
+    > Rename the flow to <w class="attendee_out">AttendeeID</w>_TechSummit by clicking on the pencil icon at the top of the screen, next to the flow name
+    >
+    > Click on the Play Message node
+    >> Audio File: welcome.wav 
+    >>
+    >>---
+    > 
+    > Click on the Queue Contact node
+    >> Select Static Queue
+    >>
+    >> Queue: Q_<w class="attendee_out">AttendeeID</w>
+    >>
+    >> ---
+    >
+    > Click on the Play Music node
+    >> Select Static Audio File
+    >>
+    >> Music File: defaultmusic_on_hold.wav
+    >>
+    >> ---
+    >
+    > Click the Validation switch to turn on validation
+    >
+    > Click Publish Flow
+    > 
+    > Add a Publish Note of your choosing
+    >
+    > Click Publish Flow
+    >
+    > Click Return to Flow
+    > 
+    > Turn off Validation 
+    >
+    >   ---

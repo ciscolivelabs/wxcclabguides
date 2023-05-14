@@ -10,7 +10,7 @@ title: 'Cheat Sheet'
 > 
 > </details>
 >
-> <details> <summary>Map an Entry Point</summary>
+> <details> <summary>Navigate to Map an Entry Point</summary>
 >
 > <img src="images/openEPmap.gif"/>
 >
@@ -24,19 +24,19 @@ title: 'Cheat Sheet'
 >
 > <details> <summary>Navigate to Teams</summary>
 >
-> <img src="images/openEP.gifx"/>
+> <img src="images/openTeam.gif"/>
 >
 > </details>
 >
 > <details> <summary>Navigate to Skills</summary>
 >
-> <img src="images/openEP.gifx"/>
+> <img src="images/openSkills.gif"/>
 >
 > </details>
 >
 > <details> <summary>Navigate to Skills Profiles</summary>
 >
-> <img src="images/openEP.gifx"/>
+> <img src="images/openSkillsProfile.gif"/>
 >
 > </details>
 >
@@ -55,6 +55,12 @@ title: 'Cheat Sheet'
 #### Retrieve the last 10 digits of an DNIS
 > \{\{NewPhoneContact.DNIS \| slice (NewPhoneContact.DNIS.length -10,NewPhoneContact.DNIS.length)\}\}
 
+#### Retrieve the nth value of a delimitated string
+> Requires an integer variable and a delimitated string starting with the first element being 1
+>
+> \{\{string \| split(",",string \| split(",") | length-(string \| split(",") \| length-number)) \| last \| split(",") \| first\}\}
+>
+> 
 
 
 
@@ -66,7 +72,11 @@ title: 'Cheat Sheet'
 #### Time Now as Epoch
 > \{\{now() \| epoch\}\}
 
-
+#### 
 
 ## Tools and Toys
-[BRE Tool](Configuring_The_BRE.md){:target="_blank"}
+> [BRE Tool](Configuring_The_BRE.md){:target="_blank"}
+>
+> [JSON Path Finder](https://jsonpathfinder.com/){:target="_blank"}
+>
+> 

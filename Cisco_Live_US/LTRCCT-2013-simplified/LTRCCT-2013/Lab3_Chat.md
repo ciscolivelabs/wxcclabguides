@@ -52,12 +52,12 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Workflows: **[GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}**\
+> Workflows: **[GitHub page]( https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows) {:target="_blank"}**\
 > Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
 
-## Step 1. Live Chat Asset creation & register to Webex CC
+## Step 1. Live Chat Asset creation & register to Webex Engage
 
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
@@ -77,19 +77,19 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 - Select `REGISTER TO WEBEX CC` and choose the Service you have created and REGISTER
 
-<img align="middle" src="images/Lab3_3.jpg" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_1_register_app_to_webex_engage_png" width="1000" />
 <br/>
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
 
-<img align="middle" src="images/Lab3_4.jpg" width="600" />
+<img align="middle" src="new_images\Lab3_chat\lab3_2_register_app_to_service_png" width="600" />
 <br/>
 <br/>
 
-- Verify that the `Register to Webex CC` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned.
+- Verify that the `Register to Webex Engage` option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned.
 
-<img align="middle" src="images/Lab3_5.jpg" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_3_confirm_register_app_to_service_png" width="1000" />
 <br/>
 <br/>
 
@@ -256,9 +256,9 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-- In the agent settigns, Select `Skill Profile` as `Sales` and click **Save**
+- In the agent settings, Select `Skill Profile` as `Sales` and click **Save**
 
-<img align="middle" src="images/Lab3_31.jpg" width="600" />
+<img align="middle" src="new_images\Lab3_chat\lab3_4_assign_agent_skill_profile_png" width="600" />
 <br/>
 <br/>
 
@@ -425,13 +425,11 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Select the Custom Variables tab and set the following variable defaults:
 
-*appid*: Set it to the value you copied in Step1
-
 *domain*: Set it to `www.w3schools.com`
 
 *liveChatDomain*: Set it to `www.w3schools.com`
 
-<img align="middle" src="images/Lab3_35.jpg" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_8_chat_flow_cust_var_1_png" width="1000" />
 <br/>
 <br/>
 
@@ -441,13 +439,13 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - We must select the right Live Chat Template as configured earlier so that the right Form is presented to the customer. Click on the `Pre-chat form` node and select `Form Template` as configured earlier and `Save`
 
-<img align="middle" src="images/Lab3_22.gif" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_9_select_pre_chat_template_gif" width="1000" />
 <br/>
 <br/>
 
 3. The same must be done in the Receive node, double click on it and select the Form from the dropdown menu and `Save`
 
-<img align="middle" src="images/Lab3_23.gif" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_91_select_pre_chat_template_receive_node_gif" width="1000" />
 <br/>
 <br/>
 
@@ -461,7 +459,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Finally click on Make Live on top right corner -> Select the Application/Asset that we have created and click `Make Live`.
 
-<img align="middle" src="images/Lab3_37.jpg" width="1000" />
+<img align="middle" src="new_images\Lab3_chat\lab3_92_chat_flow_make_live_png" width="1000" />
 <br/>
 <br/>
 
@@ -537,7 +535,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - You can search and view conversation transcripts from the New Digital Channels Engage interface. Go to the already openned tab or from Management Portal, access the menu and cross launch **New Digital Channels Admin Portal**  by choosing `New Digital Channels`. Then click on Switch to Customer Care button at the top right.
 
-<img align="middle" src="images/Lab3_54.jpg" width="400" />
+<img align="middle" src="new_images\Lab3_chat\lab3_93_customer_care_png" width="400" />
 <br/>
 <br/>
 
@@ -581,11 +579,6 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 <br/>
 <br/>
 
-## Step 9. Challenge Lab - Enhance flow
-
-### 1. Add Branch to handle Dropdown form field
-
-- Add a Branch node before the Queue Task node that differentiates between Sales and Support from the form's dropdown menu and queue's with a different Skill requirement
 
 [Back to top](#table-of-contents)
 ---

@@ -44,7 +44,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Workflows: **[GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}**\
+> Workflows: **[GitHub page]( https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}**\
 > Connect: https://cl1pod**\<ID\>**.imiconnect.io/ (where **\<ID\>** is your POD number)
 
 # Lab Section
@@ -191,9 +191,9 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 ### 1. Initial flow loading
 
-- Download the default Facebook Inbound flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the default Facebook Inbound flow from the [GitHub page]( https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **Facebook Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows -> 3.0 -> template -> media specific workflows -> facebook inbound flow.workflow.zip**, select the zip file and click download.
 
 - Unzip the downloaded file.
 

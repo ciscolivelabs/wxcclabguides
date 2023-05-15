@@ -52,15 +52,15 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - On the Manage Integrations page, scroll down to the **Node Authorizations** section. This section lists all the authorizations mapped to this integration.
 
-- Click **Action** → **Add Authorization** associated with the **WxCC Engage Authorisation**, where Auth Type is oauth2 and Status is Authorization Pending.
+- Click **Action** → **Add Authorization** associated with the **WxCC Engage Authorization**, where Auth Type is oauth2 and Status is Authorization Pending.
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 <br/>
 <br/>
 
-- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorisation**.
+- Enter the Authorization Name and click **Authorize**. In that example we use **WxCC Engage Authorization**.
 
-<img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
+<img align="middle" src="new_images/LAB1_preconfig/LAB1_1_engage_auth_png" width="1000" />
 <br/>
 <br/>
 
@@ -78,7 +78,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Enter the **Authorization Name** (for example: **WxCC Authorisation**) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**\<ID\>**@email.carehybrid.com) and click **Sign in**.
 
-<img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
+<img align="middle" src="new_images\LAB1_preconfig\LAB1_2_task_auth_png" width="1000" />
 <br/>
 <br/>
 
@@ -88,18 +88,18 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 
 ## Step 2. Download and upload CA flows in Connect 
-> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
+> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
 > • Task Routed - Adding an agent participant to a conversation;\
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+1) Download all flows from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}.
 
-2) Navigate to **Webex Connect Flows** -> **v2.1**.
+2) Navigate to **webex connect -> v3.0 -> template -> event handling workflows**
 
-<img align="middle" src="images/Lab1_GitHub.gif" width="1000" />
+<img align="middle" src="new_images\LAB1_preconfig\LAB1_5_dl_CA_flows_gif" width="1000" />
 <br/>
 <br/>
 
@@ -124,7 +124,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 8) In the **FLOW NAME** section set **Task Close Flow**.
 
-9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file.
+9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close.workflow** file.
 
 10) Now you can click on **CREATE** button.
 
@@ -134,7 +134,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 11) In the new menu click **SAVE** and then **MAKE LIVE**. On pop up window click on **MAKE LIVE** again.
 
-<img align="middle" src="images/Lab1_Live.gif" width="1000" />
+<img align="middle" src="new_images\LAB1_preconfig\LAB1_71_save_task_close_flow_gif" width="1000" />
 <br/>
 <br/>
 
@@ -260,7 +260,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 - Log in to the Control Hub at [https://admin.webex.com](https://admin.webex.com){:target="_blank"}
 
 - Navigate to **Services** -> **Contact Center** -> **Settings** -> **Desktop** -> **RONA Timeouts**.
-<img align="middle" src="images/Lab1_RONA.png" width="1000" />
+<img align="middle" src="new_images\LAB1_preconfig\lab1_8_RONA_timers_png" width="1000" />
 <br/>
 <br/>
 
@@ -290,7 +290,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 
 - Select the `Team1` and click **_Submit_**. Make sure that you are successfully logged in to the Agent Desktop. Now you can continue with the Next Lab.
 
-<img align="middle" src="images/Lab1_Login.gif" width="1000" />
+<img align="middle" src="new_images\LAB1_preconfig\Lab1_9_Agent_login_gif" width="1000" />
 <br/>
 <br/>
 

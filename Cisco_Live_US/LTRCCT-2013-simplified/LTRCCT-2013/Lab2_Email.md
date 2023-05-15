@@ -77,13 +77,13 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 
 - You will have to agree with the Terms of Service and pick their Country of residence. Then click **Select a project** and create a **NEW PROJECT**.
 
-<img align="middle" src="images/Lab2_NewGmail1.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_2_google_console_new_project_png" width="1000" />
 <br/>
 <br/>
 
 - Keep the default project's name and press **Create** at the bottom. Make sure that now you have selected this project. 
 
-<img align="middle" src="images/Lab2_NewGmail2.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_3_google_console_proj_name_png" width="1000" />
 <br/>
 <br/>
 
@@ -91,13 +91,13 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 
 - Enter `Gmail API` in the search bar and click on it once found.
 
-<img align="middle" src="images/Lab2_NewGmail3.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_4_google_console_gmail_API_png" width="1000" />
 <br/>
 <br/>
 
 - You need to enable the API for your project by clickin **ENABLE** button.
 
-<img align="middle" src="images/Lab2_NewGmail4.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_5_google_console_gmail_API_enable_png" width="1000" />
 <br/>
 <br/>
 
@@ -105,31 +105,31 @@ We need to activate API if we want to use Gmail accont for outbound emails.
 
 - Once the API is enabled, you’ll be taken to a nice dashboard that says, `"To use this API, you may need credentials"`.
 
-<img align="middle" src="images/Lab2_NewGmail5.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_6_google_console_gmail_API_may_need_creds_png" width="1000" />
 <br/>
 <br/>
 
 - To create an OAuth client ID, you must first configure your consent screen. Under the APIs and Services section, click on **OAuth Consent Screen**, set the user type as `External` and click **CREATE** button.
 
-<img align="middle" src="images/Lab2_NewGmail6.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_7_google_console_oauth_external_png" width="1000" />
 <br/>
 <br/>
 
 -  It will bring you to a page with many fields. Just enter the **App name** as `WebexApp`, choose your **User support email** and enter the same email in the **Developer contact information**. In the end press **SAVE AND CONTINUE**.
 
-<img align="middle" src="images/Lab2_NewGmail7.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_8_google_console_app_info_png" width="1000" />
 <br/>
 <br/>
 
 - On the next screen, you need to provide Auth 2.0 Scopes for Google APIs. Click the **Add Or Remove Scopes** button and add https://www.googleapis.com/auth/gmail.send to the list of scopes since we only want to send emails from Gmail and not read any user data. Click **SAVE AND CONTINUE**.
 
-<img align="middle" src="images/Lab2_NewGmail8.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_9_google_console_scopes_png" width="1000" />
 <br/>
 <br/>
 
 - On the test user page, click **ADD USERS** and enter your gmail address. Click **Save and Continue**.
 
-<img align="middle" src="images/Lab2_NewGmail9.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_91_google_console_test_user_png" width="1000" />
 <br/>
 <br/>
 
@@ -140,7 +140,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - In the APIs & Services section, click on **Credentials** and then pick **OAuth client ID** from the drop-down list of the **CREATE CREDENTIALS** button. 
 
-<img align="middle" src="images/Lab2_NewGmail10.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_92_google_console_oauth_client_ID_png" width="1000" />
 <br/>
 <br/>
 
@@ -150,13 +150,13 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
 
-<img align="middle" src="images/Lab2_NewGmail11.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_93_google_console_web_application_callback_URL_png" width="1000" />
 <br/>
 <br/>
 
 - Download a JSON file with your credentials – you’ll need it later.
 
-<img align="middle" src="images/Lab2_NewGmail12.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_931_google_console_json_png" width="1000" />
 <br/>
 <br/>
 
@@ -169,7 +169,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Select **Assets** -> **Apps** -> **CONFIGURE NEW APP** -> **Email**.
 
-<img align="middle" src="images/Lab2_Assest1.gif" width="1000" />
+<img align="middle" src="new_images\LAB2_email\lab2_94_create_email_app_gif" width="1000" />
 <br/>
 <br/>
 
@@ -199,19 +199,19 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Click **GENERATE TOKEN** and follow the step on the screenshot:
 
-<img align="middle" src="images/Lab2_As2.gif" width="1000" />
+<img align="middle" src="new_images\LAB2_email\lab2_95_generate_token_gif" width="1000" />
 <br/>
 <br/>
 
 - Verify that the **ACCESS TOKEN** and **REFRESH TOKEN** are generated and click **SAVE**.
 
-<img align="middle" src="images/Lab2_As3.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_96_email_app_save_tokens_png" width="1000" />
 <br/>
 <br/>
 
-- Click on **REGISTER TO WEBEX CC** and Select the service **My First Service**. In the end click **REGISTER**.
+- Click on **REGISTER TO Engage** and Select the service **My First Service**. In the end click **REGISTER**.
 
-<img align="middle" src="images/Lab2_As4.gif" width="1000" />
+<img align="middle" src="new_images\LAB2_email\lab2_97_register_to_engage_gif" width="1000" />
 <br/>
 <br/>
 
@@ -325,9 +325,9 @@ Now create a new client ID that will be used to identify your application to Goo
 
 ## Step 4. Create/Upload Email flow
 
-- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows)  {:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **Email Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows -> 3.0 -> template -> media specific workflows -> email inbound flow.workflow.zip**, select the zip file and click download.
 
 - Unzip the downloaded file.
 
@@ -339,13 +339,13 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Lab2_WF1.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_98_create_email_flow_png" width="1000" />
 <br/>
 <br/>
 
 - Click **Save** and in the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
 
-<img align="middle" src="images/Lab2_WF2.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_99_email_Qtask_node_png" width="1000" />
 <br/>
 <br/>
 
@@ -375,7 +375,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - The Email will be offered to the agent. Click **Accept** to handle the email. Click "Reply" or Reply All" to the email and hit send button.
 
-<img align="middle" src="images/Lab2_Agent2.png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2__991_email_reply_in_agent_desktop_png" width="1000" />
 <br/>
 <br/>
 

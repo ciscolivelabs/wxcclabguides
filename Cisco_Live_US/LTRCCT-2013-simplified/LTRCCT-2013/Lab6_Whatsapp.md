@@ -70,21 +70,21 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 <br/>
 <br/>
 
-- Click 'Register to WebexCC option' 
+- Click 'Register to Webex Engage option' 
 
-<img align="middle" src="images/Lab6_3.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.1_register_to_engage.png" width="1000" />
 <br/>
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
 
-<img align="middle" src="images/Lab6_4.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.2_register_to_svc.png" width="1000" />
 <br/>
 <br/>
 
-- Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+- Verify that the 'Register to Webex Engage' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 
-<img align="middle" src="images/Lab6_5.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.3_register_success.png" width="1000" />
 <br/>
 <br/>
 
@@ -152,11 +152,11 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 
 ## Step 4. Create/Upload Whatsapp flow
 
-- Download the Whatsapp flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the Whatsapp flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **WAB Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows -> 3.0->template -> media specific workflows -> whatsapp inbound flow.workflow.zip**, select the zip file and click download.
 
-<img align="middle" src="images/Lab6_12.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.4_dl_wa_flow_github.png" width="1000" />
 <br/>
 <br/>
 
@@ -168,9 +168,9 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 
 - Enter the **FLOW NAME** as **Whatsapp Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
-- Drag and drop the **WAB Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE**
+- Drag and drop the **whatsapp inbound flow.workflow** flow that is downloaded in zip file, click **CREATE**
 
-<img align="middle" src="images/Lab6_13.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.5_import_wa_flow.png" width="1000" />
 <br/>
 <br/>
 
@@ -200,7 +200,7 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 
 - Wait for 2 minutes and verify that the flow is published successfully. 
 
-<img align="middle" src="images/Lab6_18.png" width="1000" />
+<img align="middle" src="new_images\Lab6_whatsapp\Lab_6.6_flow_live.png" width="1000" />
 <br/>
 <br/>
 

@@ -36,7 +36,7 @@ You have successfully compleated the Lab1 and Lab2 (Email Configuration).
 
 Before proceeding with the configuration task, you need to understand the flow logic. Please follow the diagram below and call the proctor if you have any questions.
 
-<img align="middle" src="images/Lab7_workflow.png" width="1000" />
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.0_overview.png" width="1000" />
 <br/>
 <br/>
 
@@ -52,15 +52,15 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 
 - Click on the **EDIT** button in the upper right corner.
 
-- Drug and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
+- Drag and drop the **PIQ and EWT** node from the Node Palette to the main canvas.
 
-<img align="middle" src="images/Lab7_workflow2.gif" width="1000" />
+<img align="middle" src="new_images\Lab7_advemail\lab_7.1_move_piq_node.gif" width="1000" />
 <br/>
 <br/>
 
 - Delete the existing **Queue Task** `Queued` link by clicking on it and pressing the delete button. Re-connect the **Queue Task** with the **PIQ and EWT**
 
-<img align="middle" src="images/Lab7_workflow3.gif" width="1000" />
+<img align="middle" src="new_images\Lab7_advemail\lab_7.2_cnnct_Q_to_PIQ.gif" width="1000" />
 <br/>
 <br/>  
 
@@ -80,13 +80,13 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 | TASK ID    | $(n1850.Task ID) | 
 | LOOKBACK MINUTES    | 5 | 
   
-<img align="middle" src="images/Lab7_workflow4.png" width="1000" />
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.5_PIQ_settings.png" width="1000" />
 <br/>
 <br/>
 
-- Click **SAVE** and link all exit states of **PIQ and EWT** with **Update Conversation**.
+- Click **SAVE** and link all exit states of **PIQ and EWT** with **email node**.
   
-<img align="middle" src="images/Lab7_workflow5.gif" width="1000" />
+<img align="middle" src="new_images\Lab7_advemail\lab_7.3_cnnct_piq_to_email.gif" width="1000" />
 <br/>
 <br/>
 
@@ -96,7 +96,7 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
 
 - Double-click the the **Email** node and in the **MESSAGE**. 
 
-<img align="middle" src="images/Lab7_autoanswer1.png" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.31_email_auto_reply_node.png" width="1000" />  
 <br/>
 <br/>
 
@@ -104,7 +104,7 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
   
 > **Note:** Your PIQ node ID can be different from the example above. Select the right variable from the **Input Variables** in the right panel.
   
-<img align="middle" src="images/Lab7_autoanswer2.png" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.4_PIQ_auto_reply.png" width="1000" />  
 <br/>
 <br/>
 
@@ -141,13 +141,13 @@ We will use the **Branch** node which allows you to split your flow based on con
  
 - Drag the **Branch** node from the nodes palette to the main canvas.
 
-<img align="middle" src="images/Lab7_subject1.gif" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\lab_7.6_add_branch_node.gif" width="1000" />  
 <br/>
 <br/>
 
-- Delete the existing **Create Task** `Created` link by clicking on it and pressing the delete button. Re-connect **Create Task** with **Branch**.
+- Delete the existing link from first **Email node** to the **Queue Task** node.  Reconnect **Email node** to the **Branch node**
    
-<img align="middle" src="images/Lab7_subject2.gif" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\lab_7.7_connect_email_to_branch.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -164,13 +164,13 @@ We will use the **Branch** node which allows you to split your flow based on con
 <br/>
 <br/>
 
-- Drug a second **Queue Task** node from the Node Palette to the main canvas. 
+- Drag a second **Queue Task** node from the Node Palette to the main canvas. 
 
 - Connect exit `Branch1` with the second **Queue Task**. Connect `None of the above` exit with the first (existing) **Queue Task**.
 
-- Connect `onError` node outcome with the  **Close Conversation** .
+- Connect `onError` node outcome with the  **Close Task Node** .
 
-<img align="middle" src="images/Lab7_subject4.gif" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\lab_7.8_add_Q_node_2.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -191,9 +191,9 @@ Double-click the second **Queue Task** node and set the following options:
 
 - Click **SAVE** and link all exit events of the second **Queue Task** node:
   - `Queued` with **PIQ and EWT**.
-  - `onErro`, `OnTimeout`, `onInvalideData`, `taskFailed`, etc with the **Close Task**.
+  - `onError`, `OnTimeout`, `onInvalideData`, `taskFailed`, etc with the **Close Task**.
 
-<img align="middle" src="images/Lab7_subject6.gif" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\lab_7.9_connect_all_Q2.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -227,10 +227,9 @@ In our logic, if the email's subject does not contain "Cisco Live" we will be ad
 
 ### 1. Preconfigured settings (no actions needed)
 The steps below were **preconfigured** for you. They has to be done only once.
-- The smartsheet API key has been generated according to the [smarthseet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}.
-You will be using this API key in your lab.
+- The smartsheet API key has been generated according to the [smartsheet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}. Copy this API access token to a text file. You will be using this API key in your lab.
 
-<img align="middle" src="images/Lab7_smartsheet1.png" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.91_smartsheet_API_key.png" width="1000" />  
 <br/>
 <br/>
 
@@ -253,9 +252,9 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 
 - Click the **EDIT** button in the upper right corner.
   
-- Drug and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit of the first **Queue Task** `Queued` with the **HTTP Request**
+- Drag and drop the **HTTP Request** node from the Node Palette to the main canvas. Connect exit of the first **Queue Task** `Queued` with the **HTTP Request**
 
-<img align="middle" src="images/Lab7_smartsheet4.gif" width="1000" />  
+<img align="middle" src="new_images\Lab7_advemail\lab_7.92_add_http_node.gif" width="1000" />  
 <br/>
 <br/>
 
@@ -297,9 +296,9 @@ It needs just for the verification, exactly the same we will be doing in the Ema
 <br/>
 <br/>
 
-- Connect all exits of the **HTTP Request** with the **Update Conversation** node.
+- Connect all exits of the **HTTP Request** with the middle **Email node** node.
 
-<img align="middle" src="images/Lab7_smartsheet6.png" width="1000" /> 
+<img align="middle" src="new_images\Lab7_advemail\Lab_7.93_cnct_http_to_email.png" width="1000" /> 
 <br/>
 <br/>
 

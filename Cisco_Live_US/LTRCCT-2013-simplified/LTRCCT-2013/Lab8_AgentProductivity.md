@@ -35,19 +35,19 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Navigate to Assets > Integrations > Add Integration
 
-<img align="middle" src="images/Lab8_1.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.1_add_integration.png" width="1000" />
 <br/>
 <br/>
 
 - Click on Add Integration and select Inbound Webhook 
 
-<img align="middle" src="images/Lab8_2.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.2_add_webhook.png" width="1000" />
 <br/>
 <br/>
 
 - Input a desired name in the **Webhook Name** field. Copy the **Webhook URL** for later use. Click **Save**
 
-<img align="middle" src="images/Lab8_3.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.3_name_webhook.png" width="1000" />
 <br/>
 <br/>
 
@@ -170,7 +170,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Enter the **FLOW NAME** as **Inbound Webhook**, select the **TYPE** as **Work Flow** and under **METHOD** select **New flow**. Click **Create**
 
-<img align="middle" src="images/Lab8_18.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.4_webhook_flow.png" width="1000" />
 <br/>
 <br/>
 

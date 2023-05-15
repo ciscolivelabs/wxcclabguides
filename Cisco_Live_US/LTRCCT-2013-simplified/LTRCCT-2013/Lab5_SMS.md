@@ -43,7 +43,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
 
-<img align="middle" src="images/Lab5_1.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_1_check_number_png" width="1000" />
 <br/>
 <br/>
 
@@ -56,25 +56,25 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
-<img align="middle" src="images/Lab5_2.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_2_manage_number_png" width="1000" />
 <br/>
 <br/>
 
-- Click 'Register to WebexCC option' 
+- Click 'Register to Webex Engage option' 
 
-<img align="middle" src="images/Lab5_3.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_3_register_number_png" width="1000" />
 <br/>
 <br/>
 
 - In the resulting window, select a service under which this asset would be managed
 
-<img align="middle" src="images/Lab5_4.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_4_register_number_svc_png" width="1000" />
 <br/>
 <br/>
 
-- Verify that the 'Register to Webex CC' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
+- Verify that the 'Register to Webex Engage' option is now disabled and there is a message indicating the time when the asset was registered along with the service to which it is assigned. 
 
-<img align="middle" src="images/Lab5_5.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_5_registered_png" width="1000" />
 <br/>
 <br/>
 
@@ -145,11 +145,11 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 ## Step 4. Create/Upload SMS flow
 
-- Download the SMS flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
+- Download the SMS flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **SMS Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows -> 3.0-> template-> media specific workflows -> smsinbound flow.workflow.zip**, select the zip file and click download.
 
-<img align="middle" src="images/Lab5_12.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_6_SMS_github_flow_png" width="1000" />
 <br/>
 <br/>
 
@@ -163,13 +163,17 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
-<img align="middle" src="images/Lab5_13.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_6_SMS_upload_flow_png" width="1000" />
 <br/>
 <br/>
 
 - Once the flow is saved, the 'Configure SMS Event' node will open. Select the SMS number assigned to your tenant in the **_INCOMING NUMBER_** section 
 
 - Input **_*_** as `Keyword` and click on **Verify**
+
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_7_SMS_node_1_png" width="1000" />
+<br/>
+<br/>
   
 - Once the **Success** message is displayed, click on **Save**
 
@@ -181,25 +185,22 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Find and open all the **SMS** nodes and select the SMS number assigned to your tenant in the **_FROM NUMBER_** section 
 
-<img align="middle" src="images/Lab5_16.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_8_SMS_all_sms_nodes_png" width="1000" />
 <br/>
 <br/>
 
-<img align="middle" src="images/Lab5_17.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_9_SMS_from_number_png" width="1000" />
 <br/>
 <br/>
 
 - Finally click on Make Live on top right corner and click Make Live.
 
-<img align="middle" src="images/Lab5_18.jpg" width="1000" />
+<img align="middle" src="new_images\Lab5_SMS\Lab_5_91_flow_live_png" width="1000" />
 <br/>
 <br/>
 
-- Wait for 2 minutes and verify that the flow is published successfully. 
+- Wait for 2 minutes and verify that the flow is **published** successfully. 
 
-<img align="middle" src="images/Lab5_19.jpg" width="1000" />
-<br/>
-<br/>
 
 [To top of this lab](#table-of-contents)
 

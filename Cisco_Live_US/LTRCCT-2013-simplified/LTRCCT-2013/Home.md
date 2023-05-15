@@ -1,7 +1,7 @@
 ---
 title: 'Dip into NEW Digital Channels for Webex Contact Center'
 ## Session: LTRCCT-2013
-## Speakers: Gagarin Sathiyanarayanan, Carles Duz Palau, Dmitry Bokatov
+## Speakers: Dave Easton, Karthik Sundaram
 ---
 [Switch to LIGHT MODE](https://wxcctechsummit.github.io/ltrcct-2013){:target="\_blank"}
 

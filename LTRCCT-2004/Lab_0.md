@@ -5,6 +5,18 @@ speaker: Kevin Simpson
 ---
 
 ## Table of Contents
+- [Introduction](#introduction)
+    - [Lab Objective](#lab-objective)
+    - [Pre-requisites](#pre-requisites)
+- [Lab Section](#lab-section)
+    - [Configure your users](#configure-your-users)
+    - [Bulk import audio files](#bulk-import-audio-files)
+    - [Create a queue](#create-a-queue)
+    - [Create your first flow](#create-your-first-flow)
+    - [Create your Entry Point](#create-your-entry-point)
+    - [Create your Entry Point mapping](#create-your-entry-point-mapping)
+    - [Test your configuration](#test-your-configuration)
+
 
 # Introduction
  In this lab we be be ensuring that we are set for success by configuring our testing agents, setting up our queues and teams as well as validating our testing numbers with a testing flow.
@@ -178,10 +190,10 @@ speaker: Kevin Simpson
 
 
 <script>
-function mainPage() {window.location.href = "Home.md";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "Lab_1.md";
+ window.location.href = "Lab_1";
  }
 </script>
 

@@ -5,6 +5,13 @@ speaker: Kevin Simpson
 ---
 
 ## Table of Contents
+- [Introduction](#introduction)
+    - [Lab Objective](#lab-objective)
+    - [Pre-requisites](#pre-requisites)
+- [Lab Section](#lab-section)
+  - [Import the starter flow](#import-the-starter-flow)
+  - [Creating an opt-out option with ANI readout](#creating-an-opt-out-option-with-ani-readout)
+  - [Adding the ability to receive a callback at a different number](#adding-the-ability-to-receive-a-callback-at-a-different-number)
 
 # Introduction
 
@@ -12,7 +19,7 @@ speaker: Kevin Simpson
 ### Lab Objective
 In this lab we will be taking a starter flow and adding a callback number read back to confirm to the caller which number we should be calling them back at.
 
-Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="\_blank"} along the way if you are not sure of how to navigate a step.
+Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along the way if you are not sure of how to navigate a step.
 
 
 ### Pre-requisites
@@ -22,7 +29,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="\_blank"} along
 
 ## Import the starter flow
 
-1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="\_blank"}
+1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="_blank"}
 2. Click Routing Strategy
 3. Click on Flows in the top ribbon 
 4. Click Import
@@ -240,3 +247,29 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="\_blank"} along
     >> Did you hear the number you entered read back?
 
     ---
+
+
+
+
+<script>
+function mainPage() {window.location.href = "Lab_0";}
+function nextLab() 
+ {
+ window.location.href = "Lab_2";
+ }
+</script>
+
+<div id="button-row">
+<button onclick="mainPage()" style="
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go To Previous Lab</button>
+
+<button onclick="nextLab()" style="
+  position: absolute;
+  right: 200px;
+  border-radius: 5px;
+  background-color: rgb(116,191,75);
+  padding: 10px;">Go to the Next Lab</button>
+
+</div>

@@ -45,6 +45,12 @@ title: 'Cheat Sheet'
 > <img src="images/rsToFlow.gif"/>
 >
 > </details>
+>
+> <details> <summary>Import a flow</summary>
+>
+> <img src="images/rsToFlow.gif"/>
+>
+> </details>
 
 ## Pebble
 > Official pebble template documentation [https://pebbletemplates.io/](https://pebbletemplates.io/){:target="_blank"}

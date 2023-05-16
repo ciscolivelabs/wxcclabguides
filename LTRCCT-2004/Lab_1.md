@@ -12,6 +12,8 @@ speaker: Kevin Simpson
 ### Lab Objective
 In this lab we will be taking a starter flow and adding a callback number read back to confirm to the caller which number we should be calling them back at.
 
+Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="\_blank"} along the way if you are not sure of how to navigate a step.
+
 
 ### Pre-requisites
 - Complete Lab0
@@ -20,18 +22,15 @@ In this lab we will be taking a starter flow and adding a callback number read b
 
 ## Import the starter flow
 
-1. Download the [Flow Template](flows/CL_1_start.json){:target="\_blank"}
-2. Click Routing Strategy <
+1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="\_blank"}
+2. Click Routing Strategy
 3. Click on Flows in the top ribbon 
 4. Click Import
-5. Select flow_template
+5. Select CL_1_start
 ---
 
 1. Click the ellipsis next to the newly imported flow_template and select Open 
-
-    
     > 
-    > Rename the flow to <w class="attendee_out">AttendeeID</w>_TechSummit by clicking on the pencil icon at the top of the screen, next to the flow name
     >
     > Click on the Play Message node
     >> Audio File: welcome.wav 

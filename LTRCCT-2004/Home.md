@@ -12,3 +12,5 @@ Speakers: Kevin Simpson
 |---|---|---|
 |Lab0|Initial setup and configuration|[Preconfiguration and validation](Lab_0.md){:target="\_blank"}|
 |Lab1|Adding Callback Number Read Back|[Adding Callback Number Read Back](Lab_1.md){:target="\_blank"}|
+|Lab2|Reusing Our Existing Wait Treatment and Opt-out|[Reusing Our Existing Wait Treatment and Opt-out](Lab_2.md){:target="\_blank"}|
+|Lab3|Menu to Select from 50 States|[Menu to Select from 50 States](Lab_3.md){:target="\_blank"}|

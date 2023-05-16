@@ -64,7 +64,7 @@ title: 'Cheat Sheet'
 #### Retrieve the nth value of a delimitated string
 > Requires an integer variable and a delimitated string starting with the first element being 1
 >
-> \{\{string \| split(",",string \| split(",") | length-(string \| split(",") \| length-number)) \| last \| split(",") \| first\}\}
+> \{\{string \| split(",",string \| split(",") \| length-(string \| split(",") \| length-number)) \| last \| split(",") \| first\}\}
 >
 > 
 
@@ -78,7 +78,7 @@ title: 'Cheat Sheet'
 #### Time Now as Epoch
 > \{\{now() \| epoch\}\}
 
-#### 
+ 
 
 ## Tools and Toys
 > [BRE Tool](Configuring_The_BRE.md){:target="_blank"}

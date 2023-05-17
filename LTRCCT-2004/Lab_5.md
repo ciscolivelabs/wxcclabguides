@@ -1,5 +1,5 @@
 ---
-title: 'Exploring the Webex Contact Center Flow Builder Through Use Cases'
+title: 'Customizing the wait treatment by business unit'
 session: LTRCCT-2004
 speaker: Kevin Simpson
 ---
@@ -36,7 +36,7 @@ speaker: Kevin Simpson
 
 
 <script>
-function mainPage() {window.location.href = "Lab_3";}
+function mainPage() {window.location.href = "Lab_4";}
 function nextLab() 
  {
  window.location.href = "Lab_5";

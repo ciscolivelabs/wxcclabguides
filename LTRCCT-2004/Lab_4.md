@@ -1,5 +1,5 @@
 ---
-title: 'Exploring the Webex Contact Center Flow Builder Through Use Cases'
+title: 'Making the flow multilingual'
 session: LTRCCT-2004
 speaker: Kevin Simpson
 ---
@@ -13,26 +13,6 @@ speaker: Kevin Simpson
 
 
 # Lab Section
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>

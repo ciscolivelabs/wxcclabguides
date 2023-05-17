@@ -34,6 +34,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 3. Click on Flows in the top ribbon 
 4. Click Import
 5. Select CL_1_start
+   
 ---
 
 1. Click the ellipsis next to the newly imported flow_template and select Open 

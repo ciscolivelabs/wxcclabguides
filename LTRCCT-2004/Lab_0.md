@@ -10,6 +10,7 @@ speaker: Kevin Simpson
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
     - [Configure your users](#configure-your-users)
+    - [Configure your teams](#configure-your-teams)
     - [Bulk import audio files](#bulk-import-audio-files)
     - [Create a queue](#create-a-queue)
     - [Create your first flow](#create-your-first-flow)
@@ -30,7 +31,7 @@ speaker: Kevin Simpson
 
 ### Configure your users
 
-
+### Configure your teams
 
 ### Bulk import audio files
 
@@ -142,8 +143,8 @@ speaker: Kevin Simpson
 
 ### Create your Entry Point
 
-1. Click on Provisioning > Entry Points/Queues > Entry point
-2. Click Create new Entry point [Show Me](https://webexcc.github.io/../../../assets/images/IVR/openEP.gif){:target="\_blank"}
+1. Click on Provisioning > Entry Points/Queues > Entry point [Show Me](images/openEP.gif){:target="_blank"}
+2. Click Create new Entry point 
     > Name your Entry Point EP_<w class="attendee_out">AttendeeID</w>
     >
     > Description: optional
@@ -164,7 +165,7 @@ speaker: Kevin Simpson
 
 
 
-1. Click on Provisioning > Entry Point Mapping [Show Me](https://webexcc.github.io/../../../assets/images/IVR/openEPmap.gif){:target="\_blank"}
+1. Click on Provisioning > Entry Point Mapping [Show Me](images/openEPmap.gif){:target="\_blank"}
 2. Click new mapping
     > In location, select "Office"
     >

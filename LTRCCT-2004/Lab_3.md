@@ -32,6 +32,13 @@ speaker: Kevin Simpson
 ## Create a new flow
 1. Add a Collect Digits node
     > 
+    > Make the prompt interruptible 
+    >
+    > Minimum Digits: 2
+    >
+    > Maximum Digits: 2
+    >
+    > 
 
 
 

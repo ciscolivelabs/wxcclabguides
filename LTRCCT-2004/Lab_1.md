@@ -30,14 +30,8 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 ## Import the starter flow
 
 1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="_blank"}
-2. Click Routing Strategy
-3. Click on Flows in the top ribbon 
-4. Click Import
-5. Select CL_1_start
-   
----
-
-1. Click the ellipsis next to the newly imported flow_template and select Open 
+2. Import the flow
+3. Click the ellipsis next to the newly imported flow_template and select Open 
     > 
     >
     > Click on the Play Message node
@@ -58,20 +52,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     >> Music File: defaultmusic_on_hold.wav
     >>
     >> ---
-    >
-    > Click the Validation switch to turn on validation
-    >
-    > Click Publish Flow
-    > 
-    > Add a Publish Note of your choosing
-    >
-    > Click Publish Flow
-    >
-    > Click Return to Flow
-    > 
-    > Turn off Validation 
-    >
-    >   ---
+
 
 ## Creating an opt-out option with ANI readout
 1. Create new flow variables:

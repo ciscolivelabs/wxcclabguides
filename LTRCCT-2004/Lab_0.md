@@ -9,10 +9,12 @@ speaker: Kevin Simpson
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
-    - [Configure your users](#configure-your-users)
-    - [Configure your teams](#configure-your-teams)
+    - [Log in](#log-in)
     - [Bulk import audio files](#bulk-import-audio-files)
-    - [Create a queue](#create-a-queue)
+    - [Launch the Contact Center Portal](#launch-the-contact-center-portal)
+    - [Configure your teams](#configure-your-teams)
+    - [Configure your users](#configure-your-users)
+    - [Create a queues](#create-a-queues)
     - [Create your first flow](#create-your-first-flow)
     - [Create your Entry Point](#create-your-entry-point)
     - [Create your Entry Point mapping](#create-your-entry-point-mapping)
@@ -29,17 +31,39 @@ speaker: Kevin Simpson
 
 # Lab Section
 
-### Configure your users
-
-### Configure your teams
+### Log in 
+1. Open the [Control Hub](https://admin.webex.com/){:target="\_blank"} in your browser
+2. Click Contact Center in the left frame
+3. Click settings in the top ribbon
+   <img src="images/CH_Settings.jpg">
+4. Click Synchronize Users
 
 ### Bulk import audio files
 
 1. Download the lab audio file using this link [Audio Files](https://webexcc.github.io/assets/files/lab_wav.zip){:target="\_blank"}
-2.  
+2. Click Bulk Operations in the top ribbon 
+3. Click Create Bulk Operation
+4. Select Audio Files from the drop down
+5. Drag the zip file to the import box or brows for the zip file
+6. Click Next
+
+### Launch the Contact Center Portal
+1. Click Settings in the top ribbon
+2. Click the Go to Webex Contact Center Management Portal link at the bottom of the page
+
+### Configure your teams
+1. 
 
 
-### Create a queue
+### Configure your users
+1. 
+
+
+
+
+
+
+### Create a queues
 1. Click on Provisioning > Entry Points/Queues > Queue
     > <img src="images/openQueue.gif">
     ---
@@ -87,24 +111,33 @@ speaker: Kevin Simpson
 1. Download the [Flow Template](flows/flow_template.json){:target="\_blank"}
    > The file will open in a separate window.  
    >
-   > If using Firefox, Select the save option.
+   > <details> <summary>If using Firefox, Select the save option.</summary>
    >
    > <img src="images/saveJson.gif">
    >
-   > If using Chrome or Edge, right click and select save.
+   > </details>
+   >
+   > <details> <summary>If using Chrome or Edge, right click and select save.</summary>
    >
    ><img src="images/saveJsonChrome.gif" width="243">
-   
+   >
+   > </details>
       ---
-2. Click Routing Strategy <img src="images/rsToFlow.gif" Align= "right" height="200">
+2. <details> <summary>Click Routing Strategy</summary>
+    
+   <img src="images/rsToFlow.gif" height="200">
+
+   </details>
+
 3. Click on Flows in the top ribbon 
 4. Click Import
 5. Select flow_template
-<br><br><br><br><br><br><br><br>
+6. <details> <summary>Click the ellipsis next to the newly imported flow_template and select Open </summary>
+    <img src="images/openFlow.JPG" height="40">
+    
+    </details>
+   
 
-6. Click the ellipsis next to the newly imported flow_template and select Open 
-   > <img src="images/openFlow.JPG" height="40">
-   > 
    > Rename the flow to <w class="attendee_out">AttendeeID</w>_TechSummit by clicking on the pencil icon at the top of the screen, next to the flow name
    >
    > Click on the Play Message node

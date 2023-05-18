@@ -35,7 +35,9 @@ speaker: Kevin Simpson
 1. Open the [Control Hub](https://admin.webex.com/){:target="\_blank"} in your browser
 2. Click Contact Center in the left frame
 3. Click settings in the top ribbon
-   <img src="images/CH_Settings.jpg">
+   
+<img src="images/CH_Settings.jpg">
+
 4. Click Synchronize Users
 
 ### Bulk import audio files
@@ -138,8 +140,6 @@ speaker: Kevin Simpson
     </details>
    
 
-   > Rename the flow to <w class="attendee_out">AttendeeID</w>_TechSummit by clicking on the pencil icon at the top of the screen, next to the flow name
-   >
    > Click on the Play Message node
    >> Audio File: welcome.wav 
    >

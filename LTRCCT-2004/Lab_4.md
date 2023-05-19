@@ -13,7 +13,14 @@ speaker: Kevin Simpson
 
 
 # Lab Section
+### Bulk import audio files
 
+1. Download the lab audio file using this link [Audio Files](files/CL_Audio2.zip){:target="\_blank"}
+2. Click Bulk Operations in the top ribbon 
+3. Click Create Bulk Operation
+4. Select Audio Files from the drop down
+5. Drag the zip file to the import box or brows for the zip file
+6. Click Next
 
 <script>
 function mainPage() {window.location.href = "Lab_3";}

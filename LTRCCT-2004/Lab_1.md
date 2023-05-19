@@ -80,7 +80,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 3. Drag a Menu node onto the canvas
    > Activity Label: callback_opt
    >
-   > Audio File: opt_out_English.wav
+   > Audio File: opt_out.wav
    >
    > Make Prompt Interruptible: True
    >
@@ -160,7 +160,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 1. Add a new Menu node
     > Activity Label: confirmNumber
     >
-    > Prompt: number_confirm_English.wav
+    > Prompt: number_confirm.wav
     >
     > Make Prompt Interruptible: True
     >
@@ -179,7 +179,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 5. Add a Collect Digits node
    > Activity Label: newNumber 
    >
-   > Audio File: new_number_English.wav
+   > Audio File: new_number.wav
    >
    > Make Prompt Interruptible: True
    >

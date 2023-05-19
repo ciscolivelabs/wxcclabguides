@@ -51,6 +51,12 @@ title: 'Cheat Sheet'
 > <img src="images/rsToFlow.gif"/>
 >
 > </details>
+>
+> <details> <summary>Navigate to Bulk Updates</summary>
+>
+> <img src="images/Bulk-1.gif"/>
+>
+> </details>
 
 ## Pebble
 > Official pebble template documentation [https://pebbletemplates.io/](https://pebbletemplates.io/){:target="_blank"}

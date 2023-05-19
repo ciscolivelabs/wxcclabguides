@@ -42,7 +42,7 @@ speaker: Kevin Simpson
 
 ### Bulk import audio files
 
-1. Download the lab audio file using this link [Audio Files](https://webexcc.github.io/assets/files/lab_wav.zip){:target="\_blank"}
+1. Download the lab audio file using this link [Audio Files](files/CL_Audio1.zip){:target="\_blank"}
 2. Click Bulk Operations in the top ribbon 
 3. Click Create Bulk Operation
 4. Select Audio Files from the drop down
@@ -54,11 +54,29 @@ speaker: Kevin Simpson
 2. Click the Go to Webex Contact Center Management Portal link at the bottom of the page
 
 ### Configure your teams
-1. 
+1. Navigate to **_Provisioning_** and select **_Team_**.
+2. Click on `+ New Team`.
+3. Select you site from the _Site_ drop-down.
+4. Input _Name_ as **<w class = "attendee-class">your_attendee_ID</w>\_Team1**.
+5. Use the default **_Type_** `Agent Based`.
+6. Select your MMP in the _Multimedia Profile_ drop-down.
+7. Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and **_Save_** the configuration.
 
 
 ### Configure your users
-1. 
+1. Click on Provisioning and select Users.
+2. Click on ... for the agent, to launch the Edit view for a particular User configuration.
+
+3. Click on Contact Center Enabled toggle to move it to On.
+
+4. In the Agent Settings section, select your site in the Site drop-down.
+
+5. Click the Teams area and select your team1
+
+6. Select the default Agent-Profile in the Agent Profile drop-down list.
+
+7. Choose the Multimedia Profile and hit Save.
+
 
 
 

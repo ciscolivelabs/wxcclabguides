@@ -14,7 +14,7 @@ speaker: Kevin Simpson
     - [Launch the Contact Center Portal](#launch-the-contact-center-portal)
     - [Configure your teams](#configure-your-teams)
     - [Configure your users](#configure-your-users)
-    - [Create a queues](#create-a-queues)
+    - [Create two queues](#create-two-queues)
     - [Create your first flow](#create-your-first-flow)
     - [Create your Entry Point](#create-your-entry-point)
     - [Create your Entry Point mapping](#create-your-entry-point-mapping)
@@ -83,10 +83,13 @@ speaker: Kevin Simpson
 
 
 
-### Create a queues
-1. Click on Provisioning > Entry Points/Queues > Queue
+### Create two queues
+1. <details> <summary>Click on Provisioning > Entry Points/Queues > Queue</summary>
+   
     > <img src="images/openQueue.gif">
-    ---
+   
+   </details>
+   
 2. Click New Queue
     > Name your queue Q_<w class="attendee_out">AttendeeID</w>
     >
@@ -125,6 +128,43 @@ speaker: Kevin Simpson
     >
     > Save
 
+3. Click New Queue
+    > Name your queue Q_<w class="attendee_out">AttendeeID</w>
+    >
+    > Description: optional
+    >
+    > Channel Type: Telephony
+    >
+    > Queue Routing Type: Longest Available Agent
+    > 
+    > Call Distribution:
+    >> Click Add Group
+    >>
+    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team1
+    >>
+    >> Save Group
+    >>
+    >> Create second group
+    >>
+    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team2
+    >>
+    >> After: 60 Seconds in queue
+    >>
+    >> Add Group as: Last
+    >>
+    >> Save Group
+    >>
+    >> Click Close
+    >
+    > ---
+    >
+    > Service Level Threshold: 60
+    >
+    > Maximum Time in Queue: 600
+    >
+    > Default Music in Queue: defaultmusic_on_hold.wav
+    >
+    > Save
     ---
 
 ### Create your first flow
@@ -194,7 +234,13 @@ speaker: Kevin Simpson
 
 ### Create your Entry Point
 
-1. Click on Provisioning > Entry Points/Queues > Entry point [Show Me](images/openEP.gif){:target="_blank"}
+1. <details> <summary>Click on Provisioning > Entry Points/Queues > Entry point </summary>
+    
+    > <img src="images/openEP.gif"/>
+    
+     </details>
+    
+
 2. Click Create new Entry point 
     > Name your Entry Point EP_<w class="attendee_out">AttendeeID</w>
     >
@@ -216,7 +262,12 @@ speaker: Kevin Simpson
 
 
 
-1. Click on Provisioning > Entry Point Mapping [Show Me](images/openEPmap.gif){:target="\_blank"}
+1. <details> <summary>Click on Provisioning > Entry Point Mapping</summary>
+    
+    > <img src="images/openEPmap.gif"/>
+
+    </details>
+
 2. Click new mapping
     > In location, select "Office"
     >

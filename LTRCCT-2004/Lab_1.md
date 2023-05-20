@@ -10,7 +10,7 @@ speaker: Kevin Simpson
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
   - [Import the starter flow](#import-the-starter-flow)
-  - [Creating an opt-out option with ANI readout](#creating-an-opt-out-option-with-ani-readout)
+  - [Adding ANI readout to out-out](#adding-ani-readout-to-out-out)
   - [Adding the ability to receive a callback at a different number](#adding-the-ability-to-receive-a-callback-at-a-different-number)
 
 # Introduction
@@ -71,6 +71,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >>>
    >>> Click Close
    >>
+   >
    > Click the opt_out node
    >
    >> Audio File: opt_out.wav
@@ -83,6 +84,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >>
    >> Audio File: callback_confirm
    >>
+   >
    > Click the Validation switch to turn on validation
    >
    > Click Publish Flow
@@ -104,8 +106,12 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 
 
-## Creating an opt-out option with ANI readout
+## Adding ANI readout to out-out
 1. Create new flow variables:
+   >  Click on the cog in the lower left corner of the canvas (or on the background of the flow)
+   >
+   > Click Add Flow Variables
+   > 
    > Name: callbackANI
    >> Type: String
    >>
@@ -125,24 +131,10 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >>
    >> Default Value: 0
    >>
-   ---
-2. Delete the connection from the websiteMessage node to Play Music
-3. Drag a Menu node onto the canvas
-   > Activity Label: callback_opt
-   >
-   > Audio File: opt_out.wav
-   >
-   > Make Prompt Interruptible: True
-   >
-   > Digit Number: 1 Link Description: optOut 
-   >
-   > Connect the No-Input Timeout node edge to Play Music
-   >
-   > Connect the Unmatched Entry node edge to Play Music
-   >
    > ---
-4. Connect the websiteMessage to the callback_opt node
-5. Add a Set Variable node
+
+2. Delete the connection between the opt_out and callback nodes
+3. Add a Set Variable node
    > Activity Label: callbackANI_set
    >
    > Select Variable: callbackANI
@@ -150,15 +142,15 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    > Set to Value: \{\{NewPhoneContact.ANI \| slice (NewPhoneContact.ANI.length -10,NewPhoneContact.ANI.length)\}\}
    >
    ---
-6. Connect the callback_opt optOut node edge to callbackANI_set 
-7. Add a Play Message Node
+4. Connect the callback_opt optOut node edge to callbackANI_set 
+5. Add a Play Message Node
    > Activity Label: cfrom
    >
-   > Audio File: calling_from_English.wav
+   > Audio File: calling_from.wav
    >
    > ---
-8. Connect callbackANI_set to cfrom
-9. Add a Set Variable node
+6. Connect callbackANI_set to cfrom
+7. Add a Set Variable node
    > Activity Label: rDigit_set
    >
    > Select Variable: rDigit
@@ -167,8 +159,8 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >
    ---
 
-10. Connect cfrom to rDigit_set
-11. Add a Play Message node
+8.  Connect cfrom to rDigit_set
+9.  Add a Play Message node
    > Activity Label: playDigit 
    >
    > Click Add Audio Prompt Variable
@@ -177,8 +169,8 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >> Delete the Audio File Drop Down
    >> 
    >> ---
-12. Connect rDigit_set to playDigit
-13. Add a Set Variable node
+10. Connect rDigit_set to playDigit
+11. Add a Set Variable node
     > Activity Label: advance
     >
     > Select Variable: sPosition
@@ -186,8 +178,8 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > Set to Value: \{\{sPosition+1\}\}
     >
    ---
-14. Connect playDigit to advance
-15. Add a Condition node
+12. Connect playDigit to advance
+13. Add a Condition node
     > Activity Label: positionCheck
     > 
     > Condition: \{\{sPosition <= (callbackANI.length -1) \}\}
@@ -197,9 +189,9 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > False: Add a new Disconnect Contact node and connect it here
     >
    ---
-16. Connect advance to positionCheck  
-17. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/aniRead.JPG){:target="\_blank"}
-18. Place a test call to <w class= "DN_out" >Your EP DN</w>
+14. Connect advance to positionCheck  
+15. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/aniRead.JPG){:target="\_blank"}
+16. Place a test call to <w class= "DN_out" >Your EP DN</w>
     > When you are given the option for a callback, press 1.
     >> Did you hear your 10 digit callback number being read back?
 
@@ -265,7 +257,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 11. Add a Play message node
     > Activity Label: rcontext
     > 
-    > Audio File: entered_English.wav
+    > Audio File: entered.wav
     >
     > ---
 12. Connect resetPosition to rcontext

@@ -6,15 +6,13 @@ speaker: Kevin Simpson
 
 ## Table of Contents
 - [Introduction](#introduction)
-    - [Lab Objective](#lab-objective)
-    - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
     - [Log in](#log-in)
     - [Bulk import audio files](#bulk-import-audio-files)
-    - [Launch the Contact Center Portal](#launch-the-contact-center-portal)
+    - [Sync Users and Launch the Contact Center Portal](#sync-users-and-launch-the-contact-center-portal)
     - [Configure your teams](#configure-your-teams)
     - [Configure your users](#configure-your-users)
-    - [Create two queues](#create-two-queues)
+    - [Create a queue](#create-a-queue)
     - [Create your first flow](#create-your-first-flow)
     - [Create your Entry Point](#create-your-entry-point)
     - [Create your Entry Point mapping](#create-your-entry-point-mapping)
@@ -24,112 +22,97 @@ speaker: Kevin Simpson
 # Introduction
  In this lab we be be ensuring that we are set for success by configuring our testing agents, setting up our queues and teams as well as validating our testing numbers with a testing flow.
 
-### Lab Objective
-
-### Pre-requisites
 
 
 # Lab Section
 
 ### Log in 
-1. Open the [Control Hub](https://admin.webex.com/){:target="\_blank"} in your browser
+1. Open the [Control Hub](https://admin.webex.com/){:target="_blank"} in your browser
 2. Click Contact Center in the left frame
-3. Click settings in the top ribbon
-   
-<img src="images/CH_Settings.jpg">
-
-4. Click Synchronize Users
 
 ### Bulk import audio files
 
 1. Download the lab audio file using this link [Audio Files](files/CL_Audio1.zip){:target="\_blank"}
-2. Click Bulk Operations in the top ribbon 
+2. Click Bulk Operations in the top ribbon
 3. Click Create Bulk Operation
 4. Select Audio Files from the drop down
 5. Drag the zip file to the import box or brows for the zip file
 6. Click Next
 
-### Launch the Contact Center Portal
-1. Click Settings in the top ribbon
-2. Click the Go to Webex Contact Center Management Portal link at the bottom of the page
+### Sync Users and Launch the Contact Center Portal
+1. Click Settings in the top ribbon   
+<img src="images/CH_Settings.jpg">
+
+2. Click Synchronize Users
+3. Click the Go to Webex Contact Center Management Portal link at the bottom of the page
 
 ### Configure your teams
-1. Navigate to **_Provisioning_** and select **_Team_**.
+1. Click on Provisioning > Team
 2. Click on `+ New Team`.
-3. Select you site from the _Site_ drop-down.
-4. Input _Name_ as **<w class = "attendee-class">your_attendee_ID</w>\_Team1**.
-5. Use the default **_Type_** `Agent Based`.
-6. Select your MMP in the _Multimedia Profile_ drop-down.
-7. Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and **_Save_** the configuration.
+    > Site: site-1
+    >
+    > Name: CLTeam
+    >
+    > Type: Agent Based
+    >
+    > Multimedia Profile:  Default_TelePhony_Profile
+    >
+3. Click Save
+4. Click on `+ New Team`.
+    > Site: site-1
+    >
+    > Name: CLTeam
+    >
+    > Type: Agent Based
+    >
+    > Multimedia Profile:  Default_TelePhony_Profile
+    >
+5. Click Save
 
+    ---
 
 ### Configure your users
-1. Click on Provisioning and select Users.
-2. Click on ... for the agent, to launch the Edit view for a particular User configuration.
+1. Click on Provisioning > Users.
+2. Click on the ellipsis `...` next to CL23IVR+pod1agent1
+3. Click Edit
+4. Switch Contact Center Enabled to Yes
+5. Fill out the agent setting
+   >
+   > Site: Site-1
+   >
+   > Teams: CLTeam
+   >
+   > Agent profile: Agent-Profile (Auto WrapUp)
+   >
+   > Multimedia Profile:  Default_TelePhony_Profile
+   >
+6. Click Save
+7. Click on the ellipsis `...` next to CL23IVR+pod1agent2
+8.  Click Edit
+9.  Switch Contact Center Enabled to Yes
+10. Fill out the agent settings
+   >
+   > Site: Site-1
+   >
+   > Teams: CLTeam
+   >
+   > Agent profile: Agent-Profile (Auto WrapUp)
+   >
+   > Multimedia Profile:  Default_TelePhony_Profile
+   >
+11. Click Save
 
-3. Click on Contact Center Enabled toggle to move it to On.
+    ---
 
-4. In the Agent Settings section, select your site in the Site drop-down.
-
-5. Click the Teams area and select your team1
-
-6. Select the default Agent-Profile in the Agent Profile drop-down list.
-
-7. Choose the Multimedia Profile and hit Save.
-
-
-
-
-
-
-
-### Create two queues
+### Create a queue
 1. <details> <summary>Click on Provisioning > Entry Points/Queues > Queue</summary>
    
     > <img src="images/openQueue.gif">
    
    </details>
-   
-2. Click New Queue
-    > Name your queue Q_<w class="attendee_out">AttendeeID</w>
-    >
-    > Description: optional
-    >
-    > Channel Type: Telephony
-    >
-    > Queue Routing Type: Longest Available Agent
-    > 
-    > Call Distribution:
-    >> Click Add Group
-    >>
-    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team1
-    >>
-    >> Save Group
-    >>
-    >> Create second group
-    >>
-    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team2
-    >>
-    >> After: 60 Seconds in queue
-    >>
-    >> Add Group as: Last
-    >>
-    >> Save Group
-    >>
-    >> Click Close
-    >
-    > ---
-    >
-    > Service Level Threshold: 60
-    >
-    > Maximum Time in Queue: 600
-    >
-    > Default Music in Queue: defaultmusic_on_hold.wav
-    >
-    > Save
 
-3. Click New Queue
-    > Name your queue Q_<w class="attendee_out">AttendeeID</w>
+2. Click New Queue
+    > Name: Service
     >
     > Description: optional
     >
@@ -140,19 +123,10 @@ speaker: Kevin Simpson
     > Call Distribution:
     >> Click Add Group
     >>
-    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team1
+    >> Select CLTeam
     >>
     >> Save Group
     >>
-    >> Create second group
-    >>
-    >> Select <w class="attendee_out">Your_Attendee_ID</w>_Team2
-    >>
-    >> After: 60 Seconds in queue
-    >>
-    >> Add Group as: Last
-    >>
-    >> Save Group
     >>
     >> Click Close
     >
@@ -165,7 +139,10 @@ speaker: Kevin Simpson
     > Default Music in Queue: defaultmusic_on_hold.wav
     >
     > Save
-    ---
+    >
+    > ---
+
+
 
 ### Create your first flow
 1. Download the [Flow Template](flows/flow_template.json){:target="\_blank"}
@@ -205,7 +182,7 @@ speaker: Kevin Simpson
    > Click on the Queue Contact node
    >> Select Static Queue
    >>
-   >> Queue: Q_<w class="attendee_out">AttendeeID</w>
+   >> Queue: Service
    >>
    > ---
    >
@@ -241,8 +218,8 @@ speaker: Kevin Simpson
      </details>
     
 
-2. Click Create new Entry point 
-    > Name your Entry Point EP_<w class="attendee_out">AttendeeID</w>
+2. Click New Entry Point 
+    > Name your Entry Point EP_CL
     >
     > Description: optional
     >
@@ -250,7 +227,7 @@ speaker: Kevin Simpson
     >
     > Service Level Threshold: 60
     >
-    > Flow: <w class="attendee_out">AttendeeID</w>_TechSummit
+    > Flow: flow_template
     >
     > Music on Hold: defaultmusic_on_hold.wav
     >
@@ -273,7 +250,7 @@ speaker: Kevin Simpson
     >
     > In Available Numbers select <w class= "DN_out" >Your EP DN</w>
     >
-    > In Entry point select EP_<w class="attendee_out">AttendeeID
+    > In Entry point select EP_CL
     >
     > Click Save
     >
@@ -284,6 +261,13 @@ speaker: Kevin Simpson
 1. Call <w class= "DN_out" >Your EP DN</w> from your supervisor extension
     > You should hear the greeting message and then the music in queue
     >
+    > Go back into the Flow Control tab of your browser and click debug in the lower left corner.
+    >
+    > Click on the interaction from the list
+    >
+    > Notice how it shows the node progression and variable states of the nodes
+    >
+
     > Go available in the agent desktop
     >> The call should be delivered to your agent extension
     >

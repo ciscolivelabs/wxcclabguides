@@ -2,6 +2,13 @@
 title: 'Cheat Sheet'
 ---
 
+## Contact Center Links
+>Control Hub: [https://admin.webex.com](https://admin.webex.com){:target="_blank"}
+>
+>Portal: [https://portal.wxcc-us1.cisco.com](https://portal.wxcc-us1.cisco.com){:target="_blank"}
+>
+>Agent Desktop: [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}
+
 ## Contact Center Navigation
 
 > <details> <summary>Navigate to Entry Points </summary>

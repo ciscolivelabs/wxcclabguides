@@ -32,26 +32,76 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="_blank"}
 2. Import the flow
 3. Click the ellipsis next to the newly imported flow_template and select Open 
-    > 
-    >
-    > Click on the Play Message node
-    >> Audio File: welcome.wav 
-    >>
-    >>---
-    > 
-    > Click on the Queue Contact node
-    >> Select Static Queue
-    >>
-    >> Queue: Q_<w class="attendee_out">AttendeeID</w>
-    >>
-    >> ---
-    >
-    > Click on the Play Music node
-    >> Select Static Audio File
-    >>
-    >> Music File: defaultmusic_on_hold.wav
-    >>
-    >> ---
+   > 
+   >
+   > Click on the Play Message node
+   >> Audio File: welcome.wav 
+   >>
+   >>---
+   > 
+   > Click on the Queue Contact node
+   >> Select Static Queue
+   >>
+   >> Queue: Service
+   >>
+   >> ---
+   >
+   > Click on the Play Music node
+   >> Select Static Audio File
+   >>
+   >> Music File: defaultmusic_on_hold.wav
+   >>
+   >> Music Duration: 2 seconds
+   >
+   > Click on the Variable Message node
+   >
+   >> Click the Add Audio prompt Variable button
+   >>
+   >> Delete the Audio File drop down
+   >>
+   >> Audio prompt Variable: comfort_\{\{(count % 4) + 1\}\}.wav
+   >>
+   >>> Click the blue Test Expression button in the lower right corner of the Audio Prompt Variable box
+   >>>
+   >>> Put 0 in the count box
+   >>>
+   >>> Do you see the result of "comfort_1.wav"?
+   >>>
+   >>> What happens when you put other numbers in the count box?  Try 4 and 5...
+   >>>
+   >>> Click Close
+   >>
+   > Click the opt_out node
+   >
+   >> Audio File: opt_out.wav
+   >>
+   >> Select Make Prompt Interruptible
+   >>
+   >> Connect the Unmatched Entry node edge to the front of the PlayMusic node
+   >>
+   > Click PlayMessage_s4p node
+   >>
+   >> Audio File: callback_confirm
+   >>
+   > Click the Validation switch to turn on validation
+   >
+   > Click Publish Flow
+   > 
+   > Add a Publish Note of your choosing
+   >
+   > Click Publish Flow
+   >
+   > Click Return to Flow
+   > 
+   > Turn off Validation 
+   >
+   > Edit your Entrypoint to point to CL_1_start
+   >
+   > Call your EP DN and test the flow
+   >
+   > ---
+
+
 
 
 ## Creating an opt-out option with ANI readout
@@ -116,6 +166,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    > Set to Value: \{\{callbackANI \| slice (sPosition,sPosition+1)\}\}
    >
    ---
+
 10. Connect cfrom to rDigit_set
 11. Add a Play Message node
    > Activity Label: playDigit 

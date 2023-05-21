@@ -23,7 +23,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 
 ### Pre-requisites
-- Complete Lab0
+- Complete Lab 0
 
 # Lab Section
 

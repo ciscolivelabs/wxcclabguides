@@ -10,7 +10,7 @@ speaker: Kevin Simpson
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
   - [Import the starter flow](#import-the-starter-flow)
-  - [Adding ANI readout to out-out](#adding-ani-readout-to-out-out)
+  - [Adding ANI readout to opt-out](#adding-ani-readout-to-opt-out)
   - [Adding the ability to receive a callback at a different number](#adding-the-ability-to-receive-a-callback-at-a-different-number)
 
 # Introduction
@@ -106,9 +106,9 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 
 
-## Adding ANI readout to out-out
+## Adding ANI readout to opt-out
 1. Create new flow variables:
-   >  Click on the cog in the lower left corner of the canvas (or on the background of the flow)
+   >  Click on the cog in the lower left corner of the canvas <img src="images/flowCog.JPG"/>(or on the background of the flow)
    >
    > Click Add Flow Variables
    > 
@@ -143,7 +143,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    >
    ---
 4. Connect the callback_opt optOut node edge to callbackANI_set 
-5. Add a Play Message Node
+5. Add a Play Message node
    > Activity Label: cfrom
    >
    > Audio File: calling_from.wav
@@ -164,7 +164,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    > Activity Label: playDigit 
    >
    > Click Add Audio Prompt Variable
-   >> Audio Prompt Variable: \{\{rDigit\}\}_English.wav
+   >> Audio Prompt Variable: \{\{rDigit\}\}.wav
    >>
    >> Delete the Audio File Drop Down
    >> 
@@ -186,11 +186,11 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     >
     > True: Connect to rDigit_set 
     >
-    > False: Add a new Disconnect Contact node and connect it here
+    > False: Connect to Callback_noh
     >
    ---
 14. Connect advance to positionCheck  
-15. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/aniRead.JPG){:target="\_blank"}
+15. Publish your flow [Compare](images/CL_1_readout.jpg){:target="\_blank"}
 16. Place a test call to <w class= "DN_out" >Your EP DN</w>
     > When you are given the option for a callback, press 1.
     >> Did you hear your 10 digit callback number being read back?
@@ -218,7 +218,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > ---
 2. Delete the False node edge from positionCheck to Disconnect Contact
 3. Connect the False node edge from positionCheck to confirmNumber
-4. Connect the confirm number node edge to Disconnect Contact
+4. Connect the confirm number node edge to Callback_noh
 5. Add a Collect Digits node
    > Activity Label: newNumber 
    >
@@ -262,7 +262,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > ---
 12. Connect resetPosition to rcontext
 13. Connect rcontext to rDigit_set
-14. Publish your flow [Compare](https://webexcc.github.io/../../../assets/images/IVR/changeNumber.JPG){:target="\_blank"}
+14. Publish your flow [Compare](images/CL_1_readout_2){:target="\_blank"}
 15. Place a test call to <w class= "DN_out" >Your EP DN</w>
     > When you are given the option for a callback, press 1.
     >

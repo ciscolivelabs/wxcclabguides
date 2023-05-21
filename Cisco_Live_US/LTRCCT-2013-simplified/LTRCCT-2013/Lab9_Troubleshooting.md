@@ -160,10 +160,10 @@ In this lab, we will go through the concepts and basics of flow debugging option
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";
+ window.location.href = "Home";
  }
 </script>
 
@@ -178,6 +178,6 @@ function nextLab()
   right: 200px;
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go to the Next Lab</button>
+  padding: 10px;">You have nowhere else to be!</button>
 
 </div>

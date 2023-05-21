@@ -10,7 +10,7 @@ title: 'Lab 3: Live Chat Configuration'
     - [Pre-requisite](#pre-requisite)
     - [Quick Links](#quick-links)
 - [Lab Section](#lab-section)
-  - [Step 1. Live Chat Asset creation & register to Webex CC](#step-1-live-chat-asset-creation--register-to-webex-cc)
+  - [Step 1. Live Chat Asset creation & register to Webex Engage](#step-1-live-chat-asset-creation--register-to-webex-cc)
   - [Step 2. Chat Template creation for website integration](#step-2-chat-template-creation-for-website-integration)
   - [Step 3. Chat Entry Point and Queue creation](#step-3-chat-entry-point-and-queue-creation)
     - [1. Create Entry Point in Management Portal](#1-create-entry-point-in-management-portal)
@@ -75,7 +75,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 <br/>
 <br/>
 
-- Select `REGISTER TO WEBEX CC` and choose the Service you have created and REGISTER
+- Select `REGISTER TO WEBEX Engage` and choose the Service you have created and REGISTER
 
 <img align="middle" src="new_images\Lab3_chat\lab3_1_register_app_to_webex_engage_png" width="1000" />
 <br/>
@@ -387,7 +387,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 1. Initial flow loading
 - Download the default inbound chat flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-- Navigate to **Webex Connect Flows** -> **v2.1** -> **Live Chat Inbound Flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows** -> v3.0 -> **template** -> **media specific workflows** -> **Live Chat inbound flow.workflow.zip**, select the zip file and click download.
 
 - Unzip the downloaded file.
 
@@ -586,10 +586,10 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### Congratulations, you have completed this section!
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab()
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab4_FBM.html";
+ window.location.href = "Lab4_FBM";
  }
 </script>
 

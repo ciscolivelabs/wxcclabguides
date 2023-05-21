@@ -9,7 +9,7 @@ title: 'Lab 6: Whatsapp Configuration'
     - [Pre-requisite](#pre-requisite)
 - [Lab Section](#lab-section)
   - [Step 1. Verify Whatsapp Number Assignment](#step-1-verify-whatsapp-number-assignment)
-  - [Step 2. Whatsapp Asset registration to WebexCC](#step-2-whatsapp-asset-registration-to-webexcc)
+  - [Step 2. Whatsapp Asset registration to Webex Engage](#step-2-whatsapp-asset-registration-to-webexcc)
   - [Step 3. Whatsapp Entry Point and Queue creation](#step-3-whatsapp-entry-point-and-queue-creation)
   - [Step 4. Create/Upload Whatsapp flow](#step-4-createupload-whatsapp-flow)
   - [Verification - send Whatsapp message and accept the request](#verification---send-whatsapp-message-and-accept-the-request)
@@ -42,7 +42,7 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 <br/>
 <br/>
 
->**Note**: Whatsapp Numbers cannot be procured directly from the WxCC integrated Webex Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable Whatsapp and get numbers assigned to the tenant.
+>**Note**: Whatsapp Numbers cannot be procured directly from the Webex CC integrated Webex Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable Whatsapp and get numbers assigned to the tenant.
 
 - Identify and make note of the APP ID (We will need this later in the flow configuration)
 
@@ -62,7 +62,7 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 <br/>
 <br/>
 
-## Step 2. Whatsapp Asset registration to WebexCC
+## Step 2. Whatsapp Asset registration to Webex Engage
 
 - In the Whatsapp number assigned, under actions select the 'Manage' option 
 
@@ -263,10 +263,10 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab7_Email_Advanced.html";
+ window.location.href = "Lab7_Email_Advanced";
  }
 </script>
 

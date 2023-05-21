@@ -217,7 +217,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 ### 2. Add forwarding Address
 
-- Copy the forwarding address from the created asset in previous step and in Gmail account. 
+- Copy the forwarding address from the created asset in the previous step then go back to your gmail account. 
  
 <img align="middle" src="images/Lab2_Assest4.png" width="1000" />
 <br/>
@@ -388,10 +388,10 @@ Now create a new client ID that will be used to identify your application to Goo
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab3_Chat.html";
+ window.location.href = "Lab3_Chat";
  }
 </script>
 

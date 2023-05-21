@@ -10,8 +10,8 @@ title: 'Lab 5: SMS Configuration'
     - [Pre-requisite](#pre-requisite)
 - [Lab Section](#lab-section)
   - [Step 1. Verify SMS Number Assignment](#step-1-verify-sms-number-assignment)
-  - [Step 2. SMS Asset registration to WebexCC](#step-2-sms-asset-registration-to-webexcc)
-    - [1. Register SMS asset to WebexCC](#1-register-sms-asset-to-webexcc)
+  - [Step 2. SMS Asset registration to Webex Engage](#step-2-sms-asset-registration-to-webexcc)
+    - [1. Register SMS asset to Webex Engage](#1-register-sms-asset-to-webexcc)
   - [Step 3. SMS Entry Point and Queue creation](#step-3-sms-entry-point-and-queue-creation)
     - [1. Create Entry Point in Managment Portal](#1-create-entry-point-in-managment-portal)
   - [Step 4. Create/Upload SMS flow](#step-4-createupload-sms-flow)
@@ -50,9 +50,9 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 >**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
-## Step 2. SMS Asset registration to WebexCC
+## Step 2. SMS Asset registration to Webex Engage
 
-### 1. Register SMS asset to WebexCC
+### 1. Register SMS asset to Webex Engage
 
 - In the SMS number assigned, under actions select the 'Manage' option 
 
@@ -161,7 +161,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 
 - Enter the **FLOW NAME** as **SMS Inbound Flow**, select the **TYPE** as **Work Flow** and under **METHOD** select **Upload a flow**.
 
-- Drag and drop the **Email Inbound Flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
+- Drag and drop the **SMS inbound flow.workflow** flow that is downloaded in zip file, click **CREATE** and then click **SAVE**.
 
 <img align="middle" src="new_images\Lab5_SMS\Lab_5_6_SMS_upload_flow_png" width="1000" />
 <br/>
@@ -177,7 +177,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
   
 - Once the **Success** message is displayed, click on **Save**
 
-- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **Email_Q** and click on **SAVE**.
+- In the created workflow find the **Queue Task**, click twice, select the **QUEUE NAME** as **SMS_Queue** and click on **SAVE**.
 
 <img align="middle" src="images/Lab5_15.jpg" width="1000" />
 <br/>
@@ -245,10 +245,10 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab6_Whatsapp.html";
+ window.location.href = "Lab6_Whatsapp";
  }
 </script>
 

@@ -85,7 +85,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Select the **Expected Response format** as **JSON**
 
-<img align="middle" src="images/Lab8_8.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.6_webhook_url.png" width="1000" />
 <br/>
 <br/>
 
@@ -192,7 +192,7 @@ In this Lab, we will go through the tasks that are required to configure a basic
 
 - Click **Save**
 
-<img align="middle" src="images/Lab8_20.png" width="1000" />
+<img align="middle" src="new_images\Lab8_agentprod\Lab8.7_configure_webhook_email_format.png" width="1000" />
 <br/>
 <br/>
 
@@ -321,7 +321,7 @@ Content-Type: application/json
 
 ## Step 7. OTP scenario verification
 
-- Initiate an email contact and accept the contact in Agent desktop. Click **Relply All** option. 
+- Initiate an email contact and accept the contact in Agent desktop. Click **Reply All** option. 
 
 <img align="middle" src="images/Lab8_38.png" width="1000" />
 <br/>
@@ -375,10 +375,10 @@ Content-Type: application/json
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab9_Troubleshooting.html";
+ window.location.href = "Lab9_Troubleshooting";
  }
 </script>
 

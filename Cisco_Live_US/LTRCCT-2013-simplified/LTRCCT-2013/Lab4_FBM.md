@@ -318,10 +318,10 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab5_SMS.html";
+ window.location.href = "Lab5_SMS";
  }
 </script>
 

@@ -9,17 +9,93 @@ speaker: Kevin Simpson
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
+    - [Create a new queue](#create-a-new-queue)
+    - [Add Functionality to Flow](#add-functionality-to-flow)
 
 
 # Introduction
+
 ### Lab Objective
 In this lab you will be adding a menu to select different business units which will utilize different queues but will reuse the same wait treatment.
+
+Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along the way if you are not sure of how to navigate a step.
+
 ### Pre-requisites
 - Complete Lab0
 - Complete Lab1
 
 # Lab Section
 
+### Create a new queue
+  > Name: Sales
+      >
+      > Description: optional
+      >
+      > Channel Type: Telephony
+      >
+      > Queue Routing Type: Longest Available Agent
+      > 
+      > Call Distribution:
+      >> Click Add Group
+      >>
+      >> Select CLTeam
+      >>
+      >> Save Group
+      >>
+      >>
+      >> Click Close
+      >
+      > ---
+      >
+      > Service Level Threshold: 60
+      >
+      > Maximum Time in Queue: 600
+      >
+      > Default Music in Queue: defaultmusic_on_hold.wav
+      >
+      > Save
+      >
+      > ---
+
+### Add Functionality to Flow
+
+1. Add a new Menu node
+    > Activity Label: salesService
+    >
+    > Audio File: salesServiceMenu.wav
+    >
+    > Make Prompt Interruptible: True
+    >
+    > Digit Number: 1 Link Description: Sales
+    >
+    > Digit Number: 2 Link Description: Service
+    >
+    > Connect No-Input Timeout to the front of the salesService node
+    >
+    > Connect Unmatched Entry to the front of the salesService node
+
+
+2. Delete the connection from PlayMessage_oc2 to QueueContact_ys9
+3. Connect PlayMessage_oc2 to salesService
+4. Add a new Queue Contact node
+    > Activity Name: Q_Sales
+    >
+    > Static Queue
+    >
+    > Queue: Sales
+    >
+    > ---
+5. Connect the Sales node edge to the Q_Sales node
+6. Connect the Service node edge to the QueueContact_ys9 node
+7. Connect the Q_Sales node to the PlayMusic_b9x node
+   
+    ---
+8. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
+9.  Place a test call to <w class= "DN_out" >Your EP DN</w>
+    > Test the flow
+    >> Were you able to set a callback for the queue which was chosen in the menu?
+
+    ---
 
 
 

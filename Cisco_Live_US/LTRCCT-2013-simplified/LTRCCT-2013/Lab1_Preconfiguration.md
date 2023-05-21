@@ -301,10 +301,10 @@ If an agent doesn’t answer a contact request, the contact request will return 
 ### Congratulations, you have compleated Lab1 tasks! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab2_Email.html";
+ window.location.href = "Lab2_Email";
  }
 </script>
 

@@ -27,6 +27,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 # Lab Section
 
 ### Create a new queue
+
   > Name: Sales
       >
       > Description: optional

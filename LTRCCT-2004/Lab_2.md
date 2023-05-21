@@ -21,8 +21,8 @@ In this lab you will be adding a menu to select different business units which w
 Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along the way if you are not sure of how to navigate a step.
 
 ### Pre-requisites
-- Complete Lab0
-- Complete Lab1
+- Complete Lab 0
+- Complete Lab 1
 
 # Lab Section
 

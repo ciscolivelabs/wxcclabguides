@@ -10,7 +10,10 @@ speaker: Kevin Simpson
 ### Lab Objective
 
 ### Pre-requisites
-
+- Complete Lab 0
+- Complete Lab 1
+- Complete Lab 2
+- Complete Lab 4
 
 # Lab Section
 
@@ -23,31 +26,34 @@ speaker: Kevin Simpson
     >> Default Value: \{"bUnit":"comfort","mCount":4\}
     >
     > ---
-    
-2. Delete the connection between salesService and Q_Sales
-3. Delete the connection between salesService and QueueContact_ys9
-4. Add a Set Variable node
+2. Edit Variable_Message
+   > Audio Prompt Variable: \{\{treatment.bUnit\}\}\_{\{(count % treatment.mCount) + 1\}\}\_\{\{lang\}\}.wav
+   >
+   >
+3. Delete the connection between salesService and Q_Sales
+4. Delete the connection between salesService and QueueContact_ys9
+5. Add a Set Variable node
    > Activity Name: salesTreat
    >
    > Variable Name: treatment
    >
    > Value: \{"bUnit":"sales","mCount":5\}
    >
-5. Add a Set Variable node
+6. Add a Set Variable node
    > Activity Name: serviceTreat
    >
    > Variable Name: treatment
    >
    > Value: \{"bUnit":"service","mCount":4\}
    >
-6. Connect the Sales node edge from the salesService to salesTreat
-7. Connect salesTreat to Q_Sales
-8. Connect the Service node edge from the salesService to serviceTreat
-9. Connect serviceTreat to QueueContact_ys9
+7. Connect the Sales node edge from the salesService to salesTreat
+8. Connect salesTreat to Q_Sales
+9.  Connect the Service node edge from the salesService to serviceTreat
+10. Connect serviceTreat to QueueContact_ys9
 
-10. Publish your flow [Compare](images/CL_1_salesService_lang_treatment.jpg){:target="\_blank"}
-11. Point your Entry Point to this new flow
-12. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+11. Publish your flow [Compare](images/CL_1_salesService_lang_treatment.jpg){:target="\_blank"}
+12. Point your Entry Point to this new flow
+13. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
     > Test the flow in both Sales and Service (you don't need to test the callback portion).
     >
     >> Did you observe how the variables allowed the proper language files to be played?

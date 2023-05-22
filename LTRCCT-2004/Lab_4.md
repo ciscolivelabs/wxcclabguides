@@ -97,7 +97,7 @@ speaker: Kevin Simpson
 12. Edit playDigit
     > Update Audio Prompt Variable
     >
-    > Audio Prompt Variable: {{rDigit}}_\{\{lang\}\}.wav
+    > Audio Prompt Variable: \{\{rDigit\}\}\_\{\{lang\}\}.wav
     >
     > ---
 

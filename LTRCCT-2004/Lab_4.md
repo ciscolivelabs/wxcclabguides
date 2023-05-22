@@ -1,5 +1,5 @@
 ---
-title: 'Making the flow multilingual'
+title: 'Making the Flow Multilingual'
 session: LTRCCT-2004
 speaker: Kevin Simpson
 ---
@@ -8,6 +8,7 @@ speaker: Kevin Simpson
 
 # Introduction
 ### Lab Objective
+In this lab we will enable our flow to be multilingual by using variable audio prompts with structured file names.
 
 ### Pre-requisites
 - Complete Lab 0
@@ -17,7 +18,7 @@ speaker: Kevin Simpson
 # Lab Section
 ### Bulk import audio files
 
-1. Download the lab audio file using this link [Audio Files](files/CL_Audio2.zip){:target="\_blank"}
+1. Download the lab audio file using this link [Audio Files](files/CL_Audio2.zip){:target="_blank"}
 2. Click Bulk Operations in the top ribbon 
 3. Click Create Bulk Operation
 4. Select Audio Files from the drop down
@@ -76,7 +77,7 @@ speaker: Kevin Simpson
 
 9.  Edit Variable_Message
     >  
-    > Audio Prompt Variable: comfort_\{\{(count % 4) + 1\}\}_\{\{lang\}\}.wav
+    > Audio Prompt Variable: comfort_\{\{(count % 4) + 1\}\}\_\{\{lang\}\}.wav
     >
     > ---
 

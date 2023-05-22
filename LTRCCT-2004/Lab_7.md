@@ -15,6 +15,7 @@ speaker: Kevin Simpson
 - Complete Lab 2
 - Complete Lab 4
 - Complete Lab 5
+- Complete Lab 6
 
 # Lab Section
 

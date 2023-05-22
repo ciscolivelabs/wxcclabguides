@@ -87,8 +87,8 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > Queue: Sales
     >
     > ---
-5. Connect the Sales node edge to the Q_Sales node
-6. Connect the Service node edge to the QueueContact_ys9 node
+5. Connect the Sales node edge of salesService to the Q_Sales node
+6. Connect the Service node edge of salesService to the QueueContact_ys9 node
 7. Connect the Q_Sales node to the PlayMusic_b9x node
    
     ---

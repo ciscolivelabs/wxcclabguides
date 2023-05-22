@@ -32,28 +32,112 @@ speaker: Kevin Simpson
     >> Type: string
     >>
     >> Default Value: EN
+    >
     > ---
 
-2. Delete the connection between 
+2. Delete the connection between PlayMessage_oc2 and salesService
 3. Add a Menu node
+   > Activity Name: lang_menu
    >
+   > Audio File: 2_for_spanish.wav
    >
+   > Make Prompt Interruptible: True
    >
-4. Connect
-5. Connect
-6. Edit 
-7. Edit
-8. Edit
+   > Digit Number: 2 Link Description: Spanish
+   > 
+   > Connect the No-Input Timeout node edge to salesService
+   >
+   > Connect the Unmatched Entry node edge to salesService
+   >
+   > ---
 
+4. Add a Set Variable node
+   > Activity Name: set_ES
+   >
+   > Variable: lang
+   >
+   > Value: ES
+   >
+   > ---
 
+5. Connect PlayMessage_oc2 to lang_menu
+6. Connect the Spanish node edge of lang_menu to set_ES
+7. Connect set_ES to salesService
+8. Edit salesService
+   > Change from Audio File to Audio Prompt Variable
+   >
+   >> Click Add Audio prompt Variable
+   >>
+   >> Audio Prompt Variable: salesServiceMenu_\{\{lang\}\}.wav
+   >>
+   >> Delete Audio File dropdown
+   >
+   > ---
 
-31. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
-32. Point your Entry Point to this new flow
-33. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
-    > What happens when you enter 63?
+9.  Edit Variable_Message
+    >  
+    > Audio Prompt Variable: comfort_\{\{(count % 4) + 1\}\}_\{\{lang\}\}.wav
     >
-    > What happens if you enter 43?
+    > ---
 
+10. Edit opt_out
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: opt_out_\{\{lang\}\}.wav
+    >
+    > ---
+
+11. Edit cfrom
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: calling_from_\{\{lang\}\}.wav
+    >
+    > ---
+
+12. Edit playDigit
+    > Update Audio Prompt Variable
+    >
+    > Audio Prompt Variable: {{rDigit}}_\{\{lang\}\}.wav
+    >
+    > ---
+
+13. Edit confirmNumber
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: number_confirm_\{\{lang\}\}.wav
+    >
+    > ---
+    
+14. Edit newNumber
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: new_number_\{\{lang\}\}.wav
+    >
+    > ---
+    
+15. Edit rcontext
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: entered_\{\{lang\}\}.wav
+    >
+    > ---
+    
+16. Edit PlayMessage_s4p
+    > Change from Audio File to Audio Prompt Variable
+    >
+    > Audio Prompt Variable: callback_confirm_\{\{lang\}\}.wav
+    >
+    > ---
+    
+
+
+
+17. Publish your flow [Compare](images/CL_1_salesService_lang.jpg){:target="\_blank"}
+18. Point your Entry Point to this new flow
+19. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+    > Test the flow in both languages.
+    >
+    >> Did you observe how the variables allowed the proper language files to be played?
 
 <script>
 function mainPage() {window.location.href = "Lab_3";}

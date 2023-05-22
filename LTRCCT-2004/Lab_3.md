@@ -28,8 +28,10 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 1. Navigate to the [BRE Configuration Tool](Configuring_The_BRE.md){:target="_blank"}
 2. Use the following information to create the BRE rules
    > Your table name is states
+   >
    > Your key is st
-3. Download this CSV and upload it to the BRE
+
+3. Download [this CSV]("files/statelookup.csv"){:target="_blank"} and upload it to the BRE
 
 ## Create the flow
 1.  In Routing Strategy > Flows
@@ -39,14 +41,44 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >> 
     >> ---
 2. Create New Flow Variables
-    > Count
+    > Name: Count
     >
-    > Counter
+    >> Type: Integer
+    >>
+    >> Default Value: 0
+    > ---
     >
+    > Name: Counter
+    >
+    >> Type: Integer
+    >>
+    >> Default Value: 0
+    >
+    > ---
+    >
+    > Name: selectInt
     > 
+    >> Type: Integer
+    >>
+    >> Default Value: 0
     >
+    > ---
     >
-4. Add a Collect Digits node
+    > Name: list
+    >
+    >> Type: String
+    >>
+    >
+    > ---
+    >
+    > Name: state
+    >
+    >> Type: String
+    >>
+    >
+    > ---
+
+3. Add a Collect Digits node
     > 
     > Activity Name: CollectStateDigits
     >
@@ -63,18 +95,161 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Connect No-Input Timeout to the front of CollectStateDigits
     >
     > ---
-5. Connect NewPhoneContact to CollectStateDigits
-6. Add a BRE Request node
+
+4. Connect NewPhoneContact to CollectStateDigits
+5. Add a BRE Request node
     > Activity Label: getStates
     >
     >> Use the instructions from the BRE Configuration Tool to configure this node
     >
+    > Set the returned value to list
+    >
     > ---
-7. Connect CollectStateDigits to getStates
-8. 
 
+6. Connect CollectStateDigits to getStates
+7. Add a Set Variable node
+    > Activity name listCount
+    >
+    > Variable: count
+    >
+    > Set to Value: \{\{list \| split(",") \|length\}\}
+    >
+    > ---
 
+8. Connect getStates to listCount
+9.  Add a Condition node
+    > Activity Name: singleMatchCheck
+    >
+    > Expression: {{count < 2}}
+    >
+    > ---
 
+10. Add a Set Variable node
+    > Activity Name: listCount
+    >
+    > Variable: count
+    >
+    > Set to Value: \{\{list \| split(",") \|length\}\}
+    >
+    > ---
+
+11. Add a Set Variable node
+    > Activity Name: singleState
+    >
+    > Variable: state
+    >
+    > Set to Value: \{\{list\}\}
+    >
+    > ---
+
+12. Connect the True node edge of singleMatchCheck to singleState
+
+13. Add a Set Variable node
+    > Activity name: stateName
+    >
+    > Variable: state
+    >
+    > Set to Value: \{\{list \| split(",",list \| split(",") \| length-(list \| split(",") \| length-counter)) \|last \| split(",") \| first\}\}
+    >
+    > ---
+
+14. Add a Menu node
+    > Activity Label: selectState
+    >
+    > Audio File: Press.wav
+    >
+    > Audio Prompt Variable: \{\{counter\}\}.wav
+    >
+    > Audio File: for.wav
+    >
+    > Audio Prompt Variable: \{\{state.wav\}\}
+    > 
+    > Make Prompt Interruptible: True
+    >
+    > Digit Number: 1 Link Description: 1
+    >
+    > Digit Number: 2 Link Description: 2
+    >
+    > Digit Number: 3 Link Description: 3
+    >
+    > Digit Number: 4 Link Description: 4
+    >
+    > ---
+   
+
+15. Add a Set Variable node
+    > Activity Name: listCount
+    >
+    > Variable: count
+    >
+    > Set to Value: \{\{list \| split(",") \|length\}\}
+    >
+    > ---
+
+16. Add a Condition node
+    > Activity Name: listComplete
+    >
+    > Expression: \{\{counter < count\}\}
+    >
+    > ---
+
+17. Add a Set Variable node
+    > Activity Name: resetCounter
+    >
+    > Variable: counter
+    >
+    > Set to Value: 0
+    >
+    > ---
+
+18. Connect the True node edge of listComplete to the selectState node
+19. Connect the False node edge of listComplete to resetCounter node
+20. Connect No-Input Timeout node edge to the listComplete node
+21. Connect Unmatched Entry node edge to the listComplete node    
+22. Add a Set Variable node
+    > Activity Name: stateFromListPos
+    >
+    > Variable: selectInt
+    >
+    > Set to Value: \{\{selectState.OptionEntered\}\}
+    >
+    > ---
+23. Connect Node edges 1, 2, 3, and 4 from selectState to stateFromListPos
+
+24. Add a Set Variable node
+    > Activity Name: stateFromList
+    >
+    > Variable: state
+    >
+    > Set to Value: \{\{list \| split(",",list \| split(",") \| length-(list \| split(",") \| length-selectInt)) \| last \| split(",") \| first\}\}
+    >
+    > ---
+25. Connect stateFromListPos to stateFromList
+
+26. Add a Queue Contact node
+    > Activity Name: queueCaller
+    >
+    > Static Queue
+    >
+    > Queue: Service
+    >
+    > ---
+27. Connect stateFromList to queueCaller node
+28. Add a Play Music node
+    > Activity Name: PlayMusic
+    >
+    > Static Audio File
+    >
+    > Music File: defaultmusic_on_hold.wav
+    >
+    > ---
+29. Connect queueCaller to PlayMusic
+30. Loop the output of PlayMusic to the input of PlayMusic
+31. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
+32. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+    > What happens when you enter 63?
+    >
+    > What happens if you enter 43?
 
 
 

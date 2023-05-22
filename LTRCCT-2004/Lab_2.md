@@ -28,35 +28,35 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 ### Create a new queue
 
-  > Name: Sales
-      >
-      > Description: optional
-      >
-      > Channel Type: Telephony
-      >
-      > Queue Routing Type: Longest Available Agent
-      > 
-      > Call Distribution:
-      >> Click Add Group
-      >>
-      >> Select CLTeam
-      >>
-      >> Save Group
-      >>
-      >>
-      >> Click Close
-      >
-      > ---
-      >
-      > Service Level Threshold: 60
-      >
-      > Maximum Time in Queue: 600
-      >
-      > Default Music in Queue: defaultmusic_on_hold.wav
-      >
-      > Save
-      >
-      > ---
+1.  Name: Sales
+    >
+    > Description: optional
+    >
+    > Channel Type: Telephony
+    >
+    > Queue Routing Type: Longest Available Agent
+    > 
+    > Call Distribution:
+    >> Click Add Group
+    >>
+    >> Select CLTeam
+    >>
+    >> Save Group
+    >>
+    >>
+    >> Click Close
+    >
+    > ---
+    >
+    > Service Level Threshold: 60
+    >
+    > Maximum Time in Queue: 600
+    >
+    > Default Music in Queue: defaultmusic_on_hold.wav
+    >
+    > Save
+    >
+    > ---
 
 ### Add Functionality to Flow
 

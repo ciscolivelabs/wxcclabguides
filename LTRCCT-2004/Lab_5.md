@@ -1,5 +1,5 @@
 ---
-title: 'Customizing the wait treatment by business unit'
+title: 'Customizing the Wait Treatment by Business Unit'
 session: LTRCCT-2004
 speaker: Kevin Simpson
 ---
@@ -8,6 +8,8 @@ speaker: Kevin Simpson
 
 # Introduction
 ### Lab Objective
+In this labe we will customize the number and content of wait treatment messages based on the business unit selection menu.
+
 
 ### Pre-requisites
 - Complete Lab 0
@@ -61,6 +63,9 @@ speaker: Kevin Simpson
     >> How would adjust this flow if you wanted to add more Sales or Service messages?
     >>
     >> Could you edit this flow to use a single Queue Contact node?
+    >>
+    >> Could you edit this flow to only allow callbacks for a specific business unit?
+    >>
 
 
 

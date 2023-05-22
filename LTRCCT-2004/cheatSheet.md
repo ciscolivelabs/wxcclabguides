@@ -53,12 +53,6 @@ title: 'Cheat Sheet'
 >
 > </details>
 >
-> <details> <summary>Import a flow</summary>
->
-> <img src="images/rsToFlow.gif"/>
->
-> </details>
->
 > <details> <summary>Navigate to Bulk Updates</summary>
 >
 > <img src="images/Bulk-1.gif"/>

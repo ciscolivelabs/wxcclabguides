@@ -9,7 +9,7 @@ speaker: Kevin Simpson
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
-    - [Create a new queue](#create-a-new-queue)
+    - [Add an additional queue](#add-an-additional-queue)
     - [Add Functionality to Flow](#add-functionality-to-flow)
 
 
@@ -26,37 +26,38 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 # Lab Section
 
-### Create a new queue
+### Add an additional queue
 
-  > Name: Sales
-      >
-      > Description: optional
-      >
-      > Channel Type: Telephony
-      >
-      > Queue Routing Type: Longest Available Agent
-      > 
-      > Call Distribution:
-      >> Click Add Group
-      >>
-      >> Select CLTeam
-      >>
-      >> Save Group
-      >>
-      >>
-      >> Click Close
-      >
-      > ---
-      >
-      > Service Level Threshold: 60
-      >
-      > Maximum Time in Queue: 600
-      >
-      > Default Music in Queue: defaultmusic_on_hold.wav
-      >
-      > Save
-      >
-      > ---
+1. Create a queue  
+    >Name: Sales
+    >
+    > Description: optional
+    >
+    > Channel Type: Telephony
+    >
+    > Queue Routing Type: Longest Available Agent
+    > 
+    > Call Distribution:
+    >> Click Add Group
+    >>
+    >> Select CLTeam
+    >>
+    >> Save Group
+    >>
+    >>
+    >> Click Close
+    >
+    > ---
+    >
+    > Service Level Threshold: 60
+    >
+    > Maximum Time in Queue: 600
+    >
+    > Default Music in Queue: defaultmusic_on_hold.wav
+    >
+    > Save
+    >
+    > ---
 
 ### Add Functionality to Flow
 
@@ -92,7 +93,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    
     ---
 8. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
-9.  Place a test call to <w class= "DN_out" >Your EP DN</w>
+9. Place a test call to <w class= "DN_out" >Your EP DN</w>
     > Test the flow
     >> Were you able to set a callback for the queue which was chosen in the menu?
 

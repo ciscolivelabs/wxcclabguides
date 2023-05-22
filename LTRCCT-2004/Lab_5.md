@@ -16,52 +16,45 @@ speaker: Kevin Simpson
 
 
 1. Create a new flow variables
-   > Name: bUnit
+   > Name: treatment
     >
-    >> Type: string
+    >> Type: JSON
     >>
-    >> Default Value: comfort
+    >> Default Value: \{"bUnit":"comfort","mCount":4\}
+    >
     > ---
-    >
-    > mCount
-    >
-    >> Type Integer
-    >>
-    >> Default: 4
-
-2. Delete the connection between 
-3. Add a Menu node
-   > Activity Name:
-   >
-   > 
+    
+2. Delete the connection between salesService and Q_Sales
+3. Delete the connection between salesService and QueueContact_ys9
 4. Add a Set Variable node
-   > Activity Name:
+   > Activity Name: salesTreat
    >
-   > Variable Name: 
+   > Variable Name: treatment
    >
-   > Value: 
+   > Value: \{"bUnit":"sales","mCount":5\}
    >
 5. Add a Set Variable node
-   > Activity Name:
+   > Activity Name: serviceTreat
    >
-   > Variable Name: 
+   > Variable Name: treatment
    >
-   > Value: 
+   > Value: \{"bUnit":"service","mCount":4\}
    >
-6. Add a Set Variable node
-   > Activity Name:
-   >
-   > Variable Name: 
-   >
-   > Value: 
-   >
-7. Add a Set Variable node
-   > Activity Name:
-   >
-   > Variable Name: 
-   >
-   > Value: 
-   >   
+6. Connect the Sales node edge from the salesService to salesTreat
+7. Connect salesTreat to Q_Sales
+8. Connect the Service node edge from the salesService to serviceTreat
+9. Connect serviceTreat to QueueContact_ys9
+
+10. Publish your flow [Compare](images/CL_1_salesService_lang_treatment.jpg){:target="\_blank"}
+11. Point your Entry Point to this new flow
+12. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+    > Test the flow in both Sales and Service (you don't need to test the callback portion).
+    >
+    >> Did you observe how the variables allowed the proper language files to be played?
+    >>
+    >> How would adjust this flow if you wanted to add more Sales or Service messages?
+    >>
+    >> Could you edit this flow to use a single Queue Contact node?
 
 
 
@@ -83,7 +76,7 @@ speaker: Kevin Simpson
 function mainPage() {window.location.href = "Lab_4";}
 function nextLab() 
  {
- window.location.href = "Lab_5";
+ window.location.href = "Lab_6";
  }
 </script>
 

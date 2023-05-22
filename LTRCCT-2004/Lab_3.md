@@ -9,8 +9,8 @@ speaker: Kevin Simpson
     - [Lab Objective](#lab-objective)
     - [Pre-requisites](#pre-requisites)
 - [Lab Section](#lab-section)
-  - [Configure the BRE](#configure-the-bre)
-  - [Create the flow](#create-the-flow)
+    - [Configure the BRE](#configure-the-bre)
+    - [Create the flow](#create-the-flow)
 
 
 # Introduction
@@ -23,7 +23,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 
 # Lab Section
 
-## Configure the BRE
+### Configure the BRE
 
 1. Navigate to the [BRE Configuration Tool](Configuring_The_BRE.md){:target="_blank"}
 2. Use the following information to create the BRE rules
@@ -33,7 +33,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 
 3. Download [this CSV]("files/statelookup.csv"){:target="_blank"} and upload it to the BRE
 
-## Create the flow
+### Create the flow
 1.  In Routing Strategy > Flows
     > Click New
     >
@@ -46,6 +46,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >> Type: Integer
     >>
     >> Default Value: 0
+    >
     > ---
     >
     > Name: Counter
@@ -246,7 +247,8 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 29. Connect queueCaller to PlayMusic
 30. Loop the output of PlayMusic to the input of PlayMusic
 31. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
-32. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+32. Point your Entry Point to this new flow
+33. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
     > What happens when you enter 63?
     >
     > What happens if you enter 43?

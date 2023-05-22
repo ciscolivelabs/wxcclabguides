@@ -15,9 +15,53 @@ speaker: Kevin Simpson
 # Lab Section
 
 
+1. Create a new flow variables
+   > Name: bUnit
+    >
+    >> Type: string
+    >>
+    >> Default Value: comfort
+    > ---
+    >
+    > mCount
+    >
+    >> Type Integer
+    >>
+    >> Default: 4
 
-
-
+2. Delete the connection between 
+3. Add a Menu node
+   > Activity Name:
+   >
+   > 
+4. Add a Set Variable node
+   > Activity Name:
+   >
+   > Variable Name: 
+   >
+   > Value: 
+   >
+5. Add a Set Variable node
+   > Activity Name:
+   >
+   > Variable Name: 
+   >
+   > Value: 
+   >
+6. Add a Set Variable node
+   > Activity Name:
+   >
+   > Variable Name: 
+   >
+   > Value: 
+   >
+7. Add a Set Variable node
+   > Activity Name:
+   >
+   > Variable Name: 
+   >
+   > Value: 
+   >   
 
 
 

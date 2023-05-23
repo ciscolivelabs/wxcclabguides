@@ -1,5 +1,5 @@
 ---
-title: 'Adjusting Treatment with HTTP requests'
+title: 'Using Business Hours'
 session: LTRCCT-2004
 speaker: Kevin Simpson
 ---
@@ -10,12 +10,7 @@ speaker: Kevin Simpson
 ### Lab Objective
 
 ### Pre-requisites
-- Complete Lab 0
-- Complete Lab 1
-- Complete Lab 2
-- Complete Lab 4
-- Complete Lab 5
-- Complete Lab 6
+
 
 # Lab Section
 
@@ -41,10 +36,10 @@ speaker: Kevin Simpson
 
 
 <script>
-function mainPage() {window.location.href = "Lab_6";}
+function mainPage() {window.location.href = "Lab_3";}
 function nextLab() 
  {
- window.location.href = "Lab_8";
+ window.location.href = "Lab_5";
  }
 </script>
 

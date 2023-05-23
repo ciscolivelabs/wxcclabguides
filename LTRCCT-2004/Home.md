@@ -6,7 +6,7 @@ Speakers: Kevin Simpson
 
 
 
-## Lab Exercises
+<img src="images/Title.jpg"/>
 
 |Lab|Topic|Lab Link|
 |---|---|---|

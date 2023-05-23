@@ -9,6 +9,6 @@ minima:
   skin: dark
 
 header_pages:
-- https://webexcc.github.io/
+- redirectToCurrentLabs.md
 
   

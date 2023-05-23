@@ -77,7 +77,7 @@ In this task, we will use the predefined node **PIQ and EWT**. This node provide
 | METHOD NAME         | Fetch Position in Queue | 
 | NODE RUNTIME AUTHORIZATION    | WxCC Authorization | 
 | QUEUE ID    | \<Queue ID from Managment Portal\> | 
-| TASK ID    | $(n1850.Task ID) | 
+| TASK ID    | $(taskId) | 
 | LOOKBACK MINUTES    | 5 | 
   
 <img align="middle" src="new_images\Lab7_advemail\Lab_7.5_PIQ_settings.png" width="1000" />
@@ -227,7 +227,7 @@ In our logic, if the email's subject does not contain "Cisco Live" we will be ad
 
 ### 1. Preconfigured settings (no actions needed)
 The steps below were **preconfigured** for you. They has to be done only once.
-- The smartsheet API key has been generated according to the [smartsheet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}. Copy this API access token to a text file. You will be using this API key in your lab.
+- The smartsheet API key has been generated according to the [smartsheet guide](https://smartsheet.redoc.ly/#section/API-Basics/Raw-Token-Requests){:target="_blank"}. Copy this API access token to a text file. You will be using this API key in your lab. Login to the smartsheet table to generate your API token
 
 <img align="middle" src="new_images\Lab7_advemail\Lab_7.91_smartsheet_API_key.png" width="1000" />  
 <br/>
@@ -356,10 +356,10 @@ This section has the bonus category where we can check how you understand this t
 ### Congratulations, you have completed this section! 
 
 <script>
-function mainPage() {window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Home.html";}
+function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-2013/Lab8_AgentProductivity.html";
+ window.location.href = "Lab8_AgentProductivity";
  }
 </script>
 

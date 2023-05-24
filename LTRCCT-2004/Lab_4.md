@@ -144,7 +144,7 @@ In this lab we will enable our flow to be multilingual by using variable audio p
 function mainPage() {window.location.href = "Lab_3";}
 function nextLab() 
  {
- window.location.href = "Lab_5";
+ window.location.href = "Pause_3";
  }
 </script>
 

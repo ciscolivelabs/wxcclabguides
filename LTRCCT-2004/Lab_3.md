@@ -259,7 +259,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 function mainPage() {window.location.href = "Lab_2";}
 function nextLab() 
  {
- window.location.href = "Lab_4";
+ window.location.href = "Pause_2";
  }
 </script>
 

@@ -105,7 +105,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 function mainPage() {window.location.href = "Lab_1";}
 function nextLab() 
  {
- window.location.href = "Lab_3";
+ window.location.href = "Pause_1";
  }
 </script>
 

@@ -1,5 +1,5 @@
 ---
-title:"Hang out here!"
+title: "Hang out here!"
 ---
 
 <img src="images/pause_2.jpg">

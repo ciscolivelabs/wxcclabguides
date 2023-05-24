@@ -19,6 +19,7 @@ Speakers: Kevin Simpson
 |Lab 6|Targeted Agent Routing|[Targeted Agent Routing](Lab_6){:target="_blank"}|
 
 ## Addition Resources
+
 |Title|Link|
 |---|---|
 |Webex Contact Center Cheat Sheet|[Cheat Sheet](cheatSheet.md){:target="_blank"} |

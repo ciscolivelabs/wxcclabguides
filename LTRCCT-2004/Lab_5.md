@@ -87,7 +87,7 @@ In this labe we will customize the number and content of wait treatment messages
 function mainPage() {window.location.href = "Lab_4";}
 function nextLab() 
  {
- window.location.href = "Lab_6";
+ window.location.href = "Pause_4";
  }
 </script>
 

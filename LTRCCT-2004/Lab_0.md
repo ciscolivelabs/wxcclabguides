@@ -280,7 +280,7 @@ speaker: Kevin Simpson
 function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {
- window.location.href = "Lab_1";
+ window.location.href = "Pause_0";
  }
 </script>
 

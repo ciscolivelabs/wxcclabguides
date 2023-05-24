@@ -202,7 +202,7 @@ In this lab we will add the ability for a caller to queue to an exiting agent if
 function mainPage() {window.location.href = "Lab_5";}
 function nextLab() 
  {
- window.location.href = "Lab_5";
+ window.location.href = "Pause_5";
  }
 </script>
 

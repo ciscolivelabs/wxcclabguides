@@ -179,7 +179,7 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
 > <img style="position: relative" src="images/BRE_Params.jpg"/>
 <w style="position: relative; top: -275px; left: 255px; color: rgb(0,0,0)" class = "context_out">table</w>
 <w style="position: relative; top: -225px; left: 15px; color: rgb(0,0,0) " class = "key_out">ani</w>
-<w style="position: relative; top: -225px; left: 200px; color: rgb(0,0,0)">\{\{value\}\}</w>
+<w style="position: relative; top: -225px; left: 200px; color: rgb(0,0,0)">{{value}}</w>
 
 ---
 

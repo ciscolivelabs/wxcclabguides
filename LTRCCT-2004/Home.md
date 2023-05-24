@@ -17,3 +17,9 @@ Speakers: Kevin Simpson
 |Lab 4|Making the Flow Multilingual|[Making the Flow Multilingual](Lab_4.md){:target="_blank"}|
 |Lab 5|Customizing the Wait Treatment by Business Unit|[Customizing the Wait Treatment by Business Unit](Lab_5){:target="_blank"}
 |Lab 6|Targeted Agent Routing|[Targeted Agent Routing](Lab_6){:target="_blank"}|
+
+## Addition Resources
+|Title|Link|
+|---|---|
+|Webex Contact Center Cheat Sheet|[Cheat Sheet](cheatSheet.md){:target="_blank"} |
+|Webex Contact Center BRE Configuration Tool|[BRE Configuration Tool](Configuring_The_BRE.md){:target="_blank"}|

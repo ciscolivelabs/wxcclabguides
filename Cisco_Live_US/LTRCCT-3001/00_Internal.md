@@ -1,5 +1,5 @@
  - Pod ID: 2
- - Lab URL: https://wxcctechsummit.github.io/wxcclabguides/LTRCCT-3001/Home.html
+ - Lab URL: https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/Home_US.html
  - Webex Connect: https://cl2pod1.imiconnect.io/
  - Admin login: cl2admin2@email.carehybrid.com
  - Agent Login: cl2agent2@email.carehybrid.com

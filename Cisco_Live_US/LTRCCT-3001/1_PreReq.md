@@ -64,7 +64,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_ManageIntegration1.png" width="1000" />
 
-- Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**\
+- Enter the Authorization Name and click **Authorize**. In that example we use **WebexCCAuth**
 
 <img align="middle" src="images/Lab1_WebexCCAuth.png" width="1000" />
 
@@ -78,7 +78,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 <img align="middle" src="images/Lab1_ManageIntegration3.png" width="1000" />
 
-- Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) and click **Sign in**.
+- Enter the **Authorization Name** (for example: WxCCAuth) and click **Authorize**. As the result the pop-up appears where you need to enter your Cisco admin email address (cl1admin**X**@email.carehybrid.com) where X is the POD ID and click **Sign in**.
 
 <img align="middle" src="images/Lab1_WebexCCAuth2.png" width="1000" />
 
@@ -87,48 +87,44 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 
 ## Step 2. Download and upload Channel Agnostic flows in Connect 
->  Channel Agnostic (CA) flows can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
+>  Channel Agnostic (CA) flows can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed(For example : If you would like to show screenpop to agent when they accept the chat). Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
 > • Task Routed - Adding an agent participant to a conversation;\
 > • Task Modified - Adding an agent to or removing an agent from an ongoing conversation (e.g., for chat transfer or conference);\
 > • Task Close - Closing the conversation;
 
-1) Download all flows from the links below.
-[Modified flow](modified.workflow){:target="\_blank"}
-[Routed flow](routed.workflow){:target="\_blank"}
+1) Download all 3 CA flows from the links below.\
+[Modified flow](modified.workflow){:target="\_blank"}\
+[Routed flow](routed.workflow){:target="\_blank"}\
 [Closed flow](closed.workflow){:target="\_blank"}
 
-2) Navigate to **Webex Connect Flows** -> **v2.1**.
+2) Login to the **Webex Connect** portal with the admin account.
 
-3) Unzip All Files.
-
-4) Login to the **Webex Connect** portal with the admin account.
-
-5) Navigate to **Services** and click on **CREATE NEW SERVICE**
+3) Navigate to **Services** and click on **CREATE NEW SERVICE**
 
 <img align="middle" src="images/Lab1_Services.png" width="1000" />
 
-6) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
+4) Set your name __Agnostic Flows DO NOT MODIFY__ in the Service Name. This will create a new service.
 > **Note** You can choose a different Service name. It is just an exmple.
 
-7) In the service click on **FLOWS** -> **CREATE FLOW**
+5) In the service click on **FLOWS** -> **CREATE FLOW**
 
 <img align="middle" src="images/Lab1_Flows.png" width="1000" />
 
-8) In the **FLOW NAME** section set **Task Close Flow**
+6) In the **FLOW NAME** section set **Task Close Flow**
 
-9) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **Task Close Flow.workflow** file
+7) In the **METHOD** select **Upload a flow**. In **ATTACHMENT** click on **CHOOSE FILE** and select the **closed.workflow** file
 
-10) Now you can click on **CREATE** button
+8) Now you can click on **CREATE** button
 
 <img align="middle" src="images/Lab1_Create.png" width="1000" />
 
-11) In the new menu click on **SAVE** and then **MAKE LIVE**. You should get the message that "Flow successfully made live"
+9) In the new menu click on **SAVE** and then click **MAKE LIVE** on the right hand side top corner. provide a comment or leave it blank on the new pop up and click 'make live'.
 
 <img align="middle" src="images/Lab1_Live.png" width="1000" />
 
-12) Repeate steps 7 - 11 for **Task Routed flow** and **Task Modified Flow**
+10) Repeate steps 5 - 9 for **Routed flow** and **Modified Flow**
 
 
 ## Step 3. Setup agents in Portal (Agents, Team, MMP)
@@ -241,7 +237,7 @@ The users have the following preconfiguration
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `cl2agentX@email.carehybrid.com`.
+- Enter the agent’s **email ID** `cl2agentX@email.carehybrid.com`. where X is the POD ID.
 
 - Enter the **Password** for the appropriate Username.
 

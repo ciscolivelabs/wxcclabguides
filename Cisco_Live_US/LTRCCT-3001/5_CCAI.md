@@ -58,13 +58,13 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - We will need a Gmail account to get started with this lab
 
-- You can use your own personal Gmail account for this lab or create a free account by following the steps here: https://support.google.com/mail/answer/56256?hl=en 
+- You can use your own personal Gmail account for this lab or create a free account by following the steps here:  **[Gmail account creation steps](https://support.google.com/mail/answer/56256?hl=en){:target="_blank"}**\
 
 ## Step 2: Create OAuth client ID and secret
 
 - Login to [google console](https://console.cloud.google.com/){:target="_blank"} using the Gmail account mentioned in Step-1. 
 
-- Select **Country** , Accept the terms of service and Click **Agree and Continue**
+- Select **Country** , Accept the terms of service and Click **Agree and Continue** [This step may not be shown if you are using existing gmail account]
 <img align="middle" src="images/Lab5a_1.png" width="1000" />
 
 - On the top left, click **Select a Project** and then **New Project**
@@ -90,10 +90,10 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Select **User Type** as **External** and click **Create**
 <img align="middle" src="images/Lab5a_8.png" width="1000" />
 
-- Input a desired **App name** and select the **User supported email** (Enter the Gmail account mentioned in Step-1 )
+- Input a desired **App name** and select the **User supported email** (Select the Gmail account mentioned in Step-1 from dropdown)
 <img align="middle" src="images/Lab5a_9.png" width="1000" />
 
-- Input **Authorized domain** as **webexconnect.io**
+- Scroll down and click on **+ADD DOMAIN**, Input **Authorized domain** as **webexconnect.io**
 
 - Input **Email addresses** as the Gmail account mentioned in Step-1. Click **Save and Continue**
 <img align="middle" src="images/Lab5a_10.png" width="1000" />
@@ -118,7 +118,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Select **Application type** as **Web application** and a desired **Name**
 
-- Click **Add URI** and input the value as **https://oauth.us.webexconnect.io/callback** and click **Create**
+- Click **Add URI** under **Authorized redirect URIs** section and input the value as **https://oauth.us.webexconnect.io/callback** and click **Create**
 <img align="middle" src="images/Lab5a_17.png" width="1000" />
 
 - Copy the **Client ID** , **Client Secret** to a text editor in the local computer. Also, **Download JSON** .  We will need these values at a later stage to complete the configuration. 
@@ -134,7 +134,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Navigate to Assets > Integrations > Dialogflow ES > Manage 
 <img align="middle" src="images/Lab5a_19.png" width="1000" />
 
-- Click **Add Authorization**
+- Click **Add Authorization** by clicking on arrow below ACTION as shown in screenshot.
 <img align="middle" src="images/Lab5a_20.png" width="1000" />
 
 - Input a desired **Authorization Name** . Input the **Client ID**, **Client Secret** value that was obtained in Step-2. Click **Authorize**
@@ -156,7 +156,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Login to [google console](https://console.cloud.google.com/){:target="_blank"} using the Gmail account mentioned in Step-1. 
 
-- In the search window, input **Dialogflow API** and click the **Dialogflow API** option under marketplace. 
+- In the search window, input **Dialogflow API** and click the **Dialogflow API** option under **MARKETPLACE**. 
 <img align="middle" src="images/Lab5a_26.png" width="1000" />
 
 - Click **Enable**
@@ -177,7 +177,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 - Input intent name as **Agent Handover** and click **Add Training Phrases**
 <img align="middle" src="images/Lab5a_32.png" width="1000" />
 
-- Input some sample training phrases as shown in the image below and click **Add parameters and action**
+- Input some sample training phrases as shown in the image below and click **Add parameters and action** [Click eneter after each training phrase to add new one.]
 <img align="middle" src="images/Lab5a_33.png" width="1000" />
 
 - Input **LIVE_AGENT_HANDOVER** (this will be used later in the flow configuration) as the parameter name  click **Add Response**
@@ -185,6 +185,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 - Input a desired response for this intent and click **Save**
 <img align="middle" src="images/Lab5a_35.png" width="1000" />
+
+- Add another intent along with training phase and response if you would like to.  
 
 [Back to top](#table-of-contents)
 ---

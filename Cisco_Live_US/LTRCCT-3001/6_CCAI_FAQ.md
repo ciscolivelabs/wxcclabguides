@@ -22,14 +22,14 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
 <img align="middle" src="images/EM_Lab6_1.png" width="1000" />
 
 ## Step 2. Importing FAQ
-- We are going to import our FAQ from florida tourism. [Florida tourism website link](https://www.visitflorida.org/resources/research/research-faq/){:target="_blank"}
+- We are going to import our FAQ from florida tourism website. [Florida tourism website link](https://www.visitflorida.org/resources/research/research-faq/){:target="_blank"}
 - Click on the Knowledge (Beta) menu option and click Create Knowledge base
 <img align="middle" src="images/EM_Lab6_2.png" width="1000" />
 
 -  Name it "Florida FAQ" and click Save
 <img align="middle" src="images/EM_Lab6_3.png" width="1000" />
 
-- Click "Create the first one" and create the document with below mentioned details
+- Click "Create the first one" and fill in the 'Create New Document' with below mentioned details.
 <img align="middle" src="images/EM_Lab643.png" width="1000" />
 
     > Document Name: Florida FAQ
@@ -38,11 +38,11 @@ In this lab we are going to import a FAQ in Google Dialogflow from an existing w
     >
     > Mime Type: text/html
     >
-    > Data Source: URL: `https://www.visitflorida.org/resources/research/research-faq/`
+    > Data Source -> URL: `https://www.visitflorida.org/resources/research/research-faq/`
     >
     > Enable Automatic Reload: True
     >
-    > Click Create
+    > Click Create [This may take a few seconds]
 
 <img align="middle" src="images/EM_Lab6_4.png" width="1000" />
 

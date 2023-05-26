@@ -262,7 +262,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
     > ---
 12. Connect resetPosition to rcontext
 13. Connect rcontext to rDigit_set
-14. Publish your flow [Compare](images/CL_1_readout_2){:target="\_blank"}
+14. Publish your flow [Compare](images/CL_1_readout_2.jpg){:target="\_blank"}
 15. Place a test call to <w class= "DN_out" >Your EP DN</w>
     > When you are given the option for a callback, press 1.
     >

@@ -47,7 +47,7 @@ In this lab you will be configuring **SMS** number settings, SMS Assets, Entry P
 <br/>
 <br/>
 
->**Note**: SMS Numbers cannot be procured directly from the WxCC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
+>**Note**: SMS Numbers cannot be procured directly from the Webex CC integrated IMI Connect tenant. For production use, please note that customers will have to work with Partners to go through a procurement process to enable SMS and get numbers assigned to the tenant.
 
 
 ## Step 2. SMS Asset registration to Webex Engage

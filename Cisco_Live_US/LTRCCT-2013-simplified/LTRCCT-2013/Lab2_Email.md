@@ -42,7 +42,7 @@ In this lab you will be configuring **Gmail** Account settings, Email Assets, En
 <br/>
 
 ## Step 1. Gmail account configuration
-Starting from May 30 the **Less Secure Apps** feature was disabled on all Google accounts. As long as this setting was enabled, it was possible to send emails via Gmail SMTP. In this lab, we will be using new OAuth 2.0 authentication for outbound email functionality.
+Starting May 30, 2022 the **Less Secure Apps** feature was disabled on all Google accounts. As long as this setting was enabled, it was possible to send emails via Gmail SMTP. In this lab, we will be using new OAuth 2.0 authentication for outbound email functionality.
 
 >**Note**: For this lab, we have created a Gmail account. Optionally, use your own account for polling and handling the emails. It can be a Gmail account or Office 365 account or any account which has email forwarding. The instructions below are applicable only for the Gmail accounts.
 
@@ -71,7 +71,7 @@ Starting from May 30 the **Less Secure Apps** feature was disabled on all Google
 
 
 ### 2. Create a project at Google API Console 
-We need to activate API if we want to use Gmail accont for outbound emails. 
+We need to activate the API if we want to use a Gmail accont for outbound email. 
 
 - Login to [Google Developers Console](https://console.developers.google.com/){:target="_blank"} with the credentials above. The password is the same as for Webex CC admin account.
 
@@ -148,9 +148,9 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - You can leave the default name. The name of your OAuth 2.0 client is only used to identify the client in the Google Cloud console and will not be shown to application users. 
 
-- In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
+- In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.us.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
 
-<img align="middle" src="new_images\LAB2_email\Lab2_93_google_console_web_application_callback_URL_png" width="1000" />
+<img align="middle" src="new_images\LAB2_email\Lab2_93_email_CreateoAuthClientID.jpg" width="1000" />
 <br/>
 <br/>
 
@@ -161,7 +161,7 @@ Now create a new client ID that will be used to identify your application to Goo
 <br/>
 
 
-## Step 2. Create Email Asset and Register to WebexCC
+## Step 2. Create an Email Asset and Register to WebexCC
 
 ### 1. Create Email Assest
 
@@ -193,9 +193,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 > where \<ID\> is your POD ID
 
-<img align="middle" src="images/Lab2_As1.gif" width="1000" />
-<br/>
-<br/>
+
 
 - Click **GENERATE TOKEN** and follow the step on the screenshot:
 
@@ -325,7 +323,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 ## Step 4. Create/Upload Email flow
 
-- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows)  {:target="_blank"}.
+- Download the email flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows) 
 
 - Navigate to **webex connect flows -> 3.0 -> template -> media specific workflows -> email inbound flow.workflow.zip**, select the zip file and click download.
 

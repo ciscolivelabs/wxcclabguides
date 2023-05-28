@@ -37,9 +37,9 @@ title: 'Lab 3: Live Chat Configuration'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.
+In this Lab, we will go through the tasks that are required to complete a basic Live chat integration. You will be able to initiate a Chat contact to the Contact Center from a sample website and be able to accept/respond to the contact by logging in as an agent.
 
-In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
+In this lab you will be configuring the Service, Chat Assets, Entry Point, Queue, Chat Template, Website Settings, and corresponding workflows.
 
 
 ### Pre-requisite
@@ -103,7 +103,7 @@ In this lab you will be configuring Service, Chat Assets, Entry Point, Queue, Ch
 
 ## Step 2. Chat Template creation for website integration
 
-- Chat template creation allows you to configure a pre-defined chat form that will presented to the customer. Data points can be collected from the customer in a chat-like interface.
+- A Creating a chat template allows you to configure a pre-defined chat form that will presented to the customer. Data points can be collected from the customer in a chat-like interface.
 
 - From Webex Connect interface, go to `TOOLS` > `Templates` then click on `Add New Template`
 
@@ -387,7 +387,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 ### 1. Initial flow loading
 - Download the default inbound chat flow from the [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels){:target="_blank"}.
 
-- Navigate to **webex connect flows** -> v3.0 -> **template** -> **media specific workflows** -> **Live Chat inbound flow.workflow.zip**, select the zip file and click download.
+- Navigate to **webex connect flows** -> **v3.0** -> **template** -> **media specific workflows** -> **Live Chat inbound flow.workflow.zip**, select the zip file and click download.
 
 - Unzip the downloaded file.
 
@@ -425,7 +425,7 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Select the Custom Variables tab and set the following variable defaults:
 
-*domain*: Set it to `www.w3schools.com`
+*domain*: Set it to `www.w3schools.com` (if this field is not present, move on)
 
 *liveChatDomain*: Set it to `www.w3schools.com`
 

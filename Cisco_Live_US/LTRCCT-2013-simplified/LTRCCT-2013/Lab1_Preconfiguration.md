@@ -14,7 +14,7 @@ title: 'Lab 1: Preconfiguration'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. The lab contains multiple exercises to make you familiar with Control Hub, Management portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent interface.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different services offered by the platform. The lab contains multiple exercises to familiarize you with the Control Hub, Management portal UI and Webex Connect. At the end of this lab you should be able to log in to an agent desktop interface.
 
 
 ### Pre-requisites
@@ -40,9 +40,9 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 1. Node Authorization for Webex CC Task and Engage nodes
 
-> Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
+Webex Connect is required to provide a valid access token for using various Webex Contact Center and Webex Engage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
-- To authorize a pre-built integration go to **Assets** -> **Integrations**. The integrations which are not yet authorized show the status as **Authorization Pending**.
+- To authorize a pre-built integration login into Webex connect and go to **Assets** -> **Integrations**. The integrations which are not yet authorized show the status as **Authorization Pending**.
 
 - In front of **Webex CC Engage** Click **Actions** -> **Manage**.
 
@@ -88,7 +88,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 <br/>
 
 ## Step 2. Download and upload CA flows in Connect 
-> Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}. CA flow can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. Recommended to add these flow in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
+Every tenant must include CA flows. CA flows can be imported from the template folder in this [GitHub page](https://github.com/CiscoDevNet/webexcc-digital-channels/tree/imi_flow_simplification/Webex%20Connect%20Flows){:target="_blank"}. CA flows can be added only once and will be automatically be used by all existing channel specific flows in the tenant when needed. It is recommended to add these flows in a dedicated Service named “Agnostic Flows - DO NOT MODIFY”
 
 > The agnostic flows consist of:\
 > • Task Routed - Adding an agent participant to a conversation;\
@@ -284,7 +284,7 @@ If an agent doesn’t answer a contact request, the contact request will return 
 
 - Enter the **Password** for the appropriate Username.
 
-- In the **_Station Login_** pane, select **"Extension"** and put any number, for instance 1000. 
+- In the **_Station Login_** pane, select **"Extension"** and enter any number, for instance 1000. 
 
 > **Note:**  The Webex Calling service is not activated at this tenant we need to set a dummy extension only once during the login.
 

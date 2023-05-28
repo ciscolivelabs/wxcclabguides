@@ -3,7 +3,7 @@ title: 'Dip into NEW Digital Channels for Webex Contact Center'
 ## Session: LTRCCT-2013
 ## Speakers: Dave Easton, Karthik Sundaram
 ---
-[Switch to LIGHT MODE](https://wxcctechsummit.github.io/ltrcct-2013){:target="\_blank"}
+[Switch to LIGHT MODE](https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-2013-simplified/LTRCCT-2013/Home){:target="\_blank"}
 
 <img align="middle" src="images/Admin.jpeg" width="1000" />
 

@@ -36,7 +36,7 @@ In this lab you will be configuring **Whatsapp** number settings, Assets, Entry 
 
 - Login to your respective Webex Connect UI using the provided URL https://cl1pod**X**.imiconnect.io/ (where **X** is your POD number).
 
-- Navigate to Assets > Numbers and verify that the tenant you are using has a SMS number assigned 
+- Navigate to Assets > Numbers and verify that the tenant you are using has a WhatsApp number assigned 
 
 <img align="middle" src="images/Lab6_1.png" width="1000" />
 <br/>

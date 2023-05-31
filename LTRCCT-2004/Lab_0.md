@@ -248,7 +248,7 @@ speaker: Kevin Simpson
 2. Click new mapping
     > In location, select "Office"
     >
-    > In Available Numbers select <w class= "DN_out" >Your EP DN</w>
+    > In Available Numbers select <w class= "EPDN" >Your EP DN</w>
     >
     > In Entry point select EP_CL
     >
@@ -277,6 +277,16 @@ speaker: Kevin Simpson
 
 
 <script>
+if(localStorage.getItem("EPDN"){
+Array.from(document.getElementsByClassName("EPDN").forEach((element,index) => 
+    {
+      console.log(document.getElementsByClassName(entry[0])[index].innerHTML); 
+      document.getElementsByClassName("EPDN"[index]).innerHTML = localStorage.getItem("EPDN");
+    }
+}
+
+
+
 function mainPage() {window.location.href = "Home";}
 function nextLab() 
  {

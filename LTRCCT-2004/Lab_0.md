@@ -7,7 +7,8 @@ speaker: Kevin Simpson
 ## Table of Contents
 - [Introduction](#introduction)
 - [Lab Section](#lab-section)
-    - [Log in](#log-in)
+    - [Log into the Webex application for making test calls](#log-into-the-webex-application-for-making-test-calls)
+    - [Log into Control Hub](#log-into-control-hub)
     - [Bulk import audio files](#bulk-import-audio-files)
     - [Sync Users and Launch the Contact Center Portal](#sync-users-and-launch-the-contact-center-portal)
     - [Configure your teams](#configure-your-teams)
@@ -26,7 +27,11 @@ speaker: Kevin Simpson
 
 # Lab Section
 
-### Log in 
+### Log into the Webex application for making test calls
+- Email: <w class="agent1"></w>
+- PW: <w class="PW"></w>
+  
+### Log into Control Hub
 1. Open the [Control Hub](https://admin.webex.com/){:target="_blank"} in your browser
     - Username: <w class="admin"></w>
     - PW: <w class="PW"></w>
@@ -75,7 +80,7 @@ speaker: Kevin Simpson
 
 ### Configure your users
 1. Click on Provisioning > Users.
-2. Click on the ellipsis `...` next to <w class ="agent1">CL23IVR+pod1agent1 </w>
+2. Click on the ellipsis `...` next to <w class ="agent1">CL23IVR+pod1agent1</w>
 3. Click Edit
 4. Switch Contact Center Enabled to Yes
 5. Fill out the agent setting
@@ -260,7 +265,7 @@ speaker: Kevin Simpson
 
 
 ### Test your configuration
-1. Call <w class= "EPDN" >Your EP DN</w> from your supervisor extension
+1. Call <w class= "EPDN" >Your EP DN</w> from Webex
     > You should hear the greeting message and then the music in queue
     >
     > Go back into the Flow Control tab of your browser and click debug in the lower left corner.

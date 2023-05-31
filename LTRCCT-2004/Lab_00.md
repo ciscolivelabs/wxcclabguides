@@ -31,5 +31,4 @@ await localStorage.setItem("TicketID",await response[0].TicketID)
 
 </script>
 
-<w ></w><br>
-<w></w>
+[Start the lab](Home)

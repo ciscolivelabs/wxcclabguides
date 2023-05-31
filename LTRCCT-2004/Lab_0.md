@@ -28,6 +28,8 @@ speaker: Kevin Simpson
 
 ### Log in 
 1. Open the [Control Hub](https://admin.webex.com/){:target="_blank"} in your browser
+    - Username: <w class="admin"></w>
+    - PW: <w class="PW"></w>
 2. Click Contact Center in the left frame
 
 ### Bulk import audio files
@@ -73,7 +75,7 @@ speaker: Kevin Simpson
 
 ### Configure your users
 1. Click on Provisioning > Users.
-2. Click on the ellipsis `...` next to CL23IVR+pod1agent1
+2. Click on the ellipsis `...` next to <w class ="agent1">CL23IVR+pod1agent1 </w>
 3. Click Edit
 4. Switch Contact Center Enabled to Yes
 5. Fill out the agent setting
@@ -87,7 +89,7 @@ speaker: Kevin Simpson
    > Multimedia Profile:  Default_TelePhony_Profile
    >
 6. Click Save
-7. Click on the ellipsis `...` next to CL23IVR+pod1agent2
+7. Click on the ellipsis `...` next to <w class="agent2">CL23IVR+pod1agent2</w>
 8.  Click Edit
 9.  Switch Contact Center Enabled to Yes
 10. Fill out the agent settings
@@ -279,6 +281,13 @@ speaker: Kevin Simpson
 <script>
 if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
 
+if(localStorage.getItem("agent1")){ Array.from(document.getElementsByClassName("agent1")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent1")})} 
+
+if(localStorage.getItem("agent2")){ Array.from(document.getElementsByClassName("agent2")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent2")})} 
+
+if(localStorage.getItem("PW")){ Array.from(document.getElementsByClassName("PW")).forEach((index)=> {index.innerHTML = localStorage.getItem("PW")})} 
+
+if(localStorage.getItem("admin")){ Array.from(document.getElementsByClassName("admin")).forEach((index)=> {index.innerHTML = localStorage.getItem("admin")})} 
 
 
 function mainPage() {window.location.href = "Home";}

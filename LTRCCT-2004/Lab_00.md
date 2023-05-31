@@ -10,7 +10,7 @@ title: "Setup"
 
 <script>
 async function update(){
-    response = await fetch(`https://63f62bf859c944921f6e89de.mockapi.io/ivrpod?pod=CL23IVRpod${documnet.forms["labInfo"][0].value}`,
+    response = await fetch(`https://63f62bf859c944921f6e89de.mockapi.io/ivrpod?pod=CL23IVRpod${document.forms.labInfo[0].value}`,
     {
     method: 'GET',
     redirect: 'follow'

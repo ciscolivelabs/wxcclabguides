@@ -258,7 +258,7 @@ speaker: Kevin Simpson
 
 
 ### Test your configuration
-1. Call <w class= "DN_out" >Your EP DN</w> from your supervisor extension
+1. Call <w class= "EPDN" >Your EP DN</w> from your supervisor extension
     > You should hear the greeting message and then the music in queue
     >
     > Go back into the Flow Control tab of your browser and click debug in the lower left corner.
@@ -277,13 +277,7 @@ speaker: Kevin Simpson
 
 
 <script>
-if(localStorage.getItem("EPDN"){
-Array.from(document.getElementsByClassName("EPDN").forEach((element,index) => 
-    {
-      console.log(document.getElementsByClassName(entry[0])[index].innerHTML); 
-      document.getElementsByClassName("EPDN"[index]).innerHTML = localStorage.getItem("EPDN");
-    }
-}
+if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
 
 
 

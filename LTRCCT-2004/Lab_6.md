@@ -97,9 +97,9 @@ In this lab we will add the ability for a caller to queue to an exiting agent if
    >>
    >> Click Add New (under Output Variable)
    >>
-   >> Output Variable :ticketID
+   >> Output Variable: ticketID
    >>
-   >>> Path Expression: [0].ticketID
+   >>> Path Expression: $[0].ticketID
    >>
    >> ---
 
@@ -178,10 +178,17 @@ In this lab we will add the ability for a caller to queue to an exiting agent if
 19. Publish your flow [Compare](images/CL_1_salesService_lang_treatment_agentRouting.jpg){:target="\_blank"}
 
 ### Test Your Flow
-1. 
+1. Call <w class="EPDN">your EP DN</w> and select Service
+2. When prompted enter <w class="TicketID">your ticket ID<w/>
+3. Select call back from agent.
+   - Did the callback get queued to the agent?
+  
+4. Repeat steps 1 and 2, but this time drop to the queue
+   - How did the opt-out menu change?
+  
+5. What happens if you enter in a non matching Ticket ID?
 
-
-
+6. Try with the different language option.
 
 
 
@@ -199,6 +206,10 @@ In this lab we will add the ability for a caller to queue to an exiting agent if
 
 
 <script>
+if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
+
+if(localStorage.getItem("TicketID")){ Array.from(document.getElementsByClassName("TicketID")).forEach((index)=> {index.innerHTML = localStorage.getItem("TicketID")})} 
+
 function mainPage() {window.location.href = "Lab_5";}
 function nextLab() 
  {

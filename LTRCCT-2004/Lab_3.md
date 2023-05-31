@@ -248,7 +248,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 30. Loop the output of PlayMusic to the input of PlayMusic
 31. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
 32. Point your Entry Point to this new flow
-33. Open the flow debugger and place a test call to <w class= "DN_out" >Your EP DN</w>
+33. Open the flow debugger and place a test call to <w class= "EPDN" >Your EP DN</w>
     > What happens when you enter 63?
     >
     > What happens if you enter 43?
@@ -256,6 +256,15 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 
 
 <script>
+if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
+
+if(localStorage.getItem("agent1")){ Array.from(document.getElementsByClassName("agent1")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent1")})} 
+
+if(localStorage.getItem("agent2")){ Array.from(document.getElementsByClassName("agent2")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent2")})} 
+
+if(localStorage.getItem("PW")){ Array.from(document.getElementsByClassName("PW")).forEach((index)=> {index.innerHTML = localStorage.getItem("PW")})} 
+
+if(localStorage.getItem("admin")){ Array.from(document.getElementsByClassName("admin")).forEach((index)=> {index.innerHTML = localStorage.getItem("admin")})} 
 function mainPage() {window.location.href = "Lab_2";}
 function nextLab() 
  {

@@ -10,6 +10,7 @@ title: "Setup"
 
 <script>
 async function update(){
+    event.preventDefault()
     response = await fetch(`https://63f62bf859c944921f6e89de.mockapi.io/ivrpod?pod=CL23IVRpod${document.forms.labInfo[0].value}`,
     {
     method: 'GET',
@@ -27,6 +28,7 @@ await localStorage.setItem("PW",await response[0].PW)
 await localStorage.setItem("Agent1_phone",await response[0].Agent1_phone)
 await localStorage.setItem("TicketID",await response[0].TicketID)
 }
+
 </script>
 
 <w ></w><br>

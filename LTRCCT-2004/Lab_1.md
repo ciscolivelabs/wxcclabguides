@@ -191,7 +191,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    ---
 14. Connect advance to positionCheck  
 15. Publish your flow [Compare](images/CL_1_readout.jpg){:target="\_blank"}
-16. Place a test call to <w class= "DN_out" >Your EP DN</w>
+16. Place a test call to <w class= "EPDN" >Your EP DN</w>
     > When you are given the option for a callback, press 1.
     >> Did you hear your 10 digit callback number being read back?
 
@@ -277,6 +277,16 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 
 <script>
+if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
+
+if(localStorage.getItem("agent1")){ Array.from(document.getElementsByClassName("agent1")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent1")})} 
+
+if(localStorage.getItem("agent2")){ Array.from(document.getElementsByClassName("agent2")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent2")})} 
+
+if(localStorage.getItem("PW")){ Array.from(document.getElementsByClassName("PW")).forEach((index)=> {index.innerHTML = localStorage.getItem("PW")})} 
+
+if(localStorage.getItem("admin")){ Array.from(document.getElementsByClassName("admin")).forEach((index)=> {index.innerHTML = localStorage.getItem("admin")})} 
+
 function mainPage() {window.location.href = "Lab_0";}
 function nextLab() 
  {

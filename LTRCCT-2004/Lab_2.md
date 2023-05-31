@@ -93,7 +93,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
    
     ---
 8. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
-9. Place a test call to <w class= "DN_out" >Your EP DN</w>
+9. Place a test call to <w class= "EPDN" >Your EP DN</w>
     > Test the flow
     >> Were you able to set a callback for the queue which was chosen in the menu?
 
@@ -102,6 +102,15 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 
 <script>
+if(localStorage.getItem("EPDN")){ Array.from(document.getElementsByClassName("EPDN")).forEach((index)=> {index.innerHTML = localStorage.getItem("EPDN")})} 
+
+if(localStorage.getItem("agent1")){ Array.from(document.getElementsByClassName("agent1")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent1")})} 
+
+if(localStorage.getItem("agent2")){ Array.from(document.getElementsByClassName("agent2")).forEach((index)=> {index.innerHTML = localStorage.getItem("agent2")})} 
+
+if(localStorage.getItem("PW")){ Array.from(document.getElementsByClassName("PW")).forEach((index)=> {index.innerHTML = localStorage.getItem("PW")})} 
+
+if(localStorage.getItem("admin")){ Array.from(document.getElementsByClassName("admin")).forEach((index)=> {index.innerHTML = localStorage.getItem("admin")})} 
 function mainPage() {window.location.href = "Lab_1";}
 function nextLab() 
  {

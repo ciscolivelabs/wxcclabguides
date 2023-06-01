@@ -31,7 +31,7 @@ Feel free to reference the [Cheat Sheet](cheatSheet.md){:target="_blank"} along 
 
 1. Download the [CL_1_start Flow Template](flows/CL_1_start.json){:target="_blank"}
 2. Import the flow
-3. Click the ellipsis next to the newly imported flow_template and select Open 
+3. Click the ellipsis next to the newly imported flow template and select Open 
    > 
    >
    > Click on the Play Message node

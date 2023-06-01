@@ -8,7 +8,7 @@ title: "Hang out here!"
 function mainPage() {window.location.href = "Lab_4";}
 function nextLab() 
  {
- window.location.href = "Lab_5";
+ window.location.href = "JSON_Lab";
  }
 </script>
 

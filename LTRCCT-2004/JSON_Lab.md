@@ -16,14 +16,14 @@ speaker: Kevin Simpson
 ### Exercise 1
 
 1. Copy this text into the left pane of the JSON PathFinder
-   > \{"name":"John", "age":30, "car":null\}
+   > `\{"name":"John", "age":30, "car":null\}`
    >
 2. Click Beautify
 3. Click age
    > What is the JSON path for age? 
    >
 4. Delete the contents of the left pane and copy this text into the left pane of the JSON PathFinder
-   > \{"name":"John","age":30,"cars":\["Ford","BMW","Fiat"\]\}
+   > `\{"name":"John","age":30,"cars":\["Ford","BMW","Fiat"\]\}`
    >
    
 5. Click Beautify

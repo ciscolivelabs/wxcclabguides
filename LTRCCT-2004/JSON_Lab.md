@@ -18,7 +18,7 @@ speaker: Kevin Simpson
 1. Copy this text into the left pane of the JSON PathFinder
    > `{"name":"John", "age":30, "car":null}`
    >
-   >  <textarea cols="50" disabled>{"name":"John", "age":30, "car":null} </textarea>
+   >  <textarea cols="50" disabled style=background-color: #ffffff>{"name":"John", "age":30, "car":null} </textarea>
 2. Click Beautify
 3. Click age
    > What is the JSON path for age? 

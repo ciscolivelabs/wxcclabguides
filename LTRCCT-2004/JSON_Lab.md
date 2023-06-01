@@ -11,40 +11,55 @@ speaker: Kevin Simpson
 
 # Lab Section
 
-## Navigate to [JSON Path Finder](https://jsonpathfinder.com/){:target="_blank"}
+### Navigate to [JSON Path Finder](https://jsonpathfinder.com/){:target="_blank"}
    
 ### Exercise 1
 
 1. Copy this text into the left pane of the JSON PathFinder
-   - \{"name":"John", "age":30, "car":null\}
+   > \{"name":"John", "age":30, "car":null\}
+   >
 2. Click Beautify
 3. Click age
-   - What is the JSON path for age? 
+   > What is the JSON path for age? 
+   >
 4. Delete the contents of the left pane and copy this text into the left pane of the JSON PathFinder
-   - \{"name":"John","age":30,"cars":\["Ford","BMW","Fiat"\]\}
+   > \{"name":"John","age":30,"cars":\["Ford","BMW","Fiat"\]\}
+   >
+   
 5. Click Beautify
-   - Click on cars and observe that there is an array.
-   - What is the JSON path for BMW?
+   > Click on cars and observe that there is an array.
+   >
+   > What is the JSON path for BMW?
 
 ### Exercise 2
 
 1. Delete the contents of the left pane and copy this text into the left pane of the JSON PathFinder
-   -  \{"name":"John Smith","sku":"20223","price":23.95,"shipTo":\{"name":"Jane Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\},"billTo":\{"name":"John Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\}\}
+   >  \{"name":"John Smith","sku":"20223","price":23.95,"shipTo":\{"name":"Jane Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\},"billTo":\{"name":"John Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\}\}
+   >
+
 2. Click Beautify
-   - Note that shipTo and BillTo have additional JSON objects in them.
-   - What is the JSON path for the ship to state?
+   > Note that shipTo and BillTo have additional JSON objects in them.
+   >
+   > What is the JSON path for the ship to state?
+   >
 3. Delete the contents of the left pane and copy this text into the left pane of the JSON PathFinder
-   - \[\{"name":"John Smith","sku":"20223","price":23.95,"shipTo":\{"name":"Jane Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\},"billTo":\{"name":"John Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\}\},\{"name":"Alice Brown","sku":"54321","price":199.95,"shipTo":\{"name":"Bob Brown","address":"456 Oak Lane","city":"Pretendville","state":"HI","zip":"98999"\},"billTo":\{"name":"Alice Brown","address":"456 Oak Lane","city":"Pretendville","state":"HI","zip":"98999"\}\}\]
+   > \[\{"name":"John Smith","sku":"20223","price":23.95,"shipTo":\{"name":"Jane Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\},"billTo":\{"name":"John Smith","address":"123 Maple Street","city":"Pretendville","state":"NY","zip":"12345"\}\},\{"name":"Alice Brown","sku":"54321","price":199.95,"shipTo":\{"name":"Bob Brown","address":"456 Oak Lane","city":"Pretendville","state":"HI","zip":"98999"\},"billTo":\{"name":"Alice Brown","address":"456 Oak Lane","city":"Pretendville","state":"HI","zip":"98999"\}\}\]
+   >
+
 4. Click Beautify
-   - Note that we now have an array of objects (0 and 1)
-   - What is the JSON path for Alice Brown's ship to state?
+   > Note that we now have an array of objects (0 and 1)
+   >
+   > What is the JSON path for Alice Brown's ship to state?
 
 ### Exercise 3
 
 1. Delete the contents of the left pane and copy the raw text from [this flow](flows/CL_1_salesService_lang.json){:target="_blank"} into the left pane of the JSON PathFinder
 2. Click Beautify
-   - How many variables are there in this flow?
-   - What is the name and default value of variable 4?
+   > How many variables are there in this flow?
+   >
+   > What is the name and default value of variable 4?
+    
+    ---
 
 
 

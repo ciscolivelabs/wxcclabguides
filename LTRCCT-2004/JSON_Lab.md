@@ -16,8 +16,9 @@ speaker: Kevin Simpson
 ### Exercise 1
 
 1. Copy this text into the left pane of the JSON PathFinder
-   > `\{"name":"John", "age":30, "car":null\}`
+   > `{"name":"John", "age":30, "car":null}`
    >
+   >  <textarea cols="50" disabled>{"name":"John", "age":30, "car":null} </textarea>
 2. Click Beautify
 3. Click age
    > What is the JSON path for age? 
@@ -25,7 +26,7 @@ speaker: Kevin Simpson
 4. Delete the contents of the left pane and copy this text into the left pane of the JSON PathFinder
    > `\{"name":"John","age":30,"cars":\["Ford","BMW","Fiat"\]\}`
    >
-   
+   <textarea cols="50" disabled >{"name":"John","age":30,"cars":["Ford","BMW","Fiat"]}</textarea>
 5. Click Beautify
    > Click on cars and observe that there is an array.
    >

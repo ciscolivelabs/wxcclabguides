@@ -31,7 +31,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
    >
    > Your key is st
 
-3. Download [this CSV]("files/statelookup.csv"){:target="_blank"} and upload it to the BRE
+3. Download [this CSV](files/statelookup.csv){:target="_blank"} and upload it to the BRE
 
 ### Create the flow
 1.  In Routing Strategy > Flows

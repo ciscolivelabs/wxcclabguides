@@ -209,7 +209,7 @@ function flowBuilder() {
  window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/4_TaskBot_Flow.html";
  }
 function previous() {
- window.location.href = "https://wxcctechsummit.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/3.3_QnABotAdvanced.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/Cisco_Live_US/LTRCCT-3001/Home_US.html";
  }
 
 </script>
@@ -231,5 +231,5 @@ Or
 <button onclick="previous()" style="
   border-radius: 5px;
   background-color: rgb(116,191,75);
-  padding: 10px;">Go to the Previous Lab</button>
+  padding: 10px;">Go Back to the Beginning</button>
 </div>

@@ -121,7 +121,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 9.  Add a Condition node
     > Activity Name: singleMatchCheck
     >
-    > Expression: {{count < 2}}
+    > Expression: \{\{count < 2\}\}
     >
     > ---
 

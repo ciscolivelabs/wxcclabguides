@@ -11,7 +11,7 @@ speaker: Kevin Simpson
     - [Log into Control Hub](#log-into-control-hub)
     - [Bulk import audio files](#bulk-import-audio-files)
     - [Sync Users and Launch the Contact Center Portal](#sync-users-and-launch-the-contact-center-portal)
-    - [Configure your teams](#configure-your-teams)
+    - [Configure your team](#configure-your-team)
     - [Configure your users](#configure-your-users)
     - [Create a queue](#create-a-queue)
     - [Create your first flow](#create-your-first-flow)
@@ -53,7 +53,7 @@ speaker: Kevin Simpson
 2. Click Synchronize Users
 3. Click the Go to Webex Contact Center Management Portal link at the bottom of the page
 
-### Configure your teams
+### Configure your team
 1. Click on Provisioning > Team
 2. Click on `+ New Team`.
     > Site: site-1
@@ -65,18 +65,8 @@ speaker: Kevin Simpson
     > Multimedia Profile:  Default_TelePhony_Profile
     >
 3. Click Save
-4. Click on `+ New Team`.
-    > Site: site-1
-    >
-    > Name: CLTeam
-    >
-    > Type: Agent Based
-    >
-    > Multimedia Profile:  Default_TelePhony_Profile
-    >
-5. Click Save
 
-    ---
+      ---
 
 ### Configure your users
 1. Click on Provisioning > Users.

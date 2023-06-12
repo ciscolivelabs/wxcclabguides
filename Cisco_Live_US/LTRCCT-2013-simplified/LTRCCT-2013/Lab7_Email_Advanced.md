@@ -100,7 +100,11 @@ In the default workflow, auto-reply is already configured for all new tasks. In 
 <br/>
 <br/>
 
-- Set the customized message. Exampel: __Dear $(n2.email.senderName). We have successfully received your request. You are $(n1894.positionInQueue) in Queue.__. Press **SAVE**.
+- Set the customized message. Example: 
+
+Dear \$(n2.email.senderName). We have successfully received your request. You are $(n1957.positionInQueue) in Queue. 
+
+Press **SAVE**.
   
 > **Note:** Your PIQ node ID can be different from the example above. Select the right variable from the **Input Variables** in the right panel.
   

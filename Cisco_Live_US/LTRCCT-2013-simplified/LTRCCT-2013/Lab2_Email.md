@@ -148,7 +148,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - You can leave the default name. The name of your OAuth 2.0 client is only used to identify the client in the Google Cloud console and will not be shown to application users. 
 
-- In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.us.imiconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
+- In the **Authorized redirect URIs** section click **ADD URL** button and set `https://cl1pod\<ID\>.us.webexconnect.io/callback` where \<ID\> is your tenant number. Click **CREATE** button in the end.
 
 <img align="middle" src="new_images\LAB2_email\Lab2_93_email_CreateoAuthClientID.jpg" width="1000" />
 <br/>
@@ -295,7 +295,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Leave the **_Queue Routing Type_** as default value `Longest Available Agent`.
 
-- In the the **_Chat Distribution_** click on **Add Group** and select `Team1`.
+- In the the **_Email Distribution_** click on **Add Group** and select `Team1`.
 
 - Set **_Service Level Threshold_** as `2` hours.
 
@@ -315,7 +315,7 @@ Now create a new client ID that will be used to identify your application to Goo
 
 - Select `Email` in the **_Channel Type_** section.
 
-- In the the **_Chat Distribution_** click on **Add Group** and select `Team2`.
+- In the the **_Email Distribution_** click on **Add Group** and select `Team2`.
 
 <img align="middle" src="images/Lab2_Email_Q2.png" width="1000" />
 <br/>

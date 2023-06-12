@@ -364,6 +364,8 @@ Here is a screenshot of the Dropdown configuration with 2 options, one for **Sal
 
 - Enter the template text in the `Template Text` field. You can use variables by typing `@@` and also custom fields between chevron brackets `<>`. Variables will be autopopulated based on the active task and custom fields will be editable even if the template is locked. You can use the example on the screenshot or some other text.
 
+**NOTE:** The End template, Start template and Followup template may not exist in your version
+
 <img align="middle" src="images/Lab3_50.jpg" width="1000" />
 <br/>
 <br/>

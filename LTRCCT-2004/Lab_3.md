@@ -41,7 +41,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >> 
     >> ---
 2. Create New Flow Variables
-    > Name: Count
+    > Name: count
     >
     >> Type: Integer
     >>
@@ -49,7 +49,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
     >
-    > Name: Counter
+    > Name: counter
     >
     >> Type: Integer
     >>
@@ -102,8 +102,11 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Activity Label: getStates
     >
     >> Use the instructions from the BRE Configuration Tool to configure this node
-    >
-    > Set the returned value to list
+    >>
+    >> Substitute "your lookup value" with  \{\{CollectStateDigits.DigitsEntered\}\}
+    >>
+    >> Substitute "YourVariable" with list
+    >>
     >
     > ---
 
@@ -125,14 +128,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
 
-10. Add a Set Variable node
-    > Activity Name: listCount
-    >
-    > Variable: count
-    >
-    > Set to Value: \{\{list \| split(",") \|length\}\}
-    >
-    > ---
+10. Connect listCount to singleMatch
 
 11. Add a Set Variable node
     > Activity Name: singleState
@@ -143,9 +139,21 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
 
+
 12. Connect the True node edge of singleMatchCheck to singleState
 
-13. Add a Set Variable node
+13.  Add a Set Variable node
+    > Activity Name: incrementCounter
+    >
+    > Variable: count
+    >
+    > Set to Value: \{\{counter + 1\}\}
+    >
+    > --- 
+
+14. Connect the False node edge of singleMatchCheck to incrementCounter
+
+15. Add a Set Variable node
     > Activity name: stateName
     >
     > Variable: state
@@ -154,7 +162,9 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
 
-14. Add a Menu node
+16. Connect incrementCounter to stateName
+
+16. Add a Menu node
     > Activity Label: selectState
     >
     > Audio File: Press.wav
@@ -163,7 +173,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > Audio File: for.wav
     >
-    > Audio Prompt Variable: \{\{state.wav\}\}
+    > Audio Prompt Variable: \{\{state\}\}.wav
     > 
     > Make Prompt Interruptible: True
     >
@@ -177,24 +187,17 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
    
+17. Connect stateName to selectState
+    
 
-15. Add a Set Variable node
-    > Activity Name: listCount
-    >
-    > Variable: count
-    >
-    > Set to Value: \{\{list \| split(",") \|length\}\}
-    >
-    > ---
-
-16. Add a Condition node
+19. Add a Condition node
     > Activity Name: listComplete
     >
     > Expression: \{\{counter < count\}\}
     >
     > ---
 
-17. Add a Set Variable node
+20. Add a Set Variable node
     > Activity Name: resetCounter
     >
     > Variable: counter
@@ -203,11 +206,12 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > ---
 
-18. Connect the True node edge of listComplete to the selectState node
-19. Connect the False node edge of listComplete to resetCounter node
-20. Connect No-Input Timeout node edge to the listComplete node
-21. Connect Unmatched Entry node edge to the listComplete node    
-22. Add a Set Variable node
+21. Connect the True node edge of listComplete to the incrementCounter node
+22. Connect the False node edge of listComplete to resetCounter node
+23. Connect resetCounter to incrementCounter ⚠️ In a production environment you would want to limit the number of times you let this menu loop.
+24. Connect No-Input Timeout node edge to the listComplete node
+25. Connect Unmatched Entry node edge to the listComplete node    
+26. Add a Set Variable node
     > Activity Name: stateFromListPos
     >
     > Variable: selectInt
@@ -215,9 +219,9 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Set to Value: \{\{selectState.OptionEntered\}\}
     >
     > ---
-23. Connect Node edges 1, 2, 3, and 4 from selectState to stateFromListPos
+27. Connect Node edges 1, 2, 3, and 4 from selectState to stateFromListPos
 
-24. Add a Set Variable node
+28. Add a Set Variable node
     > Activity Name: stateFromList
     >
     > Variable: state
@@ -225,9 +229,9 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Set to Value: \{\{list \| split(",",list \| split(",") \| length-(list \| split(",") \| length-selectInt)) \| last \| split(",") \| first\}\}
     >
     > ---
-25. Connect stateFromListPos to stateFromList
+29. Connect stateFromListPos to stateFromList
 
-26. Add a Queue Contact node
+30. Add a Queue Contact node
     > Activity Name: queueCaller
     >
     > Static Queue
@@ -235,8 +239,9 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Queue: Service
     >
     > ---
-27. Connect stateFromList to queueCaller node
-28. Add a Play Music node
+31. Connect stateFromList to queueCaller node
+32. Connect singleState to queueCaller node
+33. Add a Play Music node
     > Activity Name: PlayMusic
     >
     > Static Audio File
@@ -244,11 +249,11 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > Music File: defaultmusic_on_hold.wav
     >
     > ---
-29. Connect queueCaller to PlayMusic
-30. Loop the output of PlayMusic to the input of PlayMusic
-31. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
-32. Point your Entry Point to this new flow
-33. Open the flow debugger and place a test call to <w class= "EPDN" >Your EP DN</w>
+34. Connect queueCaller to PlayMusic
+35. Loop the output of PlayMusic to the input of PlayMusic
+36. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
+37. Point your Entry Point to this new flow
+38. Open the flow debugger and place a test call to <w class= "EPDN" >Your EP DN</w>
     > What happens when you enter 63?
     >
     > What happens if you enter 43?

@@ -7,7 +7,7 @@ title: 'Creating a BRE Lookup'
   - [Before You Begin](#before-you-begin)
   - [Fill in the form with the necessary details and click "Update Directions"](#fill-in-the-form-with-the-necessary-details-and-click-update-directions)
   - [Preparing the tenant to use the BRE:](#preparing-the-tenant-to-use-the-bre)
-    - [In the Attributes section:](#in-the-attributes-section)
+      - [Navigate the Business Rules](#navigate-the-business-rules)
       - [Found rule](#found-rule)
       - [NotFound rule](#notfound-rule)
   - [Adding, updating, and removing data from your BRE table](#adding-updating-and-removing-data-from-your-bre-table)
@@ -48,26 +48,55 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 
  ⚠️ **Important note:** All BRE are settings, rules, attributes, and labels are case sensitive!
 
-> Click BRE 
-Click Attributes and add a new attribute called context (case sensitive) and type text
+#### Navigate the Business Rules 
+> In the BRE
 >
-> Click Labels and add <w class="label_out">routeInfo</w> (case sensitive)
 >
-> Click Context and Add Context with the name of the <w class = "context_out">table/Context that your CSM created for you</w> (case sensitive) then select <w class = "context_out">context</w> under Attribute
+>> Click Attributes in the top ribbon 
+>>
+>> Click Add  
+>> 
+>>> Name: context (case sensitive) 
+>>>
+>>> Data Type: Text
+>>>
+>>> Click Save
+>>
+>> Click Labels in the top ribbon
+>>
+>>> Click Add 
+>>>
+>>> Name: <w class="label_out">routeInfo</w> (case sensitive)
+>>>
+>>> Click Save
+>>
+>> Click Context in the top ribbon
+>>
+>>> Click Add Context 
+>>>
+>>> Name: <w class = "context_out">Table/Context that your CSM created for you</w> (case sensitive) 
+>>> 
+>>> Attribute: context 
+>>>
+>>> Click Save
+>>
+>> Click on the line of the Context you just created (<w class = "context_out"></w>)
+>>
+>>
+>> Add the rules listed below
 
-### In the Attributes section:
 
 #### Found rule
 
 > Click on Add Rule (Editor)
 > 
-> Name your rule <w class="context_out">something ending in </w>Found
+> Name: <w class="context_out"></w>Found
 > 
-> Click to make the rule active
+> Active: True
 > 
-> Select the label <w class = "label_out">routeInfo</w> from the drop down 
+> Label: <w class = "label_out">routeInfo</w>
 >
-> Set the priority to 100
+> Priority: 100
 >
 > Copy the rule into the editor
 
@@ -79,17 +108,18 @@ Click Attributes and add a new attribute called context (case sensitive) and typ
  then<br>
     c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)));<br>
  end<br> </ww>
+
 #### NotFound rule
 
 > Click on Add Rule (Editor)
 > 
-> Name your rule <w class="context_out">something ending in </w>Notfound
+> Name: <w class="context_out"></w>Notfound
 > 
-> Click to make the rule active
+> Active: True
 > 
-> Select the label <w class = "label_out">routeInfo</w> from the drop down 
+> Label: <w class = "label_out">routeInfo</w>
 >
-> Set the priority to 99
+> Priority: 99
 >
 > Copy the rule into the editor
 

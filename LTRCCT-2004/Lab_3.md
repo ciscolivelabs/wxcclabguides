@@ -142,10 +142,11 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 
 12. Connect the True node edge of singleMatchCheck to singleState
 
-13.  Add a Set Variable node
+
+13. Add a Set Variable node 
     > Activity Name: incrementCounter
     >
-    > Variable: count
+    > Variable: counter
     >
     > Set to Value: \{\{counter + 1\}\}
     >
@@ -164,7 +165,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
 
 16. Connect incrementCounter to stateName
 
-16. Add a Menu node
+17. Add a Menu node
     > Activity Label: selectState
     >
     > Audio File: Press.wav
@@ -185,9 +186,11 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     >
     > Digit Number: 4 Link Description: 4
     >
+    > No-Input Timeout: 1 second
+    >
     > ---
    
-17. Connect stateName to selectState
+18. Connect stateName to selectState
     
 
 19. Add a Condition node
@@ -251,7 +254,7 @@ In this lab we will be creating a new flow with an extensible menu to allow the 
     > ---
 34. Connect queueCaller to PlayMusic
 35. Loop the output of PlayMusic to the input of PlayMusic
-36. Publish your flow [Compare](images/CL_1_salesService.jpg){:target="\_blank"}
+36. Publish your flow [Compare](images/states.jpg){:target="\_blank"}
 37. Point your Entry Point to this new flow
 38. Open the flow debugger and place a test call to <w class= "EPDN" >Your EP DN</w>
     > What happens when you enter 63?

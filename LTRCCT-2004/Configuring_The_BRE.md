@@ -102,12 +102,14 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 
 
 
- > <textarea id="foundruleDisplay"style="width: 1100px; height: 100px;" readonly>when
+ <textarea id="foundruleDisplay"style="width: 1100px; height: 100px;" readonly>when
     c: Contact()
     eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")) != null)
 then
     c.putAttribute("routeInfo", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")));
 end </textarea><br>
+
+
 <ww id="foundRule"style="display: none">when<br>
     c: Contact()<br>
     eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("<w class = "key_out">ani</w>")) != null)<br>
@@ -212,7 +214,7 @@ end<br> </ww>
 
 
 ## Accessing the BRE data from your flow
-> <div style="width: 465px; height: 357px;position:relative">
+<div style="width: 465px; height: 357px;position:relative">
 <img style="position: relative; width: 465px; height: 357px;" src="images/BRE_Params.jpg"/>
 <w style="position: absolute; top: 27%; left:53%; color: rgb(0,0,0);" class = "context_out">table</w>
 <w style="position: absolute; top: 41%; left: 8%; color: rgb(0,0,0) "class = "key_out">ani</w>

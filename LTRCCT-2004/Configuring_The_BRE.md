@@ -102,12 +102,18 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 
 
 
->> <ww id="foundRule">when<br>
+ > <textarea id="foundruleDisplay"style="width: 1100px; height: 100px;" readonly>when
+    c: Contact()
+    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")) != null)
+then
+    c.putAttribute("routeInfo", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")));
+end </textarea><br>
+<ww id="foundRule"style="display: none">when<br>
     c: Contact()<br>
-    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)) != null)<br>
- then<br>
-    c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)));<br>
- end<br> </ww>
+    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("<w class = "key_out">ani</w>")) != null)<br>
+then<br>
+    c.putAttribute("<w class = "label_out">routeInfo</w>", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("<w class = "key_out">ani</w>")));<br>
+end<br> </ww>
 
 #### NotFound rule
 
@@ -206,10 +212,12 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 
 
 ## Accessing the BRE data from your flow
-> <img style="position: relative" src="images/BRE_Params.jpg"/>
-<w style="position: relative; top: -275px; left: 255px; color: rgb(0,0,0)" class = "context_out">table</w>
-<w style="position: relative; top: -225px; left: 15px; color: rgb(0,0,0) " class = "key_out">ani</w>
-<w style="position: relative; top: -225px; left: 200px; color: rgb(0,0,0)">your lookup value</w>
+> <div style="width: 465px; height: 357px;position:relative">
+<img style="position: relative; width: 465px; height: 357px;" src="images/BRE_Params.jpg"/>
+<w style="position: absolute; top: 27%; left:53%; color: rgb(0,0,0);" class = "context_out">table</w>
+<w style="position: absolute; top: 41%; left: 8%; color: rgb(0,0,0) "class = "key_out">ani</w>
+<w style="position: absolute; top: 41%; left: 53%; color: rgb(0,0,0)">your lookup value</w>
+</div>
 
 ---
 
@@ -228,7 +236,7 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
     {
       console.log(document.getElementsByClassName(entry[0])[index].innerHTML); 
       document.getElementsByClassName(entry[0])[index].innerHTML = entry[1];
-    })})
-
+    })});
+  document.getElementById("foundruleDisplay").value = document.getElementById("foundRule").innerText;
   event.preventDefault()}
 </script> 

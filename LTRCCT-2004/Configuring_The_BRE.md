@@ -100,14 +100,12 @@ You can access the BRE data here: https://rules.wxcc-us1.cisco.com/datasync
 >
 > Copy the rule into the editor:
 >
-
-
-><textarea id="foundruleDisplay" style="width: 1100px; height: 100px;" readonly>when
->    c: Contact()
->    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")) != null)
-> then
->    c.putAttribute("routeInfo", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")));
-> end </textarea><br>
+>> <textarea id="foundruleDisplay" style="width: 1100px; height: 100px;" readonly>when
+>>    c: Contact()
+>>    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")) != null)
+>> then
+>>    c.putAttribute("routeInfo", c.getGlobalValuesManager().getAsString(c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")));
+>> end </textarea><br>
 
 
 <ww id="foundRule" style="display: none" >when<br>
@@ -129,18 +127,24 @@ end<br> </ww>
 >
 > Priority: 99
 >
-> Copy the rule into the editor
+> Copy the rule into the editor:
+>
+>
+>> <textarea id="notfoundruleDisplay" style="width: 1100px; height: 100px;" readonly>when
+>>    c: Contact()
+>>    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("ani")) == null)
+>> then
+>>   c.putAttribute("routeInfo", "NotFound");
+>> end </textarea><br>
 
-
-
-
->> when<br>
+<ww id="notfoundRule" style="display: none" >
+when<br>
     c: Contact()<br>
-    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute(<q>context</q>) + <q>.</q> + c.getAttribute(<q><w class = "key_out">ani</w></q>)) == null)<br>
+    eval(c.getGlobalValuesManager().getAsString( c.getTenantId(), c.getAttribute("context") + "." + c.getAttribute("<w class = "key_out">ani</w>")) == null)<br>
  then<br>
-   c.putAttribute(<q><w class = "label_out">routeInfo</w></q>, <q>NotFound</q>);<br>
+   c.putAttribute("<w class = "label_out">routeInfo</w>", "NotFound");<br>
  end<br>
-
+</ww>
 
 ## Adding, updating, and removing data from your BRE table
 ### Logging in
@@ -168,7 +172,7 @@ end<br> </ww>
 >
 > </details>
 >
-> Select your tenant name from the TenatName drop down
+> Select your tenant name from the Tenant Name drop down
 >
 > Select the table name you want to add/update data to in the BRE Lookup Type drop down
 >
@@ -204,7 +208,7 @@ end<br> </ww>
 > > Action: the action you want taken on the key (ADD, UPDATE, DELETE)
 >
 >
-> Select your tenant name from the TenatName drop down
+> Select your tenant name from the Tenant Name drop down
 >
 > Select the table name you want to add/update data to in the BRE Lookup Type drop down
 >
@@ -217,7 +221,7 @@ end<br> </ww>
 > <div style="width: 465px; height: 357px;position:relative">
 > <img style="position: relative; width: 465px; height: 357px;" src="images/BRE_Params.jpg"/>
 > <w style="position: absolute; top: 27%; left:53%; color: rgb(0,0,0);" class = "context_out">table</w>
-> <w style="position: absolute; top: 41%; left: 8%; color: rgb(0,0,0) "class = "key_out">ani</w>
+> <w style="position: absolute; top: 41%; left: 8%; color: rgb(0,0,0)" class = "key_out">ani</w>
 > <w style="position: absolute; top: 41%; left: 53%; color: rgb(0,0,0)">your lookup value</w>
 > </div>
 
@@ -240,5 +244,6 @@ end<br> </ww>
       document.getElementsByClassName(entry[0])[index].innerHTML = entry[1];
     })});
   document.getElementById("foundruleDisplay").value = document.getElementById("foundRule").innerText;
+  document.getElementById("notfoundruleDisplay").value = document.getElementById("notfoundRule").innerText;
   event.preventDefault()}
 </script> 

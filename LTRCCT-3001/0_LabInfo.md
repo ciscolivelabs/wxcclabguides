@@ -2,12 +2,15 @@
 title: 'Lab Information'
 ---
 ## Introduction
-The recently introduced New Digital Channels capability in Webex Contact Centre provides a no-code bot-building capability and allows to build complex conversational flows. This session is targeted at contact centre engineers, architects and application builders interested to build bots using the new Bot Builder which is a cloud-based bot platform available out of the box with the Webex Contact Centre platform. During this session, participants will understand,
+The recently introduced New Digital Channels capability in Webex Contact Centre provides a no-code bot-building capability and allows to build complex conversational flows. This session is targeted at contact centre engineers, architects and application builders interested to build bots using the new Bot Builder which is a cloud-based bot platform available out of the box with the Webex Contact Centre platform. 
 
+During this session, participants will understand:
+
+- Chat channel basic configuration
 - Question/Answer bot: Knowledge-driven bots whose knowledge base consists of a Q&A corpus
 - Task bot: Enable multi-turn conversations where a bot can obtain relevant data from users to perform the task at hand
 - Google DialogFlow (CCAI) integration
-- Integration of one of the bots with a supported digital channel type
+- Integration of one of the bots with a Chat channel
 
 ## Lab Topology
 <img align="middle" src="images/topology.png" width="1000" />
@@ -16,15 +19,15 @@ The recently introduced New Digital Channels capability in Webex Contact Centre 
 
 | Component     | URL                     | Login                                                       |
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
-| Webex CC Control Hub | [https://admin.webex.com](https://admin.webex.com){:target="_blank"} | cl2admin**X**@email.carehybrid.com |
-| Management Portal | [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"} | cl2admin**X**@email.carehybrid.com |
-| Webex Connect | https://cl2pod**X**.imiconnect.io/ | cl2admin**X**@email.carehybrid.com |
-| Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | cl2agent**X**@email.carehybrid.com |
+| Webex CC Control Hub | [https://admin.webex.com](https://admin.webex.com){:target="_blank"} | wxcclabs+admin_ID**X**@gmail.com |
+| Management Portal | [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"} | wxcclabs+admin_ID**X**@gmail.com |
+| Webex Connect | [https://labtenant.us.webexconnect.io/] | wxcclabs+admin_ID**X**@gmail.com|
+| Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | wxcclabs+agent_ID**X**@gmail.com |
 
 > **NOTE:**  
-> **X** – is your unique POD ID listed on the card. \
+> **X** – is your unique **Attendee ID** listed on the card. \
 > The lab POD is the same as the production tenant which is located in the US Data Center. These labs are for instructional purposes only but the configuration can be reused for the real deployment.
-> The telephony service is not activated. This pod is used only for digital channels.
+> The POD is shared across all participants, so please make sure to use your **Attendee ID** in the entity names, so we keep the tenant organized.
 
 ## Before starting the labs
 
@@ -36,13 +39,13 @@ The recently introduced New Digital Channels capability in Webex Contact Centre 
 
 ### Users
 
-The users have the following pre-configuration
+The users have the following pre-configuration:
 
 | **User Role** | **User email**                       |
 | ------------- | ------------------------------------ | 
-| Admin         | cl2admin**X**@email.carehybrid.com   |
-| Agent         | cl2agent**X**@email.carehybrid.com   | 
-| Supervisor    | cl2sup**X**@email.carehybrid.com     | 
+| Admin         | wxcclabs+admin_ID**X**@gmail.com   |
+| Agent         | wxcclabs+agent_ID**X**@gmail.com   | 
+| Supervisor    | wxcclabs+supvr_ID**X**@gmail.com     | 
 
 ### User Settings
 
@@ -57,7 +60,7 @@ The users have the following pre-configuration
 
 1. Proctors is your number 1 contact. If you need assistance just raise your hand.
 
-2. All registered participants are also added to the support room where the engineering and Product Management team is added. As an alternative way, you can use that space for any questions related to the digital channels.
+2. All registered participants are also added to the support room with Webex Contact Center experts. As an alternative way, you can use that space for any questions related to the digital channels.
 
 <script>
 function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/Home_EMEAR.html";}

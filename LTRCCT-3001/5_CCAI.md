@@ -32,7 +32,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: https://cl2pod**X**.imiconnect.io/ (where **X** is your POD number)
+> Connect: **[https://labtenant.us.webexconnect.io/]**
 
 
 ### AI Terminology
@@ -129,7 +129,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 3. Authorize Google Dialog flow node in Webex Connect 
 
-- Login to your respective Webex Connect UI using the provided URL https://cl2pod**X**.imiconnect.io/ (where **X** is your POD number).
+- Login to your respective Webex Connect UI using the provided URL: **[https://labtenant.us.webexconnect.io/]**
 
 - Navigate to Assets > Integrations > Dialogflow ES > Manage 
 <img align="middle" src="images/Lab5a_19.png" width="1000" />

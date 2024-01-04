@@ -19,7 +19,7 @@ In this lab we will be creating a task bot using the bot builder in Webex Connec
 
 
 ## Accessing the Bot Builder 
-- In the connect portal (https://cl2podXX.imiconnect.io)
+- In the connect portal [https://labtenant.us.webexconnect.io/]
 - Click App tray <img src="images\Lab4_Apptray.PNG" height="20">
 - Select Bot Builder <img src="images\Lab4_BotBuilder.PNG" height="20">
 ## Creating a Task Bot

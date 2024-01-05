@@ -129,7 +129,7 @@ The users have the following preconfiguration
 
 - In the left navigation bar, go to **Services > Contact Center**. Under **Desktop Experience**, select **_Multimedia Profiles_**.
 
-<img align="middle" src="images/MMP.png" width="1000" />
+<img align="middle" src="images/MMPs.png" width="1000" />
 
 - Click on `Create Multimedia Profile` and input a Name with your **AttendeeID** (`X_MMP`)
 

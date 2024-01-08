@@ -32,24 +32,8 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: **[https://labtenant.us.webexconnect.io/]**
+> Connect: **[https://labtenant.us.webexconnect.io/](https://labtenant.us.webexconnect.io/){:target="_blank"}**
 
-
-### AI Terminology
-
-- **Utterances**: Anything a user says to the bot​
-
-- **Intents**: Task or action that the user wants to perform​
-
-- **Entities**: Metadata that specifies the user's intent​
-
-- **Responses**: Message sent from the bot to converse to the user​
-
-- **Fallback**: The state when a bot is unable to understand the utterance​
-
-- **Handover**: Bot stops processing messages and transfers to an agent
-
-- **NLU (Natural Language Understanding)**: engines used to assess the intent from the consumer inputs and respond with an accurate response
 
 
 # Lab Section
@@ -129,7 +113,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 
 ## Step 3. Authorize Google Dialog flow node in Webex Connect 
 
-- Login to your respective Webex Connect UI using the provided URL: **[https://labtenant.us.webexconnect.io/]**
+- Login to your respective Webex Connect UI using the provided URL: **[https://labtenant.us.webexconnect.io/](https://labtenant.us.webexconnect.io/){:target="_blank"}**
 
 - Navigate to Assets > Integrations > Dialogflow ES > Manage 
 <img align="middle" src="images/Lab5a_19.png" width="1000" />

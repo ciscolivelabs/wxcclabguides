@@ -40,7 +40,7 @@ In this Lab, we will go through the tasks that are required to complete the gene
 > Control Hub: **[https://admin.webex.com](https://admin.webex.com){:target="_blank"}**\
 > Portal: **[https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"}**\
 > Agent Desktop: **[https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"}**\
-> Connect: **[https://labtenant.us.webexconnect.io/]**
+> Connect: **[https://labtenant.us.webexconnect.io/](https://labtenant.us.webexconnect.io/){:target="_blank"}**
 
 
 ### Users
@@ -129,7 +129,7 @@ The users have the following preconfiguration
 
 - In the left navigation bar, go to **Services > Contact Center**. Under **Desktop Experience**, select **_Multimedia Profiles_**.
 
-<img align="middle" src="images/MMP.png" width="1000" />
+<img align="middle" src="images/MMPs.png" width="1000" />
 
 - Click on `Create Multimedia Profile` and input a Name with your **AttendeeID** (`X_MMP`)
 

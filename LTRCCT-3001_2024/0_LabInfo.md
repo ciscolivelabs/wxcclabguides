@@ -63,10 +63,10 @@ The users have the following pre-configuration:
 2. All registered participants are also added to the support room with Webex Contact Center experts. As an alternative way, you can use that space for any questions related to the digital channels.
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/Home_EMEAR.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001_2024/Home_EMEAR.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/1_PreReq.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001_2024/1_PreReq.html";
  }
 </script>
 

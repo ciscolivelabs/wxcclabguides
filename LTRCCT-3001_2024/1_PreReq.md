@@ -230,10 +230,10 @@ The users have the following preconfiguration
 
 
 <script>
-function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/0_LabInfo.html";}
+function mainPage() {window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001_2024/0_LabInfo.html";}
 function nextLab() 
  {
- window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001/2.1_BasicChat.html";
+ window.location.href = "https://ciscolivelabs.github.io/wxcclabguides/LTRCCT-3001_2024/2.1_BasicChat.html";
  }
 </script>
 

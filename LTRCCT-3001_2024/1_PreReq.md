@@ -123,7 +123,7 @@ The users have the following preconfiguration
 
 ### 1. Create new MultiMedia Profile
 
-- Login to Managment Portal by accessing [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="\_blank"}.
+- Login to Control Hub by accessing [https://admin.webex.com](https://admin.webex.com){:target="\_blank"}.
 
 - Enter the admin email address (wxcclabs+admin_ID**X**@gmail.com) and click **Sign in**
 

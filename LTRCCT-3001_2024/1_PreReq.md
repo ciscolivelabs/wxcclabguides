@@ -166,7 +166,7 @@ The users have the following preconfiguration
 
 - Select `X_MMP` in the **_Multimedia Profile_** drop-down.
 
-- Left as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
+- Leave as a default value **_Global Layout_** in the **_Desktop Layout_** drop-down and hit **_Save_**.
 
 <img align="middle" src="images/New_Team.png" width="1000" />
 

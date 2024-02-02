@@ -29,7 +29,6 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 | **Lab 3** | ***Webex Connect Task Bot*** | **Medium** |**60 mins** |
 | Lab 3.1 |  [Task Bot setup](4.1_TaskBotSetup.md){:target="\_blank"} |  |15 mins |
 | **BONUS** - Lab 3.2 | [Task Bot Integration within Flow](4.2_TaskBotFlow.md){:target="\_blank"}|  |45 mins   |
-
 |||||
 | **BONUS** | |  ||
 | **Lab 4** | ***Dialogflow Q&A Bot*** | **Hard** | **90 mins** |

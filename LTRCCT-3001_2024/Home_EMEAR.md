@@ -18,7 +18,7 @@ Welcome to the Lab Guide Library. Here you will find the step-by-step guides on 
 |||||
 | **Lab 1** | **Live Chat Configuration** | **Medium** |**90 mins** |
 | Lab 1.1 | [Environment setup](1_PreReq.md){:target="\_blank"} |  | 30 mins  |
-| Lab 1.2 | [Basic Chat](2.1_BasicChat.md){:target="\_blank"} |  | 40 mins | 
+| Lab 1.2 | [Basic Chat Configuration](2.1_BasicChat.md){:target="\_blank"} |  | 40 mins | 
 | Lab 1.3 | [Additional Capabilities](2.2_AdditionalCapabilities.md){:target="\_blank"}|  | 20 mins |
 |||||
 | **Lab 2** |**Question & Answer Bot Configuration** | **Medium** | **60 mins**|

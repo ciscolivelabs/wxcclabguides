@@ -9,7 +9,6 @@ During this session, participants will understand:
 - Chat channel basic configuration
 - Question/Answer bot: Knowledge-driven bots whose knowledge base consists of a Q&A corpus
 - Task bot: Enable multi-turn conversations where a bot can obtain relevant data from users to perform the task at hand
-- Google DialogFlow (CCAI) integration
 - Integration of one of the bots with a Chat channel
 
 ## Lab Topology
@@ -21,7 +20,7 @@ During this session, participants will understand:
 | --------------- | ----------------------------------------- | -------------------------------------------------------------           |
 | Webex CC Control Hub | [https://admin.webex.com](https://admin.webex.com){:target="_blank"} | wxcclabs+admin_ID**X**@gmail.com |
 | Management Portal | [https://portal.wxcc-us1.cisco.com/portal](https://portal.wxcc-us1.cisco.com/portal){:target="_blank"} | wxcclabs+admin_ID**X**@gmail.com |
-| Webex Connect | [https://labtenant.us.webexconnect.io/] | wxcclabs+admin_ID**X**@gmail.com|
+| Webex Connect | [https://labtenant.us.webexconnect.io/]([https://labtenant.us.webexconnect.io/]) | wxcclabs+admin_ID**X**@gmail.com|
 | Agent Desktop | [https://desktop.wxcc-us1.cisco.com](https://desktop.wxcc-us1.cisco.com){:target="_blank"} | wxcclabs+agent_ID**X**@gmail.com |
 
 > **NOTE:**  

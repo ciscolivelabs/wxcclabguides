@@ -13,7 +13,7 @@ title: 'Lab 1.1: Environment setup'
 
 - [Lab Section](#lab-section)
   - [Step 1. Node Authorization for Webex CC Task and Engage nodes](#step-1-node-authorization-for-webex-cc-task-and-engage-nodes)
-  - [Step 2. Create Service and upload Live Chat flows](#step-2-create-service-and-upload-live-chat-flows)
+  - [Step 2. Service Creation](#step-2-service-creation)
   - [Step 3. Setup entities in Portal (Agents, Team, MMP)](#step-3-setup-entities-in-portal-agents-team-mmp)
     - [1. Create new MultiMedia Profile](#1-create-new-multimedia-profile)
     - [2. Create new Site](#2-create-new-site)
@@ -26,7 +26,7 @@ title: 'Lab 1.1: Environment setup'
 
 ### Lab Objective
 
-In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different bot functionalities that are supported with the new digital channels. The lab contains multiple exercises to make you familiar with the Control Hub, Management portal UI and Webex Connect. At the end of the lab, you should be able to log in to an agent desktop interface and also complete the basic authentications required for working with Webex Connect application.
+In this Lab, we will go through the tasks that are required to complete the general pre-configuration of a tenant. These tasks are to be undertaken by an administrator. By following each of the steps, you would have prepared your tenant to begin configuring different bot functionalities that are supported with the new digital channels. The lab contains multiple exercises to make you familiar with the Control Hub, Agent Desktop and Webex Connect. At the end of the lab, you should be able to log in to an agent desktop interface and also complete the basic authentications required for working with Webex Connect application.
 
 
 ### Pre-requisites
@@ -57,14 +57,15 @@ The users have the following preconfiguration
 
 # Lab Section
 
-## JUST READ, ALREADY CONFIGURED
 ## Step 1. Node Authorization for Webex CC Task and Engage nodes
+## JUST READ IT, NO NEED TO CONFIGURE IT
+
 
 > Webex Connect is required to provide a valid access token for using various Webex Contact Center and imiengage APIs. The access token is generated using the authorization details configured within the ‘Node Runtime Authorization’ field that Webex Contact Center users are required to provide during flow configuration.
 
 > Because this is a shared tenant, the nodes are already authorized. You **don't need to complete** this step, **just read** it to understand how it would be.
 
-- Access the Webex Connect UI: **[https://labtenant.us.webexconnect.io/]**
+- Access to Webex Connect: [https://labtenant.us.webexconnect.io/]([https://labtenant.us.webexconnect.io/])
 
 - To authorize a pre-built integration go to Assets > Integrations. The integrations which are not yet authorized show the status as **Pending Authorization**.
 
@@ -106,7 +107,7 @@ The users have the following preconfiguration
 > In order to attach your Entry Point to a digital channel, you must create a Service first. In this Service you will create your channel flows.
 
 
-- Login to the **Webex Connect portal** ([https://labtenant.us.webexconnect.io/]) with your admin account (wxcclabs+admin_ID**X**@gmail.com).
+- Login to the [Webex Connect]([https://labtenant.us.webexconnect.io/]) with your admin account (wxcclabs+admin_ID**X**@gmail.com).
 
 - Navigate to **Services**, click on **CREATE NEW SERVICE** and set a name using your **Attendee ID**.
 
@@ -170,9 +171,7 @@ The users have the following preconfiguration
 
 <img align="middle" src="images/New_Team.png" width="1000" />
 
-- Please follow the same steps as above to add an extra Team as `X_Team2`. 
 
-[To top of this lab](#table-of-contents)
 
 ### 4. User Configuration
 
@@ -188,7 +187,7 @@ The users have the following preconfiguration
 
 - In the **_Agent Settings_** section, select `X_Site` in the **_Site_** drop-down.
 
-- Click the **_Teams_** area and select `X_Team1` and `X_Team2`.
+- Click the **_Teams_** area and select `X_Team1`.
 
 - Select `Agent Profile` in the **_Agent Profile_** drop-down list.
 
@@ -209,7 +208,7 @@ The users have the following preconfiguration
 
 - Navigate to **[https://desktop.wxcc-us1.cisco.com/](https://desktop.wxcc-us1.cisco.com/){:target="_blank"}** in a new browser or in incognito mode.
 
-- Enter the agent’s **email ID** `wxcclabs+agent_ID**X**@gmail.com`.
+- Enter the agent’s **email ID**: wxcclabs+agent_ID**X**@gmail.com.
 
 - Enter the **Password** for the appropriate Username.
 

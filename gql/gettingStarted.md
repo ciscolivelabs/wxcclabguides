@@ -2,7 +2,7 @@
 Title: "Getting Started"
 ---
 <script>
-Function vidPop(id){
+function vidPop(id){
 video = new CustomEvent("vidPop",{bubbles: true, composed: true, detail: id })
 document.body.dispatchEvent(video)
 }
